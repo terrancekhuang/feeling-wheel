@@ -25,7 +25,7 @@ function App() {
           {APP}
         </a>
       </header>
-      <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 pb-10">
+      <main className={`flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 ${slug ? "pb-10" : "flex flex-col pb-4"}`}>
         {!slug ? <Home key={n} /> : about ? <About /> : node ? <EmotionPage key={slug} slug={slug} /> : <NotFound />}
       </main>
       {!about && (
@@ -41,11 +41,11 @@ function Home() {
   return (
     <>
       <h1 className="font-serif text-3xl sm:text-4xl text-center mt-6">What are you feeling?</h1>
-      <p className="mt-2 mb-6 sm:mb-8 text-center text-ink-soft">See what God's Word has to say about it.</p>
+      <p className="mt-2 mb-4 sm:mb-6 text-center text-ink-soft">See what God's Word has to say about it.</p>
       {root.children ? (
         <>
           <Wheel initial={(history.state as { focus?: string } | null)?.focus ?? undefined} />
-          <p className="mt-6 text-center text-sm text-ink-soft max-w-sm mx-auto">Not sure? Tap the closest one; you can go deeper.</p>
+          <p className="mt-4 text-center text-sm text-ink-soft max-w-sm mx-auto">Not sure? Tap the closest one; you can go deeper.</p>
           <Search />
         </>
       ) : (
@@ -76,7 +76,7 @@ function Search() {
   return (
     <form
       role="search"
-      className="mt-8 max-w-sm mx-auto"
+      className="relative mt-4 w-full max-w-sm mx-auto"
       onSubmit={(e) => {
         e.preventDefault();
         if (results[0]) navigate(`/${results[0].data.slug}`);
@@ -93,7 +93,7 @@ function Search() {
         className="mt-2 w-full rounded-full border border-line bg-paper-2 px-4 py-2 text-base placeholder:text-ink-soft/70 focus-visible:outline-2 focus-visible:outline-ink"
       />
       {q.trim() && (
-        <ul className="mt-2 divide-y divide-line rounded-2xl border border-line bg-paper-2" aria-live="polite">
+        <ul className="absolute inset-x-0 top-full z-10 mt-2 divide-y divide-line rounded-2xl border border-line bg-paper-2 shadow-lg" aria-live="polite">
           {results.length ? (
             results.map((n) => (
               <li key={n.data.slug}>

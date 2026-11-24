@@ -44,10 +44,10 @@ export default function Wheel({ initial }: { initial?: string }) {
   const frame = useRef(0);
   const viaKeyboard = useRef(false);
 
-  // Size to the container (and the viewport height on wide screens).
+  // Fill the space the home page leaves for the wheel (it's a flex-1 box), so the page fits the screen without scrolling.
   useLayoutEffect(() => {
     const el = box.current!;
-    const ro = new ResizeObserver(() => setSize(Math.min(el.clientWidth, 640, Math.max(320, innerHeight - 220))));
+    const ro = new ResizeObserver(() => setSize(Math.min(el.clientWidth, el.clientHeight, 640)));
     ro.observe(el);
     return () => ro.disconnect();
   }, []);
@@ -113,9 +113,10 @@ export default function Wheel({ initial }: { initial?: string }) {
   }
 
   return (
-    <div ref={box} className="w-full flex justify-center">
+    // The wheel is out of flow so the box's height is only the free space (it would otherwise never shrink).
+    <div ref={box} className="relative w-full flex-1 min-h-[280px]">
       {size > 0 && (
-        <div className="relative" style={{ width: size, height: size }}>
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style={{ width: size, height: size }}>
           <svg ref={svg} width={size} height={size} viewBox={`${-size / 2} ${-size / 2} ${size} ${size}`} role="group" aria-label="Emotion wheel">
             {focus !== root && (
               <circle r={stops[1]} fill="transparent" className="cursor-pointer" onClick={() => zoom(focus.parent!)} aria-hidden />
