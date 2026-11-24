@@ -9,7 +9,7 @@ import { usePath, linkTo } from "./router";
 const APP = "Feeling Wheel"; // working name
 
 function App() {
-  const path = usePath();
+  const { path, n } = usePath();
   const slug = decodeURIComponent(path.slice(1).replace(/\/$/, ""));
   const node = slug ? pages.get(slug) : undefined;
 
@@ -25,7 +25,7 @@ function App() {
         </a>
       </header>
       <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 pb-10">
-        {!slug ? <Home /> : node ? <EmotionPage key={slug} slug={slug} /> : <NotFound />}
+        {!slug ? <Home key={n} /> : node ? <EmotionPage key={slug} slug={slug} /> : <NotFound />}
       </main>
     </div>
   );

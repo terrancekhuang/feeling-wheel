@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 
 // ponytail: 15-line router for a handful of flat paths; swap for a library if routes get nested.
+// Returns the path plus a counter that bumps on every navigation, even to the same path
+// (key a component on it to start fresh, e.g. the wheel when the header link is clicked).
 export function usePath() {
-  const [path, setPath] = useState(location.pathname);
+  const [nav, setNav] = useState({ path: location.pathname, n: 0 });
   useEffect(() => {
-    const update = () => setPath(location.pathname);
+    const update = () => setNav((s) => ({ path: location.pathname, n: s.n + 1 }));
     addEventListener("popstate", update);
     return () => removeEventListener("popstate", update);
   }, []);
-  return path;
+  return nav;
 }
 
 export function navigate(to: string, state: unknown = null) {
