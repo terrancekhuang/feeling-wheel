@@ -25,7 +25,7 @@
 - name: Fear
   slug: fear
   description: a sense that something bad is coming and you can't stop it
-  reviewed: false
+  reviewed: true
   god_sees_this:
     - Psalm 55:4
     - Psalm 102:2
@@ -42,7 +42,7 @@
     - name: Worried
       slug: worried
       description: a mind that keeps circling what might go wrong
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 13:2
         - Luke 10:41
@@ -59,7 +59,7 @@
         - name: Anxious
           slug: anxious
           description: a restless dread about what might happen
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Mark 14:33-34
             - ref: Psalm 42:5
@@ -76,7 +76,7 @@
         - name: Restless
           slug: restless
           description: unable to settle, as if something is always unfinished
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 77:4
             - Job 7:4
@@ -93,7 +93,7 @@
         - name: Dreading
           slug: dreading
           description: bracing for something you know is coming
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Mark 14:35-36
             - Job 3:25-26
@@ -109,7 +109,7 @@
     - name: Afraid
       slug: afraid
       description: feeling in danger, whether the threat is near or imagined
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 31:22
         - Matthew 14:30
@@ -127,7 +127,7 @@
         - name: Terrified
           slug: terrified
           description: fear so strong it is hard to think or move
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 55:5
             - Psalm 18:4-6
@@ -145,7 +145,7 @@
         - name: Panicked
           slug: panicked
           description: a sudden rush of fear that floods body and mind
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 38:10
             - Matthew 14:30
@@ -162,7 +162,7 @@
         - name: Threatened
           slug: threatened
           description: sensing that someone or something is against you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: Psalm 3:1
               excerpt: 'O LORD, how my foes have increased! How many rise up against me!'
@@ -180,7 +180,7 @@
     - name: Insecure
       slug: insecure
       description: lacking solid ground under your feet
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 73:2
         - ref: Psalm 61:2
@@ -198,7 +198,7 @@
         - name: Unsafe
           slug: unsafe
           description: not able to relax because you don't feel protected
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 142:4
             - ref: Psalm 55:6
@@ -215,7 +215,7 @@
         - name: Unsure of myself
           slug: unsure-of-myself
           description: doubting your own judgment and ability
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Exodus 4:10
             - Jeremiah 1:6
@@ -231,7 +231,7 @@
         - name: Fragile
           slug: fragile
           description: feeling one more blow could break you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 6:2
             - Psalm 31:9
@@ -247,7 +247,7 @@
     - name: Overwhelmed
       slug: overwhelmed
       description: more coming at you than you can hold
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - 2 Corinthians 1:8
         - Psalm 142:3
@@ -266,7 +266,7 @@
         - name: Pressured
           slug: pressured
           description: pushed by demands and expectations from every side
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Exodus 18:18
             - Psalm 25:17
@@ -282,7 +282,7 @@
         - name: Out of control
           slug: out-of-control
           description: life is moving faster than you can steer it
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Mark 4:37-38
             - Psalm 107:27
@@ -298,7 +298,7 @@
         - name: Drowning
           slug: drowning
           description: going under, with no strength left to keep your head up
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: Psalm 69:1
               excerpt: 'Save me, O God, for the waters are up to my neck.'
@@ -316,7 +316,7 @@
     - name: Helpless
       slug: helpless
       description: unable to change what is happening
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - 2 Chronicles 20:12
         - ref: Psalm 121:1
@@ -335,7 +335,7 @@
         - name: Powerless
           slug: powerless
           description: watching something unfold that you cannot stop
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 88:4
             - ref: Psalm 22:15
@@ -354,7 +354,7 @@
         - name: Trapped
           slug: trapped
           description: seeing no way out of where you are
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Lamentations 3:7
             - ref: Psalm 142:7
@@ -371,7 +371,7 @@
         - name: Vulnerable
           slug: vulnerable
           description: exposed and open to harm
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 40:17
             - Psalm 22:11
