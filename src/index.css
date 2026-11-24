@@ -92,3 +92,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .arc path { transition: none; }
 }
+
+/* The browser's blue clear button clashes with the palette. */
+input[type="search"]::-webkit-search-cancel-button { appearance: none; }

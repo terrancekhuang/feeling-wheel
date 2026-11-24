@@ -7,7 +7,7 @@ const RESERVED = new Set(["about"]);
 const RINGS = ["core", "middle", "specific"];
 const GROUPS = { god_sees_this: '"God sees this"', truth_to_hold: '"Truth to hold"' };
 const STEPS = ["reflection", "prayer", "action"];
-const KEYS = new Set(["name", "slug", "description", "reviewed", "crisis", "children", ...Object.keys(GROUPS), ...STEPS]);
+const KEYS = new Set(["name", "slug", "description", "also", "reviewed", "crisis", "children", ...Object.keys(GROUPS), ...STEPS]);
 const MIN = 2;
 const MAX = 4;
 
@@ -37,6 +37,8 @@ export function validate(tree, bible) {
     if (typeof node.name !== "string" || !node.name.trim()) errors.push(`${where}: missing name.`);
     if (typeof node.description !== "string" || !node.description.trim()) errors.push(`${where}: missing description.`);
     if (typeof node.reviewed !== "boolean") errors.push(`${where}: "reviewed" must be true or false.`);
+    if (node.also !== undefined && !(Array.isArray(node.also) && node.also.every((w) => typeof w === "string" && w.trim() && w === w.toLowerCase())))
+      errors.push(`${where}: "also" must be a list of lowercase search words, like [scared, nervous].`);
     if (node.crisis !== undefined && typeof node.crisis !== "boolean") errors.push(`${where}: "crisis" must be true or false.`);
     if (typeof node.slug !== "string" || !SLUG.test(node.slug)) {
       errors.push(`${where}: slug "${node.slug}" must be lowercase words joined by hyphens.`);

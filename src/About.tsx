@@ -17,7 +17,7 @@ export default function About() {
 
       <Section title="How to use it">
         <ol className="list-decimal pl-5 space-y-1.5">
-          <li>Tap the feeling on the wheel that's closest to yours.</li>
+          <li>Tap the feeling on the wheel that's closest to yours, or type it in the search box below the wheel.</li>
           <li>Go deeper until it names what you feel, or tap <em>Read verses</em> at any ring.</li>
           <li>Read slowly, pray, and take the next step. Share the page with someone who needs it.</li>
         </ol>

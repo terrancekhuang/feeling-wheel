@@ -2,7 +2,9 @@
 #
 # How this file works:
 #   - Top level = core ring. "children" = middle ring. Their "children" = specific ring.
-#   - slug     = the emotion's link (feelingwheel.app/anxious). Lowercase, hyphens, unique.
+#   - slug     = the emotion's link (feeling-wheel.terrancehuang.dev/anxious). Lowercase, hyphens, unique.
+#   - also     = optional extra search words (lowercase), e.g. [scared, nervous]. The name and
+#                description are already searched; add the everyday words people would type instead.
 #   - reviewed = set to true only after you have read and approved the entry.
 #   - crisis   = true shows the crisis banner (988 + helplines) on that emotion's page.
 #                Crisis flags below are suggestions — please check each one.
@@ -25,6 +27,7 @@
 - name: Fear
   slug: fear
   description: a sense that something bad is coming and you can't stop it
+  also: [scared, frightened, fearful]
   reviewed: true
   god_sees_this:
     - Psalm 55:4
@@ -42,6 +45,7 @@
     - name: Worried
       slug: worried
       description: a mind that keeps circling what might go wrong
+      also: [worry, concerned, uneasy, overthinking]
       reviewed: true
       god_sees_this:
         - Psalm 13:2
@@ -59,6 +63,7 @@
         - name: Anxious
           slug: anxious
           description: a restless dread about what might happen
+          also: [anxiety, nervous, on edge, stressed]
           reviewed: true
           god_sees_this:
             - Mark 14:33-34
@@ -76,6 +81,7 @@
         - name: Restless
           slug: restless
           description: unable to settle, as if something is always unfinished
+          also: [can't settle, agitated, fidgety]
           reviewed: true
           god_sees_this:
             - Psalm 77:4
@@ -93,6 +99,7 @@
         - name: Dreading
           slug: dreading
           description: bracing for something you know is coming
+          also: [dread, apprehensive, nervous]
           reviewed: true
           god_sees_this:
             - Mark 14:35-36
@@ -109,6 +116,7 @@
     - name: Afraid
       slug: afraid
       description: feeling in danger, whether the threat is near or imagined
+      also: [scared, frightened, fearful]
       reviewed: true
       god_sees_this:
         - Psalm 31:22
@@ -127,6 +135,7 @@
         - name: Terrified
           slug: terrified
           description: fear so strong it is hard to think or move
+          also: [scared, horrified, petrified]
           reviewed: true
           god_sees_this:
             - Psalm 55:5
@@ -145,6 +154,7 @@
         - name: Panicked
           slug: panicked
           description: a sudden rush of fear that floods body and mind
+          also: [panic, panic attack, freaking out]
           reviewed: true
           god_sees_this:
             - Psalm 38:10
@@ -162,6 +172,7 @@
         - name: Threatened
           slug: threatened
           description: sensing that someone or something is against you
+          also: [in danger, attacked, intimidated]
           reviewed: true
           god_sees_this:
             - ref: Psalm 3:1
@@ -180,6 +191,7 @@
     - name: Insecure
       slug: insecure
       description: lacking solid ground under your feet
+      also: [unstable, uncertain, unsettled]
       reviewed: true
       god_sees_this:
         - Psalm 73:2
@@ -198,6 +210,7 @@
         - name: Unsafe
           slug: unsafe
           description: not able to relax because you don't feel protected
+          also: [in danger, unprotected, scared]
           reviewed: true
           god_sees_this:
             - Psalm 142:4
@@ -215,6 +228,7 @@
         - name: Unsure of myself
           slug: unsure-of-myself
           description: doubting your own judgment and ability
+          also: [self-doubt, low confidence, second-guessing]
           reviewed: true
           god_sees_this:
             - Exodus 4:10
@@ -231,6 +245,7 @@
         - name: Fragile
           slug: fragile
           description: feeling one more blow could break you
+          also: [breakable, delicate, on the edge]
           reviewed: true
           god_sees_this:
             - Psalm 6:2
@@ -247,6 +262,7 @@
     - name: Overwhelmed
       slug: overwhelmed
       description: more coming at you than you can hold
+      also: [too much, swamped, stressed]
       reviewed: true
       god_sees_this:
         - 2 Corinthians 1:8
@@ -266,6 +282,7 @@
         - name: Pressured
           slug: pressured
           description: pushed by demands and expectations from every side
+          also: [pressure, stressed, expectations]
           reviewed: true
           god_sees_this:
             - Exodus 18:18
@@ -282,6 +299,7 @@
         - name: Out of control
           slug: out-of-control
           description: life is moving faster than you can steer it
+          also: [chaos, chaotic, spinning]
           reviewed: true
           god_sees_this:
             - Mark 4:37-38
@@ -298,6 +316,7 @@
         - name: Drowning
           slug: drowning
           description: going under, with no strength left to keep your head up
+          also: [sinking, underwater, going under]
           reviewed: true
           god_sees_this:
             - ref: Psalm 69:1
@@ -316,6 +335,7 @@
     - name: Helpless
       slug: helpless
       description: unable to change what is happening
+      also: [stuck, can't do anything]
       reviewed: true
       god_sees_this:
         - 2 Chronicles 20:12
@@ -335,6 +355,7 @@
         - name: Powerless
           slug: powerless
           description: watching something unfold that you cannot stop
+          also: [no control, weak]
           reviewed: true
           god_sees_this:
             - Psalm 88:4
@@ -354,6 +375,7 @@
         - name: Trapped
           slug: trapped
           description: seeing no way out of where you are
+          also: [stuck, cornered, no way out, caged]
           reviewed: true
           god_sees_this:
             - Lamentations 3:7
@@ -371,6 +393,7 @@
         - name: Vulnerable
           slug: vulnerable
           description: exposed and open to harm
+          also: [exposed, unprotected, weak]
           reviewed: true
           god_sees_this:
             - Psalm 40:17
@@ -388,6 +411,7 @@
 - name: Sadness
   slug: sadness
   description: a heaviness of heart over what is lost, broken or not as it should be
+  also: [sad, unhappy, sorrow, down, blue]
   reviewed: true
   god_sees_this:
     - Psalm 6:6
@@ -405,6 +429,7 @@
     - name: Grieving
       slug: grieving
       description: mourning someone or something you have lost
+      also: [grief, mourning, loss, sorrow]
       reviewed: true
       god_sees_this:
         - Psalm 42:3
@@ -423,6 +448,7 @@
         - name: Heartbroken
           slug: heartbroken
           description: a deep ache where love or hope used to be
+          also: [heartbreak, broken heart, breakup, divorce]
           reviewed: true
           god_sees_this:
             - Psalm 31:9
@@ -441,6 +467,7 @@
         - name: Bereaved
           slug: bereaved
           description: grieving the death of someone you love
+          also: [death, died, funeral, loss, widow]
           reviewed: true
           god_sees_this:
             - 2 Samuel 18:33
@@ -457,6 +484,7 @@
         - name: Missing someone
           slug: missing-someone
           description: longing for a person who is far away or gone
+          also: [miss, missing, longing, absent]
           reviewed: true
           god_sees_this:
             - 2 Timothy 1:4
@@ -474,6 +502,7 @@
     - name: Disappointed
       slug: disappointed
       description: what you hoped for did not happen
+      also: [disappointment, letdown, dashed hopes]
       reviewed: true
       god_sees_this:
         - ref: Luke 24:21
@@ -492,6 +521,7 @@
         - name: Let down
           slug: let-down
           description: someone you counted on did not come through
+          also: [letdown, failed me, unreliable]
           reviewed: true
           god_sees_this:
             - 2 Timothy 4:16
@@ -509,6 +539,7 @@
         - name: Discouraged
           slug: discouraged
           description: losing the heart to keep trying
+          also: [disheartened, demoralized, giving up]
           reviewed: true
           god_sees_this:
             - Nehemiah 4:10
@@ -525,6 +556,7 @@
         - name: Unfulfilled
           slug: unfulfilled
           description: life feels smaller than you thought it would be
+          also: [unsatisfied, meaningless, purposeless, stuck]
           reviewed: true
           god_sees_this:
             - Ecclesiastes 2:11
@@ -542,6 +574,7 @@
     - name: Hurt
       slug: hurt
       description: wounded by what someone said or did
+      also: [pain, offended, upset]
       reviewed: true
       god_sees_this:
         - Psalm 69:20
@@ -559,6 +592,7 @@
         - name: Wounded
           slug: wounded
           description: carrying an injury that hasn't healed
+          also: [scarred, trauma, injured]
           reviewed: true
           god_sees_this:
             - ref: Jeremiah 15:18
@@ -577,6 +611,7 @@
         - name: Betrayed
           slug: betrayed
           description: hurt by someone you trusted
+          also: [betrayal, backstabbed, lied to, cheated on, affair]
           reviewed: true
           god_sees_this:
             - Psalm 55:12-14
@@ -594,6 +629,7 @@
         - name: Crushed
           slug: crushed
           description: pressed down so hard you can barely stand
+          also: [devastated, shattered, flattened]
           reviewed: true
           god_sees_this:
             - Psalm 38:8
@@ -611,6 +647,7 @@
     - name: Downcast
       slug: downcast
       description: a low, heavy spirit that won't lift
+      also: [down, low, depressed, blue]
       reviewed: true
       god_sees_this:
         - Psalm 38:6
@@ -628,6 +665,7 @@
         - name: Heavy-hearted
           slug: heavy-hearted
           description: a weight on your chest you can't put down
+          also: [heavy, sorrowful, burdened]
           reviewed: true
           god_sees_this:
             - Matthew 26:38
@@ -645,6 +683,7 @@
         - name: Gloomy
           slug: gloomy
           description: everything seems grey and dim
+          also: [gloom, dark, dreary, grey]
           reviewed: true
           god_sees_this:
             - Job 30:26
@@ -662,6 +701,7 @@
         - name: Empty
           slug: empty
           description: hollow inside, as if nothing is left
+          also: [hollow, void, depressed]
           reviewed: true
           crisis: true
           god_sees_this:
@@ -679,6 +719,7 @@
     - name: Hopeless
       slug: hopeless
       description: unable to see how things could ever get better
+      also: [no hope, pointless, depressed]
       reviewed: true
       crisis: true
       god_sees_this:
@@ -697,6 +738,7 @@
         - name: Despairing
           slug: despairing
           description: hope feels completely gone
+          also: [despair, no hope, desperate]
           reviewed: true
           crisis: true
           god_sees_this:
@@ -716,6 +758,7 @@
         - name: Defeated
           slug: defeated
           description: you've fought and feel you have lost
+          also: [beaten, lost, failure]
           reviewed: true
           god_sees_this:
             - Joshua 7:7
@@ -733,6 +776,7 @@
         - name: Not wanting to live
           slug: not-wanting-to-live
           description: thoughts of not wanting to be here anymore
+          also: [suicidal, suicide, kill myself, want to die, end it all, self-harm]
           reviewed: true
           crisis: true
           god_sees_this:
@@ -752,6 +796,7 @@
 - name: Anger
   slug: anger
   description: heat rising against something that feels wrong
+  also: [angry, mad, upset, rage]
   reviewed: true
   god_sees_this:
     - Mark 3:5
@@ -771,6 +816,7 @@
     - name: Frustrated
       slug: frustrated
       description: blocked again and again from what you want or need
+      also: [frustration, annoyed, fed up]
       reviewed: true
       god_sees_this:
         - Exodus 5:22-23
@@ -788,6 +834,7 @@
         - name: Irritated
           slug: irritated
           description: small things keep rubbing you the wrong way
+          also: [annoyed, irritable, grumpy, on edge]
           reviewed: true
           god_sees_this:
             - Luke 10:40
@@ -804,6 +851,7 @@
         - name: Impatient
           slug: impatient
           description: tired of waiting and wanting it done now
+          also: [impatience, restless, can't wait]
           reviewed: true
           god_sees_this:
             - ref: Psalm 13:1
@@ -822,6 +870,7 @@
         - name: Stuck
           slug: stuck
           description: pushing hard and going nowhere
+          also: [going nowhere, blocked, no progress]
           reviewed: true
           god_sees_this:
             - Job 19:8
@@ -839,6 +888,7 @@
     - name: Bitter
       slug: bitter
       description: an old hurt that has hardened inside
+      also: [bitterness, sour, grudge]
       reviewed: true
       god_sees_this:
         - Ruth 1:20
@@ -856,6 +906,7 @@
         - name: Resentful
           slug: resentful
           description: replaying a wrong and holding it against someone
+          also: [resentment, grudge, begrudge]
           reviewed: true
           god_sees_this:
             - Psalm 55:12-13
@@ -872,6 +923,7 @@
         - name: Unforgiving
           slug: unforgiving
           description: unable or unwilling to let a debt go
+          also: [can't forgive, won't forgive, grudge]
           reviewed: true
           god_sees_this:
             - Matthew 18:21
@@ -889,6 +941,7 @@
         - name: Hardened
           slug: hardened
           description: closing your heart so it can't be hurt again
+          also: [hard-hearted, cold, closed off, numb]
           reviewed: true
           god_sees_this:
             - Psalm 77:2
@@ -906,6 +959,7 @@
     - name: Enraged
       slug: enraged
       description: anger that feels too big to contain
+      also: [rage, livid, seething, explosive]
       reviewed: true
       god_sees_this:
         - Jonah 4:9
@@ -923,6 +977,7 @@
         - name: Furious
           slug: furious
           description: burning, explosive anger
+          also: [fury, livid, mad, raging]
           reviewed: true
           god_sees_this:
             - Psalm 39:3
@@ -940,6 +995,7 @@
         - name: Vengeful
           slug: vengeful
           description: wanting the one who hurt you to pay
+          also: [revenge, vengeance, payback, get even]
           reviewed: true
           god_sees_this:
             - Psalm 58:6
@@ -957,6 +1013,7 @@
     - name: Wronged
       slug: wronged
       description: treated unfairly, and it isn't being made right
+      also: [unfair, injustice, mistreated, victim]
       reviewed: true
       god_sees_this:
         - Psalm 35:11-12
@@ -974,6 +1031,7 @@
         - name: Cheated
           slug: cheated
           description: robbed of what was rightfully yours
+          also: [robbed, scammed, ripped off]
           reviewed: true
           god_sees_this:
             - Genesis 27:36
@@ -992,6 +1050,7 @@
         - name: Disrespected
           slug: disrespected
           description: treated as if you don't matter
+          also: [disrespect, belittled, insulted, looked down on]
           reviewed: true
           god_sees_this:
             - Psalm 123:3-4
@@ -1009,6 +1068,7 @@
         - name: Indignant
           slug: indignant
           description: angry at injustice done to you or to others
+          also: [outraged, injustice, offended]
           reviewed: true
           god_sees_this:
             - Habakkuk 1:2-3
@@ -1026,6 +1086,7 @@
     - name: Envious
       slug: envious
       description: pained by what others have that you don't
+      also: [envy, covet, comparison, comparing]
       reviewed: true
       god_sees_this:
         - Psalm 73:2-3
@@ -1043,6 +1104,7 @@
         - name: Jealous
           slug: jealous
           description: afraid of losing what or who you love to someone else
+          also: [jealousy, possessive, insecure]
           reviewed: true
           god_sees_this:
             - Genesis 30:1
@@ -1060,6 +1122,7 @@
         - name: Discontent
           slug: discontent
           description: unable to be at peace with what you have
+          also: [dissatisfied, unsatisfied, never enough, ungrateful]
           reviewed: true
           god_sees_this:
             - Numbers 11:4-5
@@ -1077,6 +1140,7 @@
     - name: Angry with God
       slug: angry-with-god
       description: hurt and angry at God for what He has allowed
+      also: [mad at god, angry at god, blame god]
       reviewed: true
       god_sees_this:
         - Job 30:20-21
@@ -1095,6 +1159,7 @@
         - name: Disappointed in God
           slug: disappointed-in-god
           description: God did not do what you hoped He would
+          also: [let down by god, unanswered prayer]
           reviewed: true
           god_sees_this:
             - John 11:21
@@ -1111,6 +1176,7 @@
         - name: Feeling God is unfair
           slug: god-is-unfair
           description: it seems God blesses others and passes you by
+          also: [unfair, why me, not fair]
           reviewed: true
           god_sees_this:
             - Jeremiah 12:1
@@ -1128,6 +1194,7 @@
 - name: Shame
   slug: shame
   description: feeling that something is wrong with who you are
+  also: [ashamed, shameful, self-hatred]
   reviewed: true
   god_sees_this:
     - Genesis 3:10
@@ -1148,6 +1215,7 @@
     - name: Guilty
       slug: guilty
       description: knowing you have done wrong
+      also: [guilt, fault, sinned, my fault]
       reviewed: true
       god_sees_this:
         - Psalm 51:3
@@ -1167,6 +1235,7 @@
         - name: Remorseful
           slug: remorseful
           description: sorrow over the harm you have caused
+          also: [remorse, sorry, repentant, contrite]
           reviewed: true
           god_sees_this:
             - Luke 22:61-62
@@ -1183,6 +1252,7 @@
         - name: Condemned
           slug: condemned
           description: feeling judged and sentenced, with no way back
+          also: [judged, damned, sentenced, guilty]
           reviewed: true
           god_sees_this:
             - John 8:10-11
@@ -1200,6 +1270,7 @@
         - name: Regretful
           slug: regretful
           description: wishing you could undo what you did or didn't do
+          also: [regret, if only, should have]
           reviewed: true
           god_sees_this:
             - Psalm 25:7
@@ -1217,6 +1288,7 @@
     - name: Worthless
       slug: worthless
       description: believing you have no value
+      also: [no value, useless, nothing, self-worth, self-hatred]
       reviewed: true
       crisis: true
       god_sees_this:
@@ -1237,6 +1309,7 @@
         - name: Unlovable
           slug: unlovable
           description: sure that no one could truly love you
+          also: [unloved, not loved, no one loves me]
           reviewed: true
           god_sees_this:
             - Psalm 88:18
@@ -1254,6 +1327,7 @@
         - name: Like a failure
           slug: like-a-failure
           description: measuring your life and finding it not enough
+          also: [failure, failed, loser]
           reviewed: true
           god_sees_this:
             - ref: 1 Kings 19:4
@@ -1272,6 +1346,7 @@
         - name: Insignificant
           slug: insignificant
           description: as if your life makes no difference
+          also: [unimportant, doesn't matter, invisible, small]
           reviewed: true
           god_sees_this:
             - Judges 6:15
@@ -1289,6 +1364,7 @@
     - name: Inadequate
       slug: inadequate
       description: not measuring up to what is asked of you
+      also: [incapable, incompetent, not enough]
       reviewed: true
       god_sees_this:
         - Exodus 4:10
@@ -1306,6 +1382,7 @@
         - name: Not good enough
           slug: not-good-enough
           description: whatever you do, it never seems to be enough
+          also: [never enough, perfectionism, not enough]
           reviewed: true
           god_sees_this:
             - Romans 7:24-25
@@ -1323,6 +1400,7 @@
         - name: Inferior
           slug: inferior
           description: lesser than the people around you
+          also: [less than, compare, comparison, beneath]
           reviewed: true
           god_sees_this:
             - Exodus 4:10
@@ -1340,6 +1418,7 @@
         - name: Falling short
           slug: falling-short
           description: missing the mark again and again
+          also: [missing the mark, failing, sinning]
           reviewed: true
           god_sees_this:
             - Romans 7:24-25
@@ -1357,6 +1436,7 @@
     - name: Embarrassed
       slug: embarrassed
       description: wishing you could hide from others' eyes
+      also: [embarrassment, awkward, cringe, self-conscious]
       reviewed: true
       god_sees_this:
         - Genesis 3:10
@@ -1375,6 +1455,7 @@
         - name: Humiliated
           slug: humiliated
           description: shamed in front of others
+          also: [humiliation, mortified, shamed]
           reviewed: true
           god_sees_this:
             - Psalm 69:19
@@ -1392,6 +1473,7 @@
         - name: Exposed
           slug: exposed
           description: something you wanted hidden has come to light
+          also: [found out, secret, revealed, caught]
           reviewed: true
           god_sees_this:
             - Genesis 3:10
@@ -1409,6 +1491,7 @@
         - name: Foolish
           slug: foolish
           description: feeling stupid for what you said or did
+          also: [stupid, dumb, idiot, silly]
           reviewed: true
           god_sees_this:
             - Psalm 69:5
@@ -1425,6 +1508,7 @@
     - name: Unclean
       slug: unclean
       description: feeling stained by sin or by what was done to you
+      also: [dirty, impure, stained, sinful]
       reviewed: true
       god_sees_this:
         - Isaiah 6:5
@@ -1443,6 +1527,7 @@
         - name: Defiled
           slug: defiled
           description: feeling dirty in a way you can't wash off
+          also: [dirty, violated, abused, assaulted]
           reviewed: true
           god_sees_this:
             - ref: 2 Samuel 13:13
@@ -1461,6 +1546,7 @@
         - name: Disgusted with myself
           slug: disgusted-with-myself
           description: unable to stand who you have been
+          also: [self-loathing, self-hatred, hate myself, disgusting]
           reviewed: true
           god_sees_this:
             - Job 42:6
@@ -1478,6 +1564,7 @@
         - name: Unforgivable
           slug: unforgivable
           description: sure you have gone too far to be forgiven
+          also: [can't be forgiven, too far, too sinful]
           reviewed: true
           god_sees_this:
             - Luke 15:20-21
@@ -1496,6 +1583,7 @@
 - name: Loneliness
   slug: loneliness
   description: an ache to be known, wanted and close to someone
+  also: [lonely, alone, solitary]
   reviewed: true
   god_sees_this:
     - Psalm 25:16
@@ -1514,6 +1602,7 @@
     - name: Isolated
       slug: isolated
       description: cut off from the people around you
+      also: [isolation, lonely, alone, withdrawn]
       reviewed: true
       god_sees_this:
         - Psalm 142:4
@@ -1531,6 +1620,7 @@
         - name: Alone
           slug: alone
           description: no one is with you in this
+          also: [lonely, by myself, solitary, single]
           reviewed: true
           god_sees_this:
             - John 16:32
@@ -1548,6 +1638,7 @@
         - name: Cut off
           slug: cut-off
           description: separated from community by distance, illness or circumstance
+          also: [isolated, far away, sick, housebound]
           reviewed: true
           god_sees_this:
             - Psalm 38:11
@@ -1564,6 +1655,7 @@
         - name: Homesick
           slug: homesick
           description: longing for a place and people you have left
+          also: [home, moved, far from home, miss home]
           reviewed: true
           god_sees_this:
             - Psalm 137:1
@@ -1581,6 +1673,7 @@
     - name: Rejected
       slug: rejected
       description: pushed away by people you wanted to be close to
+      also: [rejection, turned away, dumped, refused]
       reviewed: true
       god_sees_this:
         - Isaiah 53:3
@@ -1599,6 +1692,7 @@
         - name: Excluded
           slug: excluded
           description: left out while others are welcomed in
+          also: [left out, outsider, not invited]
           reviewed: true
           god_sees_this:
             - ref: Luke 15:28-29
@@ -1617,6 +1711,7 @@
         - name: Unwanted
           slug: unwanted
           description: as if no one wants you around
+          also: [not wanted, unloved, burden]
           reviewed: true
           god_sees_this:
             - Job 19:19
@@ -1634,6 +1729,7 @@
         - name: Ignored
           slug: ignored
           description: treated as if you aren't there
+          also: [overlooked, invisible, neglected, ghosted]
           reviewed: true
           god_sees_this:
             - Psalm 142:4
@@ -1651,6 +1747,7 @@
     - name: Abandoned
       slug: abandoned
       description: left by someone who should have stayed
+      also: [left, walked out, orphaned, divorce]
       reviewed: true
       god_sees_this:
         - Psalm 27:10
@@ -1669,6 +1766,7 @@
         - name: Deserted
           slug: deserted
           description: left to face hard things on your own
+          also: [left alone, on my own, stranded]
           reviewed: true
           god_sees_this:
             - ref: 2 Timothy 4:16
@@ -1687,6 +1785,7 @@
         - name: Forgotten
           slug: forgotten
           description: as if no one remembers you exist
+          also: [overlooked, invisible, neglected]
           reviewed: true
           god_sees_this:
             - Isaiah 49:14
@@ -1704,6 +1803,7 @@
         - name: Left behind
           slug: left-behind
           description: everyone else has moved on without you
+          also: [left out, behind, falling behind]
           reviewed: true
           god_sees_this:
             - Job 19:13-14
@@ -1721,6 +1821,7 @@
     - name: Misunderstood
       slug: misunderstood
       description: no one seems to see what's really going on inside you
+      also: [no one gets me, not understood]
       reviewed: true
       god_sees_this:
         - 1 Samuel 1:13
@@ -1741,6 +1842,7 @@
         - name: Unseen
           slug: unseen
           description: your pain or effort goes unnoticed
+          also: [invisible, overlooked, unnoticed, unappreciated]
           reviewed: true
           god_sees_this:
             - Psalm 142:4
@@ -1758,6 +1860,7 @@
         - name: Unheard
           slug: unheard
           description: you speak, but no one really listens
+          also: [not listened to, no voice, silenced]
           reviewed: true
           god_sees_this:
             - 1 Samuel 1:14-15
@@ -1775,6 +1878,7 @@
         - name: Judged
           slug: judged
           description: others have made up their minds about you
+          also: [criticized, labelled, stereotyped]
           reviewed: true
           god_sees_this:
             - Psalm 35:11
@@ -1792,6 +1896,7 @@
     - name: Disconnected
       slug: disconnected
       description: among people but not really with them
+      also: [detached, apart, lonely in a crowd]
       reviewed: true
       god_sees_this:
         - Psalm 55:12-14
@@ -1810,6 +1915,7 @@
         - name: Distant
           slug: distant
           description: close relationships have grown cold
+          also: [drifting apart, estranged, cold]
           reviewed: true
           god_sees_this:
             - Psalm 55:12-14
@@ -1826,6 +1932,7 @@
         - name: Out of place
           slug: out-of-place
           description: like you don't belong where you are
+          also: [don't belong, misfit, outsider, awkward]
           reviewed: true
           god_sees_this:
             - Psalm 119:19
@@ -1844,6 +1951,7 @@
 - name: Weariness
   slug: weariness
   description: worn down in body, mind or soul
+  also: [weary, tired, fatigue, worn out]
   reviewed: true
   god_sees_this:
     - Psalm 6:6
@@ -1861,6 +1969,7 @@
     - name: Exhausted
       slug: exhausted
       description: completely out of strength
+      also: [tired, fatigue, worn out, no energy, spent]
       reviewed: true
       god_sees_this:
         - 1 Kings 19:5-7
@@ -1878,6 +1987,7 @@
         - name: Drained
           slug: drained
           description: everything has been poured out and nothing refilled
+          also: [tired, empty, spent, running on empty]
           reviewed: true
           god_sees_this:
             - ref: Psalm 22:14
@@ -1895,6 +2005,7 @@
         - name: Burned out
           slug: burned-out
           description: worn out by work or service that once gave you life
+          also: [burnout, burnt out, overworked, tired]
           reviewed: true
           god_sees_this:
             - Exodus 18:17-18
@@ -1912,6 +2023,7 @@
         - name: Sleepless
           slug: sleepless
           description: unable to rest even when you lie down
+          also: [insomnia, can't sleep, awake, no sleep]
           reviewed: true
           god_sees_this:
             - Psalm 77:4
@@ -1929,6 +2041,7 @@
     - name: Burdened
       slug: burdened
       description: carrying more weight than you were made to carry
+      also: [burden, heavy, load, overloaded]
       reviewed: true
       god_sees_this:
         - Numbers 11:14
@@ -1947,6 +2060,7 @@
         - name: Weighed down
           slug: weighed-down
           description: responsibilities pressing on you all day
+          also: [heavy, responsibility, pressure]
           reviewed: true
           god_sees_this:
             - 2 Corinthians 11:28
@@ -1963,6 +2077,7 @@
         - name: Stretched thin
           slug: stretched-thin
           description: too many people need too much from you
+          also: [busy, overcommitted, spread thin, too much]
           reviewed: true
           god_sees_this:
             - Mark 6:31
@@ -1979,6 +2094,7 @@
         - name: Carrying others' pain
           slug: carrying-others-pain
           description: worn by caring for someone who is suffering
+          also: [caregiver, caregiving, compassion fatigue, sick family]
           reviewed: true
           god_sees_this:
             - 2 Corinthians 11:28
@@ -1996,6 +2112,7 @@
     - name: Worn down
       slug: worn-down
       description: tired from a struggle that has lasted too long
+      also: [worn out, tired, weary, battle-weary]
       reviewed: true
       god_sees_this:
         - Psalm 6:3
@@ -2014,6 +2131,7 @@
         - name: Tired of waiting
           slug: tired-of-waiting
           description: you have waited and prayed, and still nothing
+          also: [waiting, unanswered prayer, how long]
           reviewed: true
           god_sees_this:
             - Psalm 6:3
@@ -2032,6 +2150,7 @@
         - name: Worn out by pain
           slug: worn-out-by-pain
           description: long illness or ongoing pain has taken its toll
+          also: [chronic pain, illness, sick, suffering, chronic illness]
           reviewed: true
           god_sees_this:
             - Mark 5:25-26
@@ -2049,6 +2168,7 @@
         - name: Ready to give up
           slug: ready-to-give-up
           description: you don't know how much longer you can keep going
+          also: [give up, quit, can't go on, done]
           reviewed: true
           crisis: true
           god_sees_this:
@@ -2068,6 +2188,7 @@
     - name: Numb
       slug: numb
       description: feeling very little at all
+      also: [nothing, no feelings, shut down, empty]
       reviewed: true
       god_sees_this:
         - Psalm 38:8
@@ -2085,6 +2206,7 @@
         - name: Detached
           slug: detached
           description: watching your own life from a distance
+          also: [disconnected, dissociated, unreal, distant]
           reviewed: true
           god_sees_this:
             - Psalm 143:4
@@ -2101,6 +2223,7 @@
         - name: Apathetic
           slug: apathetic
           description: finding it hard to care about anything
+          also: [apathy, don't care, unmotivated, indifferent]
           reviewed: true
           god_sees_this:
             - Ecclesiastes 2:17
@@ -2117,6 +2240,7 @@
         - name: Flat
           slug: flat
           description: no highs or lows, just grey
+          also: [meh, blah, bored, dull]
           reviewed: true
           god_sees_this:
             - Lamentations 3:17-18
@@ -2133,6 +2257,7 @@
     - name: Spiritually dry
       slug: spiritually-dry
       description: your soul feels parched and far from refreshment
+      also: [dry, dry spell, desert, dryness]
       reviewed: true
       god_sees_this:
         - ref: Psalm 63:1
@@ -2153,6 +2278,7 @@
         - name: Going through the motions
           slug: going-through-the-motions
           description: doing the right things with no life in them
+          also: [routine, autopilot, lukewarm, religious]
           reviewed: true
           god_sees_this:
             - Isaiah 29:13
@@ -2169,6 +2295,7 @@
         - name: Struggling to pray
           slug: struggling-to-pray
           description: prayer feels hard, empty or impossible
+          also: [can't pray, prayer, no words]
           reviewed: true
           god_sees_this:
             - Psalm 77:4
@@ -2185,6 +2312,7 @@
         - name: Thirsty for God
           slug: thirsty-for-god
           description: longing for God's presence you can't seem to feel
+          also: [longing for god, thirst, hungry for god, seeking god]
           reviewed: true
           god_sees_this:
             - ref: Psalm 42:2
@@ -2204,6 +2332,7 @@
 - name: Doubt
   slug: doubt
   description: struggling to trust what you once believed or felt sure of
+  also: [doubting, unbelief, skeptical, unsure]
   reviewed: true
   god_sees_this:
     - Mark 9:24
@@ -2222,6 +2351,7 @@
     - name: Confused
       slug: confused
       description: unable to make sense of what is happening
+      also: [confusion, unclear, mixed up, puzzled]
       reviewed: true
       god_sees_this:
         - Psalm 73:16-17
@@ -2239,6 +2369,7 @@
         - name: Lost
           slug: lost
           description: not knowing which way to go
+          also: [directionless, aimless, no direction]
           reviewed: true
           god_sees_this:
             - Job 23:8-10
@@ -2256,6 +2387,7 @@
         - name: Torn
           slug: torn
           description: pulled between two paths or two loyalties
+          also: [conflicted, divided, decision, dilemma]
           reviewed: true
           god_sees_this:
             - Genesis 32:24-26
@@ -2273,6 +2405,7 @@
         - name: Unsure of God's will
           slug: unsure-of-gods-will
           description: wanting to obey but not knowing what God wants
+          also: [calling, decision, guidance, direction, what should i do]
           reviewed: true
           god_sees_this:
             - Psalm 25:4-5
@@ -2290,6 +2423,7 @@
     - name: Far from God
       slug: far-from-god
       description: God feels distant or absent
+      also: [distant from god, away from god, backslidden]
       reviewed: true
       god_sees_this:
         - Psalm 10:1
@@ -2308,6 +2442,7 @@
         - name: Forsaken
           slug: forsaken
           description: as if God Himself has turned away from you
+          also: [abandoned by god, god left me]
           reviewed: true
           god_sees_this:
             - Matthew 27:46
@@ -2325,6 +2460,7 @@
         - name: God feels silent
           slug: god-feels-silent
           description: you pray and hear nothing back
+          also: [silence, no answer, unanswered prayer]
           reviewed: true
           god_sees_this:
             - Psalm 22:2
@@ -2341,6 +2477,7 @@
         - name: Cold in faith
           slug: cold-in-faith
           description: your love for God has cooled
+          also: [lukewarm, cold, backsliding, complacent]
           reviewed: true
           god_sees_this:
             - Revelation 2:4
@@ -2358,6 +2495,7 @@
     - name: Questioning
       slug: questioning
       description: wrestling with hard questions about God and faith
+      also: [questions, skeptical, deconstructing]
       reviewed: true
       god_sees_this:
         - Genesis 32:24-26
@@ -2376,6 +2514,7 @@
         - name: Struggling to believe
           slug: struggling-to-believe
           description: wanting to believe but finding it hard
+          also: [unbelief, faith crisis, can't believe]
           reviewed: true
           god_sees_this:
             - Mark 9:24
@@ -2393,6 +2532,7 @@
         - name: Shaken
           slug: shaken
           description: something has rattled the foundations of your faith
+          also: [rattled, faith crisis, deconstruction]
           reviewed: true
           god_sees_this:
             - Psalm 11:3
@@ -2410,6 +2550,7 @@
         - name: Why, God?
           slug: why-god
           description: unable to understand why God allowed this
+          also: [why, suffering, why me, theodicy]
           reviewed: true
           god_sees_this:
             - Habakkuk 1:3
@@ -2427,6 +2568,7 @@
     - name: Disillusioned
       slug: disillusioned
       description: let down by the church or by other believers
+      also: [hypocrites, hypocrisy, church, letdown]
       reviewed: true
       god_sees_this:
         - Psalm 55:12-14
@@ -2444,6 +2586,7 @@
         - name: Hurt by church
           slug: hurt-by-church
           description: wounded by a church or by Christians you trusted
+          also: [church hurt, spiritual abuse, pastor, religious trauma]
           reviewed: true
           god_sees_this:
             - Psalm 55:20-21
@@ -2461,6 +2604,7 @@
         - name: Cynical
           slug: cynical
           description: expecting the worst from people who claim faith
+          also: [cynicism, skeptical, distrust, hypocrites]
           reviewed: true
           god_sees_this:
             - Psalm 116:11
@@ -2477,6 +2621,7 @@
     - name: Spiritually unsure
       slug: spiritually-unsure
       description: uncertain where you stand with God
+      also: [uncertain, faith, salvation]
       reviewed: true
       god_sees_this:
         - Psalm 51:11
@@ -2496,6 +2641,7 @@
         - name: Unsure I'm saved
           slug: unsure-im-saved
           description: afraid you might not truly belong to God
+          also: [salvation, assurance, am i saved, going to hell, hell]
           reviewed: true
           god_sees_this:
             - Psalm 51:11
@@ -2513,6 +2659,7 @@
         - name: Afraid I've gone too far
           slug: gone-too-far
           description: wondering if you've wandered beyond God's reach
+          also: [too sinful, prodigal, beyond saving, backslidden]
           reviewed: true
           god_sees_this:
             - Jonah 2:4

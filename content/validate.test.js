@@ -41,9 +41,10 @@ test("catches shape problems", () => {
     e("Bad Slug"),
     e("about"),
     { name: "x", slug: "x", reviewed: "no", god_see_this: [] },
+    e("y", { also: ["Scared"] }),
   ];
   const errors = validate(tree, bible).errors.join("\n");
-  for (const re of [/already used/, /lowercase words/, /reserved/, /missing description/, /true or false/, /can't have children/, /unknown field "god_see_this"/]) assert.match(errors, re);
+  for (const re of [/already used/, /lowercase words/, /reserved/, /missing description/, /true or false/, /can't have children/, /unknown field "god_see_this"/, /lowercase search words/]) assert.match(errors, re);
 });
 
 test("drafts may be incomplete; reviewed entries must be complete and valid", () => {

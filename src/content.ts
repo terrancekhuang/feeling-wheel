@@ -11,6 +11,7 @@ export type Emotion = {
   name: string;
   slug: string;
   description: string;
+  also?: string[];
   reviewed: boolean;
   crisis?: boolean;
   children?: Emotion[];
