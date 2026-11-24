@@ -1845,93 +1845,361 @@
   slug: weariness
   description: worn down in body, mind or soul
   reviewed: false
+  god_sees_this:
+    - Psalm 6:6
+    - Psalm 143:4
+  truth_to_hold:
+    - Matthew 11:28-29
+    - Isaiah 40:29-31
+  reflection: >-
+    Is your tiredness mostly in your body, your mind or your soul, and what kind of rest would actually help?
+  prayer: >-
+    Jesus, I'm worn down. You invite the weary to come to You, so I'm coming. I don't have much to bring. Give me rest, and renew my strength.
+  action: >-
+    Choose one thing you can set down today, like a task, a commitment or a late night, and use that time to rest.
   children:
     - name: Exhausted
       slug: exhausted
       description: completely out of strength
       reviewed: false
+      god_sees_this:
+        - 1 Kings 19:5-7
+        - Psalm 69:3
+      truth_to_hold:
+        - Isaiah 40:29-31
+        - Psalm 73:26
+      reflection: >-
+        When God met an exhausted Elijah, He gave him sleep and food first. What does your body need first?
+      prayer: >-
+        Lord, I'm completely out of strength. You met Elijah under the broom tree with sleep and bread before anything else. Care for me like that, and give power to my weakness.
+      action: >-
+        Do what the angel told Elijah: eat something nourishing and sleep. Leave the hard conversations and decisions until you've rested.
       children:
         - name: Drained
           slug: drained
           description: everything has been poured out and nothing refilled
           reviewed: false
+          god_sees_this:
+            - ref: Psalm 22:14
+              excerpt: 'I am poured out like water'
+            - Psalm 143:4
+          truth_to_hold:
+            - Isaiah 58:11
+            - Psalm 23:2-3
+          reflection: >-
+            What has been draining you, and what actually refills you?
+          prayer: >-
+            Lord, I'm poured out and empty. You lead me beside quiet waters and restore my soul. Fill me again, and show me how to stop pouring from an empty cup.
+          action: >-
+            Make two lists: what drains you and what refills you. Do one thing from the second list today.
         - name: Burned out
           slug: burned-out
           description: worn out by work or service that once gave you life
           reviewed: false
+          god_sees_this:
+            - Exodus 18:17-18
+            - Numbers 11:14
+          truth_to_hold:
+            - Mark 6:31
+            - Psalm 127:2
+            - Galatians 6:9
+          reflection: >-
+            Jethro told Moses, "You cannot handle it alone." What are you carrying alone that you need to share or set down?
+          prayer: >-
+            Father, the work that once gave me life has worn me out. Moses couldn't carry it alone either. Show me what to hand to others, what to set down, and how to rest with You.
+          action: >-
+            Name one responsibility you could hand to someone else or pause for a season. Have that conversation this week. If burnout has lasted months, talk to a doctor too.
         - name: Sleepless
           slug: sleepless
           description: unable to rest even when you lie down
           reviewed: false
+          god_sees_this:
+            - Psalm 77:4
+            - Job 7:3-4
+          truth_to_hold:
+            - Psalm 4:8
+            - Psalm 3:5
+            - Psalm 127:2
+          reflection: >-
+            What thoughts keep you awake, and could you hand them to God before you lie down?
+          prayer: >-
+            Lord, I lie awake and the night drags on. You give sleep to those You love. Quiet my mind, take my worries, and let me lie down in peace.
+          action: >-
+            Before bed, write down what's on your mind and leave it on the page. Read Psalm 4:8 as you lie down. If sleeplessness keeps going, see a doctor.
     - name: Burdened
       slug: burdened
       description: carrying more weight than you were made to carry
       reviewed: false
+      god_sees_this:
+        - Numbers 11:14
+        - Psalm 38:4
+      truth_to_hold:
+        - Psalm 55:22
+        - Matthew 11:28-29
+        - 1 Peter 5:7
+      reflection: >-
+        What are you carrying that God never asked you to carry alone?
+      prayer: >-
+        Lord, this weight is too much for me. You tell me to cast my burden on You, so I'm handing it over. Carry what I can't, and show me who can help with the rest.
+      action: >-
+        Write down everything you're carrying. Circle one thing to give to God in prayer, and one thing to ask someone else to help with.
       children:
         - name: Weighed down
           slug: weighed-down
           description: responsibilities pressing on you all day
           reviewed: false
+          god_sees_this:
+            - 2 Corinthians 11:28
+            - Exodus 18:17-18
+          truth_to_hold:
+            - Psalm 55:22
+            - Exodus 33:14
+          reflection: >-
+            Which of your responsibilities are truly yours, and which have you picked up that belong to someone else?
+          prayer: >-
+            Father, my responsibilities press on me all day long. Your presence goes with me, and You promise rest. Help me carry what is mine and put down what isn't.
+          action: >-
+            Look at tomorrow's list. Cross off or postpone one thing that doesn't truly need you.
         - name: Stretched thin
           slug: stretched-thin
           description: too many people need too much from you
           reviewed: false
+          god_sees_this:
+            - Mark 6:31
+            - Numbers 11:14
+          truth_to_hold:
+            - Luke 10:41-42
+            - Exodus 18:17-18
+          reflection: >-
+            Jesus left crowds to rest. Who might you need to say "not now" to, so you can say "yes" to what matters?
+          prayer: >-
+            Lord, everyone needs something from me, and I'm stretched too thin. Jesus took His friends away to rest even when people kept coming. Give me the courage to say no, and to rest without guilt.
+          action: >-
+            Say one kind "no" or "not this week" today. Use the time it frees up to rest or pray.
         - name: Carrying others' pain
           slug: carrying-others-pain
           description: worn by caring for someone who is suffering
           reviewed: false
+          god_sees_this:
+            - 2 Corinthians 11:28
+            - Psalm 6:6
+          truth_to_hold:
+            - Galatians 6:2
+            - Galatians 6:9
+            - 1 Peter 5:7
+          reflection: >-
+            Who is caring for you while you care for someone else?
+          prayer: >-
+            Father, caring for someone I love is wearing me down. You see what I give and what it costs. Strengthen me, and send someone to care for me too.
+          action: >-
+            Ask one person to take over a caring task for a few hours this week, and use that time to rest. Look for a carers' support group or a church member who can help.
     - name: Worn down
       slug: worn-down
       description: tired from a struggle that has lasted too long
       reviewed: false
+      god_sees_this:
+        - Psalm 6:3
+        - Psalm 69:3
+      truth_to_hold:
+        - Hebrews 12:3
+        - 2 Corinthians 4:16-17
+        - Galatians 6:9
+      reflection: >-
+        What has kept you going this long, and what do you need to keep going a little longer?
+      prayer: >-
+        Lord, this struggle has lasted too long, and I'm worn down. Jesus endured, and He knows what it costs. Renew me inwardly day by day, and help me not to lose heart.
+      action: >-
+        Write down one way God has carried you through this so far. Then ask someone to pray for you this week.
       children:
         - name: Tired of waiting
           slug: tired-of-waiting
           description: you have waited and prayed, and still nothing
           reviewed: false
+          god_sees_this:
+            - Psalm 6:3
+            - Psalm 69:3
+          truth_to_hold:
+            - ref: Psalm 40:1
+              excerpt: 'I waited patiently for the LORD; He inclined to me and heard my cry.'
+            - Isaiah 40:31
+            - Lamentations 3:25-26
+          reflection: >-
+            What have you been praying for, and what would it mean to keep bringing it to God even now?
+          prayer: >-
+            Lord, I've waited and prayed, and still nothing. How long? I don't understand the delay. Keep me from giving up on You, and renew my strength while I wait.
+          action: >-
+            Write down what you're waiting for and the date. Keep praying about it, and also do one good thing today that doesn't depend on the answer.
         - name: Worn out by pain
           slug: worn-out-by-pain
           description: long illness or ongoing pain has taken its toll
           reviewed: false
+          god_sees_this:
+            - Mark 5:25-26
+            - Psalm 38:8
+          truth_to_hold:
+            - 2 Corinthians 4:16-17
+            - Revelation 21:4
+            - Romans 8:18
+          reflection: >-
+            How has this pain changed you, and where have you seen God in it, even faintly?
+          prayer: >-
+            Lord, this pain has gone on so long, and it's taken so much out of me. The woman who bled for twelve years knew this too, and she reached for You. I'm reaching for You now. Give me strength for today, and hope for the day when pain is gone.
+          action: >-
+            Rest without guilt today. If you haven't recently, talk to your doctor about your pain and your mood, since long pain often weighs on both.
         - name: Ready to give up
           slug: ready-to-give-up
           description: you don't know how much longer you can keep going
           reviewed: false
           crisis: true
+          god_sees_this:
+            - Job 6:11
+            - ref: 1 Kings 19:4
+              excerpt: '“I have had enough, LORD,” he said.'
+          truth_to_hold:
+            - 1 Kings 19:5-7
+            - 2 Corinthians 4:8-9
+            - Isaiah 42:3
+          reflection: >-
+            When Elijah said "I have had enough," God sent rest and food, not a lecture. What do you need most right now?
+          prayer: >-
+            Lord, I don't know how much longer I can keep going. Elijah told You he'd had enough, and You cared for him. You won't break a bruised reed. Hold me up, and send me help today.
+          action: >-
+            If giving up means you're thinking of ending your life, call or text 988 now, or tell someone you trust today. You don't have to keep going alone.
     - name: Numb
       slug: numb
       description: feeling very little at all
       reviewed: false
+      god_sees_this:
+        - Psalm 38:8
+        - Psalm 143:4
+      truth_to_hold:
+        - Ezekiel 36:26
+        - Isaiah 42:3
+      reflection: >-
+        When did you stop feeling much, and what was happening then?
+      prayer: >-
+        Lord, I don't feel much of anything. I don't even know what to pray. You won't put out a smouldering wick. Keep the small flame in me alive, and bring feeling back in Your time.
+      action: >-
+        Do one simple, physical thing today, like a walk outside, a warm shower or a meal with someone. If numbness has lasted weeks, talk to a doctor or counsellor.
       children:
         - name: Detached
           slug: detached
           description: watching your own life from a distance
           reviewed: false
+          god_sees_this:
+            - Psalm 143:4
+            - Psalm 77:4
+          truth_to_hold:
+            - Psalm 139:7-8
+            - Psalm 73:23
+          reflection: >-
+            What might you be protecting yourself from by stepping back?
+          prayer: >-
+            Lord, I feel like I'm watching my life from far away. Wherever I go, You are there. Hold my hand, and bring me gently back into my own life.
+          action: >-
+            Ground yourself: name five things you can see and three you can hear, and say "God is here" for each. If this feeling is frequent, talk to a doctor or counsellor.
         - name: Apathetic
           slug: apathetic
           description: finding it hard to care about anything
           reviewed: false
+          god_sees_this:
+            - Ecclesiastes 2:17
+            - Ecclesiastes 1:14
+          truth_to_hold:
+            - Psalm 51:12
+            - Romans 15:13
+          reflection: >-
+            What did you used to care about, and what changed?
+          prayer: >-
+            God, I can't make myself care about much right now. Even the Teacher in Ecclesiastes felt everything was futile. Restore the joy I've lost, and give me a willing spirit.
+          action: >-
+            Pick one small thing you once enjoyed and do it for ten minutes, even without feeling like it. Tell someone if this has lasted a while.
         - name: Flat
           slug: flat
           description: no highs or lows, just grey
           reviewed: false
+          god_sees_this:
+            - Lamentations 3:17-18
+            - Psalm 143:4
+          truth_to_hold:
+            - Lamentations 3:22-23
+            - Hosea 6:3
+          reflection: >-
+            Where might there still be a small colour in your grey day?
+          prayer: >-
+            Lord, everything feels grey. I've almost forgotten what good feels like. Your mercies are new every morning, even on grey ones. Come to me like the spring rain.
+          action: >-
+            At the end of today, write down one small good thing, however ordinary. Do the same tomorrow, and keep going for a week.
     - name: Spiritually dry
       slug: spiritually-dry
       description: your soul feels parched and far from refreshment
       reviewed: false
+      god_sees_this:
+        - ref: Psalm 63:1
+          excerpt: 'O God, You are my God. Earnestly I seek You; my soul thirsts for You. My body yearns for You in a dry and weary land without water.'
+        - ref: Psalm 143:6
+          excerpt: 'I stretch out my hands to You; my soul thirsts for You like a parched land.'
+      truth_to_hold:
+        - Isaiah 44:3
+        - Isaiah 58:11
+        - Jeremiah 17:7-8
+      reflection: >-
+        What might your dryness be telling you about what your soul needs?
+      prayer: >-
+        God, my soul feels parched. I'm going through a dry and weary land. You promise to pour water on the thirsty. I'm thirsty. Please come.
+      action: >-
+        Try a different way of meeting God this week, like praying on a walk, reading a psalm aloud, or sitting in silence for five minutes.
       children:
         - name: Going through the motions
           slug: going-through-the-motions
           description: doing the right things with no life in them
           reviewed: false
+          god_sees_this:
+            - Isaiah 29:13
+            - Revelation 2:4
+          truth_to_hold:
+            - Psalm 51:12
+            - Revelation 3:20
+          reflection: >-
+            What would you say to God if you dropped the routine and just told Him how it really is?
+          prayer: >-
+            Lord, I'm doing the right things, but my heart isn't in them. I'd rather be honest with You than just keep going through the motions. Restore the joy of my salvation.
+          action: >-
+            Skip your usual routine once this week. Instead, tell God honestly how it is, in your own words, with no script.
         - name: Struggling to pray
           slug: struggling-to-pray
           description: prayer feels hard, empty or impossible
           reviewed: false
+          god_sees_this:
+            - Psalm 77:4
+            - Luke 11:1
+          truth_to_hold:
+            - Romans 8:26
+            - Matthew 6:7-8
+          reflection: >-
+            What if prayer today was just a few honest words, or even silence?
+          prayer: >-
+            Lord, I don't know how to pray right now. The words won't come. Your Spirit prays for me with groans too deep for words. Let that be enough today.
+          action: >-
+            Pray one short sentence, like "Lord, help me" or "I'm here," several times today. Or pray the Lord's Prayer slowly.
         - name: Thirsty for God
           slug: thirsty-for-god
           description: longing for God's presence you can't seem to feel
           reviewed: false
+          god_sees_this:
+            - ref: Psalm 42:2
+              excerpt: 'My soul thirsts for God, the living God. When shall I come and appear in God’s presence?'
+            - Psalm 84:2
+          truth_to_hold:
+            - John 7:37
+            - Isaiah 55:1
+            - John 4:13-14
+          reflection: >-
+            Could your thirst itself be a sign that God is drawing you?
+          prayer: >-
+            Living God, my soul thirsts for You, and I can't seem to feel You near. Jesus said, "If anyone is thirsty, let him come to Me and drink." I'm coming. Satisfy me.
+          action: >-
+            Read John 7:37 and Psalm 42 slowly. Then sit quietly for five minutes and tell God you're thirsty.
 
 - name: Doubt
   slug: doubt
