@@ -753,97 +753,377 @@
   slug: anger
   description: heat rising against something that feels wrong
   reviewed: false
+  god_sees_this:
+    - Mark 3:5
+    - Psalm 39:3
+  truth_to_hold:
+    - ref: Psalm 4:4
+      excerpt: 'Be angry, yet do not sin; on your bed, search your heart and be still.'
+    - James 1:19-20
+    - Psalm 103:8
+  reflection: >-
+    What is your anger telling you is wrong, and what do you want to do with it?
+  prayer: >-
+    Lord, I am angry, and I won't pretend I'm not. Jesus, You were angry at hardness of heart, so You understand this heat. Help me tell You the truth about it, and keep me from sinning in it.
+  action: >-
+    Before you speak or act, pause. Write down what made you angry and what you wish would happen. Then read Psalm 4:4 and, if you can, sleep on it before you respond.
   children:
     - name: Frustrated
       slug: frustrated
       description: blocked again and again from what you want or need
       reviewed: false
+      god_sees_this:
+        - Exodus 5:22-23
+        - Numbers 11:14
+      truth_to_hold:
+        - Galatians 6:9
+        - Proverbs 3:5-6
+      reflection: >-
+        What keeps blocking you, and which part of it is actually in your hands?
+      prayer: >-
+        Father, I keep running into the same wall, and I'm tired of it. Moses brought You his frustration, so I bring You mine. Show me what is mine to do, and give me patience for what is not.
+      action: >-
+        Write down what keeps blocking you. Split it into what you can change and what you can't. Take one small step on the first list today, and hand the second list to God in prayer.
       children:
         - name: Irritated
           slug: irritated
           description: small things keep rubbing you the wrong way
           reviewed: false
+          god_sees_this:
+            - Luke 10:40
+            - Numbers 20:10
+          truth_to_hold:
+            - Proverbs 19:11
+            - Proverbs 15:1
+          reflection: >-
+            Is it really the small things, or is something bigger underneath making everything rub?
+          prayer: >-
+            Lord, everything is getting under my skin today. Calm me before I say something I regret. Show me what's really underneath this, and give me grace to overlook what I can.
+          action: >-
+            When you feel yourself about to snap, stop and take three slow breaths. Ask whether you're tired, hungry, or carrying something else, and look after that first.
         - name: Impatient
           slug: impatient
           description: tired of waiting and wanting it done now
           reviewed: false
+          god_sees_this:
+            - ref: Psalm 13:1
+              excerpt: 'How long, O LORD? Will You forget me forever?'
+            - Psalm 6:3
+          truth_to_hold:
+            - Lamentations 3:25-26
+            - Habakkuk 2:3
+            - Psalm 31:15
+          reflection: >-
+            What are you waiting for, and what is the waiting doing in you?
+          prayer: >-
+            Lord, I'm tired of waiting and I want this done now. My times are in Your hands, even when Your timing feels slow. Help me wait without giving up, and show me what to do in the meantime.
+          action: >-
+            Name the thing you're waiting for. Then pick one good thing you can do today while you wait, and do it.
         - name: Stuck
           slug: stuck
           description: pushing hard and going nowhere
           reviewed: false
+          god_sees_this:
+            - Job 19:8
+            - Romans 7:19
+          truth_to_hold:
+            - Psalm 118:5
+            - Isaiah 43:19
+            - 2 Corinthians 12:9
+          reflection: >-
+            Where are you pushing hardest, and what would it look like to stop pushing and ask for help?
+          prayer: >-
+            Lord, I'm pushing as hard as I can and getting nowhere. I'm out of ideas and out of strength. Make a way where I can't see one, and let Your power show up in my weakness.
+          action: >-
+            Stop pushing for a day. Tell one person you trust where you're stuck and ask what they see. Sometimes the next step only shows up when someone else looks.
     - name: Bitter
       slug: bitter
       description: an old hurt that has hardened inside
       reviewed: false
+      god_sees_this:
+        - Ruth 1:20
+        - Job 7:11
+      truth_to_hold:
+        - Hebrews 12:15
+        - Ephesians 4:31-32
+      reflection: >-
+        What hurt is underneath the bitterness, and have you ever told God how much it cost you?
+      prayer: >-
+        Lord, this old hurt has turned sour in me. Like Naomi, I feel life has dealt bitterly with me. Pull up this root before it spreads, and heal the wound underneath it.
+      action: >-
+        Write down the hurt your bitterness is guarding: who, what, and what it cost you. Read it to God, then read Ephesians 4:31-32.
       children:
         - name: Resentful
           slug: resentful
           description: replaying a wrong and holding it against someone
           reviewed: false
+          god_sees_this:
+            - Psalm 55:12-13
+            - Luke 15:29
+          truth_to_hold:
+            - 1 Peter 2:23
+            - Colossians 3:13
+          reflection: >-
+            How many times have you replayed this wrong, and what does replaying it give you?
+          prayer: >-
+            Lord, I keep replaying what they did. You saw all of it, and You judge justly. I hand this wrong to You, and I ask You to loosen its grip on my mind.
+          action: >-
+            The next time the memory replays, stop and pray one sentence for the person, even if all you can say is, "Lord, deal with them justly."
         - name: Unforgiving
           slug: unforgiving
           description: unable or unwilling to let a debt go
           reviewed: false
+          god_sees_this:
+            - Matthew 18:21
+            - Psalm 109:4-5
+          truth_to_hold:
+            - Luke 23:34
+            - Ephesians 4:32
+            - Genesis 50:20
+          reflection: >-
+            What would forgiving them mean for you, and what would it not mean?
+          prayer: >-
+            Lord, I don't feel ready to forgive. What they did was real, and You know it. You have forgiven me so much; help me begin to release this debt to You, even if it takes time.
+          action: >-
+            Write down what they owe you, then write "I hand this to God" across it. Forgiving doesn't mean trusting them again or pretending it was fine. If it isn't safe to be near them, keep your distance.
         - name: Hardened
           slug: hardened
           description: closing your heart so it can't be hurt again
           reviewed: false
+          god_sees_this:
+            - Psalm 77:2
+            - Jeremiah 31:15
+          truth_to_hold:
+            - Ezekiel 36:26
+            - Isaiah 42:3
+            - Psalm 147:3
+          reflection: >-
+            What happened that made you close your heart, and what has keeping it closed cost you?
+          prayer: >-
+            Lord, I shut my heart so it couldn't be hurt again, and now it feels like stone. You don't break bruised reeds. Gently soften what I've walled off, and make it safe to feel again.
+          action: >-
+            Tell one trusted person about the hurt you've been guarding against. Start small; one honest sentence is enough.
     - name: Enraged
       slug: enraged
       description: anger that feels too big to contain
       reviewed: false
+      god_sees_this:
+        - Jonah 4:9
+        - Genesis 4:6
+      truth_to_hold:
+        - Proverbs 16:32
+        - Psalm 103:8
+      reflection: >-
+        What would happen if you acted on this anger right now, and who would get hurt?
+      prayer: >-
+        God, this anger feels too big for me. You are slow to anger and rich in love; lend me Your patience. Hold me back from doing harm, and help me bring this fire to You instead.
+      action: >-
+        Step away now: leave the room, take a walk, or put the phone down. Don't send or say anything until you've calmed down. If you're afraid you might hurt someone, call someone you trust right away.
       children:
         - name: Furious
           slug: furious
           description: burning, explosive anger
           reviewed: false
+          god_sees_this:
+            - Psalm 39:3
+            - Jonah 4:4
+          truth_to_hold:
+            - Ephesians 4:26-27
+            - Proverbs 29:11
+            - Psalm 37:8
+          reflection: >-
+            What set this off, and what hurt or fear is under the fury?
+          prayer: >-
+            Lord, I am burning with anger right now. Cool my body and slow my words. Show me the hurt underneath, and keep me from doing what I'll regret.
+          action: >-
+            Move your body: walk fast, or climb the stairs until the surge passes. Then write down what set you off before you speak to anyone about it.
         - name: Vengeful
           slug: vengeful
           description: wanting the one who hurt you to pay
           reviewed: false
+          god_sees_this:
+            - Psalm 58:6
+            - Psalm 7:6
+          truth_to_hold:
+            - Romans 12:19
+            - Proverbs 20:22
+            - Romans 12:21
+          reflection: >-
+            What do you want them to suffer, and can you hand that exact wish to God instead of acting on it?
+          prayer: >-
+            God, I want them to pay for what they did. The psalmists prayed this honestly to You, so I will too. Vengeance is Yours, not mine. Do what is just, and keep my hands from harm.
+          action: >-
+            Tell God your wish for revenge, out loud or on paper, and leave it with Him. If you are planning to hurt someone, stop and talk to a trusted person or counsellor today.
     - name: Wronged
       slug: wronged
       description: treated unfairly, and it isn't being made right
       reviewed: false
+      god_sees_this:
+        - Psalm 35:11-12
+        - Job 19:7
+      truth_to_hold:
+        - Psalm 10:14
+        - Deuteronomy 32:4
+      reflection: >-
+        What was done to you, and what would "made right" look like?
+      prayer: >-
+        Lord, I was treated unfairly, and no one is making it right. You see it all, and You love justice. Defend my cause, and keep me from turning bitter while I wait.
+      action: >-
+        Write down plainly what happened. If there's a fair way to seek justice, like a conversation, a complaint or a report, take the first step. Leave the rest with God.
       children:
         - name: Cheated
           slug: cheated
           description: robbed of what was rightfully yours
           reviewed: false
+          god_sees_this:
+            - Genesis 27:36
+            - Genesis 31:41
+          truth_to_hold:
+            - Genesis 31:42
+            - Joel 2:25
+            - ref: Isaiah 61:8
+              excerpt: 'For I, the LORD, love justice; I hate robbery and iniquity'
+          reflection: >-
+            What was taken from you, and what do you fear it means for your future?
+          prayer: >-
+            Lord, I was robbed of what was mine. Laban cheated Jacob, but You saw his toil and did not let him be sent away empty-handed. See me too, and provide what was taken.
+          action: >-
+            If you can, seek fair redress: ask for it back, get advice, or report it. Then tell God exactly what you lost.
         - name: Disrespected
           slug: disrespected
           description: treated as if you don't matter
           reviewed: false
+          god_sees_this:
+            - Psalm 123:3-4
+            - Psalm 69:20
+          truth_to_hold:
+            - ref: Isaiah 43:4
+              excerpt: 'Because you are precious and honored in My sight, and because I love you'
+            - Luke 12:7
+          reflection: >-
+            Whose opinion of you is weighing on you, and what does God say about your worth?
+          prayer: >-
+            Lord, I was treated as if I don't matter. Jesus, You were mocked and scorned, so You know this sting. Remind me that I am precious and honoured in Your sight.
+          action: >-
+            Read Isaiah 43:4 aloud. If the disrespect keeps happening, decide on one calm, clear boundary and say it. If someone is mistreating or abusing you, tell a person you trust.
         - name: Indignant
           slug: indignant
           description: angry at injustice done to you or to others
           reviewed: false
+          god_sees_this:
+            - Habakkuk 1:2-3
+            - Psalm 94:3
+          truth_to_hold:
+            - Psalm 7:11
+            - Amos 5:24
+            - Micah 6:8
+          reflection: >-
+            What injustice is stirring you, and what one thing could you do about it?
+          prayer: >-
+            Lord, I'm angry at what's being done. You love justice more than I do. Let this anger move me to do right, not to hate, and bring justice where I can't.
+          action: >-
+            Choose one concrete way to act on this injustice this week: speak up, give, volunteer, or stand with someone affected.
     - name: Envious
       slug: envious
       description: pained by what others have that you don't
       reviewed: false
+      god_sees_this:
+        - Psalm 73:2-3
+        - Psalm 73:21-22
+      truth_to_hold:
+        - Psalm 73:25-26
+        - Proverbs 14:30
+      reflection: >-
+        What do they have that you want, and what do you believe it would give you?
+      prayer: >-
+        Lord, I'm envious of what others have. Like Asaph, I looked at them and nearly slipped. Be my portion, and teach me to want You more than what they have.
+      action: >-
+        Name what you envy and who has it. Pray a blessing over that person by name, then thank God for three things He has given you.
       children:
         - name: Jealous
           slug: jealous
           description: afraid of losing what or who you love to someone else
           reviewed: false
+          god_sees_this:
+            - Genesis 30:1
+            - ref: Song of Solomon 8:6
+              excerpt: 'For love is as strong as death, its jealousy as unrelenting as Sheol.'
+          truth_to_hold:
+            - 1 John 4:18
+            - Jeremiah 31:3
+          reflection: >-
+            What are you afraid of losing, and what would it mean to you if you did?
+          prayer: >-
+            Lord, I'm afraid of losing someone I love, and I'm holding on too tightly. Remind me of Your everlasting love, and help me love without fear.
+          action: >-
+            Name the fear behind your jealousy in one sentence. If it's about a relationship, talk honestly with the person, calmly and without accusing.
         - name: Discontent
           slug: discontent
           description: unable to be at peace with what you have
           reviewed: false
+          god_sees_this:
+            - Numbers 11:4-5
+            - Ecclesiastes 4:4
+          truth_to_hold:
+            - Philippians 4:11
+            - Psalm 16:5-6
+            - 1 Timothy 6:6
+          reflection: >-
+            What do you keep thinking would finally make you content?
+          prayer: >-
+            Lord, I can't seem to be at peace with what I have. Paul learned to be content; teach me too. Be my portion, and open my eyes to the good You've already given.
+          action: >-
+            Write down ten things you have today that you're grateful for, then read the list aloud to God.
     - name: Angry with God
       slug: angry-with-god
       description: hurt and angry at God for what He has allowed
       reviewed: false
+      god_sees_this:
+        - Job 30:20-21
+        - Psalm 88:14
+      truth_to_hold:
+        - ref: Psalm 62:8
+          excerpt: 'Trust in Him at all times, O people; pour out your hearts before Him. God is our refuge.'
+        - Hebrews 4:15-16
+      reflection: >-
+        What do you want to say to God about what He allowed, and have you said it to Him directly?
+      prayer: >-
+        God, I'm angry with You. I don't understand why You allowed this. Job poured out his anguish to You, and You answered him; I'm bringing mine to You too. Please don't let go of me.
+      action: >-
+        Pour out your heart to God, out loud or on paper. Don't clean it up; He can handle it. Then read Psalm 62:8.
       children:
         - name: Disappointed in God
           slug: disappointed-in-god
           description: God did not do what you hoped He would
           reviewed: false
+          god_sees_this:
+            - John 11:21
+            - Psalm 22:2
+          truth_to_hold:
+            - Isaiah 55:8-9
+            - Lamentations 3:22-23
+          reflection: >-
+            What did you hope God would do, and what did it mean to you when He didn't?
+          prayer: >-
+            Lord, I hoped You would act, and You didn't. Like Martha, I want to say, "If You had been here." I don't understand Your ways, but I'm still here talking to You. Meet me in this disappointment.
+          action: >-
+            Finish this sentence to God, honestly: "Lord, if You had..." Then read John 11:32-35 and notice how Jesus met Mary in her disappointment.
         - name: Feeling God is unfair
           slug: god-is-unfair
           description: it seems God blesses others and passes you by
           reviewed: false
+          god_sees_this:
+            - Jeremiah 12:1
+            - Psalm 73:13
+          truth_to_hold:
+            - Luke 15:31
+            - Psalm 145:17
+          reflection: >-
+            Who seems blessed in a way you're not, and what do you want God to give you?
+          prayer: >-
+            Lord, it seems You bless others and pass me by. Like Jeremiah, I want to plead my case with You. Show me that You are with me, and that what is Yours is mine, even when I can't see it.
+          action: >-
+            Write down what feels unfair as an honest complaint to God, the way Jeremiah did. Then list three ways God has been with you that you might have missed.
 
 - name: Shame
   slug: shame

@@ -1,7 +1,7 @@
 # Milestone 4 — Curate Remaining Branches: log
 
-Branches done: **Fear** (milestone 2), **Sadness** (session 1 below).
-Still to do: Anger, Shame, Loneliness, Weariness, Doubt.
+Branches done: **Fear** (milestone 2), **Sadness** (session 1), **Anger** (session 2).
+Still to do: Shame, Loneliness, Weariness, Doubt.
 
 ---
 
@@ -44,6 +44,51 @@ Worth a closer look while reviewing:
 
 - Same recipe: print candidate verses straight from `content/bsb.txt` (`grep "^Psalm 42:5<TAB>"`), write the entries, then run `pnpm check`. Use excerpts for psalm titles (verse 1) and partial verses.
 - Next suggested branch: **Anger** (wheel order). Shame (one crisis flag) and Weariness (one) are also left.
+
+### Deviations from the PRD
+
+- None.
+
+---
+
+## Session 2 — Anger
+
+### What's new in the app
+
+- **All 22 Anger emotions now have full pages in draft preview**, each with God sees this, Truth to hold, and a reflection, prayer and action.
+- **Every verse is checked word for word against the BSB** (`pnpm check`: no problems).
+- **Pages for the most volatile feelings tell you to step away and get help.** On Enraged, Furious and Vengeful, the action says to step away and to call someone if you might hurt someone.
+- Nothing is live yet. These pages appear on the public site only after you mark them `reviewed: true`.
+
+### Review list (run `pnpm dev`, open each link, then set `reviewed: true`)
+
+- [ ] /anger
+- [ ] /frustrated · [ ] /irritated · [ ] /impatient · [ ] /stuck
+- [ ] /bitter · [ ] /resentful · [ ] /unforgiving · [ ] /hardened
+- [ ] /enraged · [ ] /furious · [ ] /vengeful
+- [ ] /wronged · [ ] /cheated · [ ] /disrespected · [ ] /indignant
+- [ ] /envious · [ ] /jealous · [ ] /discontent
+- [ ] /angry-with-god · [ ] /disappointed-in-god · [ ] /god-is-unfair
+
+Worth a closer look while reviewing:
+- **/vengeful** uses an imprecatory psalm (Psalm 58:6, "shatter their teeth") as the lament. It shows that the wish for revenge can be prayed rather than acted on. Swap it if it reads as endorsing revenge.
+- **/enraged** and **/furious** use God's questions to Cain and Jonah ("Why are you angry?") as "God sees this". They are gentle in tone, but both men were in the wrong. Check that they don't read as a rebuke.
+- **/jealous** quotes Song of Solomon 8:6 on love's jealousy. The BSB names the book "Song of Solomon", not "Song of Songs".
+- **/unforgiving** and **/disrespected** say outright that forgiving doesn't mean staying near someone unsafe, and point to a trusted person if there is mistreatment or abuse.
+
+### What was built
+
+- `content/emotions.yaml`: full content for the 22 Anger entries. No names, slugs, descriptions or flags changed. No app code changed.
+
+### Decisions not pre-specified in the PRD
+
+- **No crisis flags added to Anger.** The banner is for self-harm (988). Harm-to-others risk (Enraged, Furious, Vengeful) is handled in the action text instead. Flag them if you want the banner there too.
+- The angry-with-God pages lean on lament (Job, Jeremiah, Martha) to show that bringing anger to God is allowed. They don't correct the reader.
+
+### For the next session
+
+- Same recipe as before: print verses from `content/bsb.txt`, write the entries, run `pnpm check`. Watch for "Selah" and psalm titles (Psalm 4:4, 62:8, 13:1 needed excerpts here).
+- Next suggested branch: **Shame** (one crisis flag: Worthless).
 
 ### Deviations from the PRD
 
