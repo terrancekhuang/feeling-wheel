@@ -40,7 +40,8 @@ function App() {
 function Home() {
   return (
     <>
-      <h1 className="font-serif text-3xl sm:text-4xl text-center mt-6 mb-6 sm:mb-8">What are you feeling?</h1>
+      <h1 className="font-serif text-3xl sm:text-4xl text-center mt-6">What are you feeling?</h1>
+      <p className="mt-2 mb-6 sm:mb-8 text-center text-ink-soft">See what God's Word has to say about it.</p>
       {root.children ? (
         <>
           <Wheel initial={(history.state as { focus?: string } | null)?.focus ?? undefined} />
