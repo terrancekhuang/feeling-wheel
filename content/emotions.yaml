@@ -1497,88 +1497,349 @@
   slug: loneliness
   description: an ache to be known, wanted and close to someone
   reviewed: false
+  god_sees_this:
+    - Psalm 25:16
+    - Psalm 102:7
+  truth_to_hold:
+    - Psalm 68:6
+    - Deuteronomy 31:8
+    - Psalm 73:23
+  reflection: >-
+    What kind of closeness are you missing most right now: being known, being wanted, or simply having company?
+  prayer: >-
+    Lord, I feel alone, and it aches. David prayed this same prayer, so I bring it to You too. Be near me, and lead me toward people who can be near me as well.
+  action: >-
+    Reach out to one person today with a message, a call or an invitation, even if it feels awkward. Loneliness often asks us to make the first move.
   children:
     - name: Isolated
       slug: isolated
       description: cut off from the people around you
       reviewed: false
+      god_sees_this:
+        - Psalm 142:4
+        - Psalm 102:7
+      truth_to_hold:
+        - Psalm 68:6
+        - Ecclesiastes 4:9-10
+      reflection: >-
+        What has cut you off from others, and what is one small way back in?
+      prayer: >-
+        Father, I feel cut off, and no one seems to notice. You settle the lonely in families. Open a door back to people, and give me courage to walk through it.
+      action: >-
+        Find one regular gathering, like a church small group, a class or a club, and go once this month.
       children:
         - name: Alone
           slug: alone
           description: no one is with you in this
           reviewed: false
+          god_sees_this:
+            - John 16:32
+            - 2 Timothy 4:16-17
+          truth_to_hold:
+            - Deuteronomy 31:8
+            - Matthew 28:20
+            - Psalm 139:7-8
+          reflection: >-
+            Jesus was left alone too, yet said "the Father is with Me." What would it mean for that to be true of you right now?
+          prayer: >-
+            Jesus, I feel completely alone in this. You were deserted too, and You know how it feels. Be with me now, and send someone to stand by me.
+          action: >-
+            Tell one person what you're facing and ask them to check in on you this week.
         - name: Cut off
           slug: cut-off
           description: separated from community by distance, illness or circumstance
           reviewed: false
+          god_sees_this:
+            - Psalm 38:11
+            - Psalm 88:8
+          truth_to_hold:
+            - Romans 8:38-39
+            - Hebrews 13:5
+          reflection: >-
+            What connection is still possible from where you are, even if it's small?
+          prayer: >-
+            Lord, I'm separated from the people I'd normally lean on, and I can't fix that right now. Nothing can separate me from Your love. Be my company, and show me the connection that is still possible.
+          action: >-
+            Ask one person for a regular call or video chat, even ten minutes a week. If you can't get to church, ask whether someone could visit or pray with you by phone.
         - name: Homesick
           slug: homesick
           description: longing for a place and people you have left
           reviewed: false
+          god_sees_this:
+            - Psalm 137:1
+            - Psalm 137:4
+          truth_to_hold:
+            - Jeremiah 29:7
+            - Hebrews 11:13-16
+            - Psalm 84:3
+          reflection: >-
+            What do you miss most about home, and how might God be planting you where you are now?
+          prayer: >-
+            Father, I miss home: the places, the people, the way things were. The exiles wept by the rivers of Babylon, and You saw them. Help me grieve what I left, and plant me where I am.
+          action: >-
+            Call or write to someone from home this week. Then do one thing that helps you put down roots where you are, like learning a neighbour's name or joining a local church.
     - name: Rejected
       slug: rejected
       description: pushed away by people you wanted to be close to
       reviewed: false
+      god_sees_this:
+        - Isaiah 53:3
+        - John 1:11-12
+      truth_to_hold:
+        - 1 Peter 2:4
+        - John 6:37
+        - Isaiah 41:9
+      reflection: >-
+        Jesus was rejected by His own. What does it mean that He knows this from the inside?
+      prayer: >-
+        Jesus, I've been pushed away, and it hurts. You were despised and rejected too. Thank You that You will never drive me away. Heal this wound, and help me not to close my heart.
+      action: >-
+        Read John 6:37 and write it somewhere you'll see it. Then spend time this week with someone who has shown you they want you around.
       children:
         - name: Excluded
           slug: excluded
           description: left out while others are welcomed in
           reviewed: false
+          god_sees_this:
+            - ref: Luke 15:28-29
+              excerpt: 'Yet you never gave me even a young goat so I could celebrate with my friends.'
+            - Psalm 142:4
+          truth_to_hold:
+            - Ephesians 2:19
+            - Luke 19:5
+            - John 6:37
+          reflection: >-
+            Where have you been left out, and where might you be welcomed in?
+          prayer: >-
+            Lord, I'm on the outside while others are welcomed in. You noticed Zacchaeus up a tree and invited Yourself to his house. Notice me too, and lead me to people who will make room for me.
+          action: >-
+            Look for one person who might also be on the edges, and invite them in, whether to coffee, a meal or a conversation.
         - name: Unwanted
           slug: unwanted
           description: as if no one wants you around
           reviewed: false
+          god_sees_this:
+            - Job 19:19
+            - Psalm 31:12
+          truth_to_hold:
+            - Zephaniah 3:17
+            - Ephesians 1:5-6
+            - Psalm 27:10
+          reflection: >-
+            What would change if you believed God was glad you exist?
+          prayer: >-
+            Father, I feel like no one wants me around. But You chose to adopt me, and You rejoice over me with singing. Help me to feel wanted by You, and open someone's door to me.
+          action: >-
+            Read Zephaniah 3:17 aloud with your name in it. Then reply to, or reach out to, one person who has been kind to you lately.
         - name: Ignored
           slug: ignored
           description: treated as if you aren't there
           reviewed: false
+          god_sees_this:
+            - Psalm 142:4
+            - Psalm 38:11
+          truth_to_hold:
+            - Genesis 16:13
+            - Psalm 34:15
+            - Psalm 56:8
+          reflection: >-
+            Hagar called God "the One who sees me." Where do you most need to be seen?
+          prayer: >-
+            God who sees me, I feel invisible to the people around me. You saw Hagar in the desert, and You see me here. Let me feel seen by You, and help others to see me too.
+          action: >-
+            Tell one person honestly that you've been feeling overlooked. Asking to be noticed is not weakness.
     - name: Abandoned
       slug: abandoned
       description: left by someone who should have stayed
       reviewed: false
+      god_sees_this:
+        - Psalm 27:10
+        - Mark 14:50
+      truth_to_hold:
+        - Hebrews 13:5
+        - Isaiah 49:15-16
+        - Psalm 9:10
+      reflection: >-
+        Who left, and what did their leaving make you believe about yourself?
+      prayer: >-
+        Lord, someone who should have stayed left me. Even if my father and mother forsake me, You will receive me. Hold me close, and heal what this leaving broke.
+      action: >-
+        Write down what their leaving made you believe about yourself. Then write Hebrews 13:5 beside it, and talk to someone you trust about the hurt.
       children:
         - name: Deserted
           slug: deserted
           description: left to face hard things on your own
           reviewed: false
+          god_sees_this:
+            - ref: 2 Timothy 4:16
+              excerpt: 'At my first defense, no one stood with me, but everyone deserted me.'
+            - Mark 14:50
+          truth_to_hold:
+            - ref: 2 Timothy 4:17
+              excerpt: 'But the Lord stood by me and strengthened me'
+            - Deuteronomy 31:8
+          reflection: >-
+            Paul was deserted at his trial, yet said, "the Lord stood by me." Where do you need the Lord to stand by you now?
+          prayer: >-
+            Lord, I've been left to face this on my own. Paul knew this too, and You stood by him. Stand by me and strengthen me today.
+          action: >-
+            Name the hard thing you're facing alone. Ask one person, even someone new, to help with one practical part of it.
         - name: Forgotten
           slug: forgotten
           description: as if no one remembers you exist
           reviewed: false
+          god_sees_this:
+            - Isaiah 49:14
+            - Psalm 31:12
+          truth_to_hold:
+            - Isaiah 49:15-16
+            - Psalm 56:8
+            - Luke 15:4
+          reflection: >-
+            God says He has written your name on His hands. How does that sit next to feeling forgotten?
+          prayer: >-
+            God, I feel forgotten, as if no one remembers I exist. Zion said the same, and You answered, "I will not forget you." Remind me that I'm written on Your hands.
+          action: >-
+            Write Isaiah 49:16 on your hand or on a note. Then reach out to one person you've lost touch with.
         - name: Left behind
           slug: left-behind
           description: everyone else has moved on without you
           reviewed: false
+          god_sees_this:
+            - Job 19:13-14
+            - Psalm 88:18
+          truth_to_hold:
+            - Luke 15:4
+            - Psalm 73:23
+            - Isaiah 41:9
+          reflection: >-
+            Whose timeline are you measuring yourself against?
+          prayer: >-
+            Lord, everyone seems to have moved on without me. The Shepherd goes after the one who is left behind. Find me here, and walk with me at the pace You set for me.
+          action: >-
+            Write down what you feel left behind in. Then name one good thing in your own life right now, and thank God for it.
     - name: Misunderstood
       slug: misunderstood
       description: no one seems to see what's really going on inside you
       reviewed: false
+      god_sees_this:
+        - 1 Samuel 1:13
+        - ref: Psalm 42:3
+          excerpt: 'My tears have been my food both day and night'
+      truth_to_hold:
+        - ref: Psalm 139:1
+          excerpt: 'O LORD, You have searched me and known me.'
+        - Psalm 139:2-3
+        - 1 Samuel 16:7
+      reflection: >-
+        What do you wish someone understood about you right now?
+      prayer: >-
+        Lord, no one seems to see what's going on inside me. You have searched me and You know me completely. Help me rest in being known by You, and give me words to help others understand.
+      action: >-
+        Write down what you wish someone understood. Then share it with one person you trust, plainly and kindly.
       children:
         - name: Unseen
           slug: unseen
           description: your pain or effort goes unnoticed
           reviewed: false
+          god_sees_this:
+            - Psalm 142:4
+            - Psalm 69:19
+          truth_to_hold:
+            - Genesis 16:13
+            - Psalm 56:8
+            - Galatians 6:9
+          reflection: >-
+            What effort or pain of yours has gone unnoticed, and what does it mean that God keeps count of your tears?
+          prayer: >-
+            God who sees me, no one seems to notice what I'm carrying. You keep every tear in Your bottle. Let that be enough today, and help me keep going.
+          action: >-
+            Tell God, in writing, everything you've done or carried that no one noticed. Then tell one person about one part of it.
         - name: Unheard
           slug: unheard
           description: you speak, but no one really listens
           reviewed: false
+          god_sees_this:
+            - 1 Samuel 1:14-15
+            - Psalm 142:4
+          truth_to_hold:
+            - Psalm 116:1-2
+            - Psalm 4:3
+            - Psalm 34:15
+          reflection: >-
+            Hannah was misheard by the priest but heard by God. What do you need God to hear today?
+          prayer: >-
+            Lord, I speak and no one really listens. Hannah poured out her soul to You when even the priest misunderstood her. I'm pouring out mine. Hear me.
+          action: >-
+            Pour out everything to God, aloud or in writing. Then ask one person, "Could I talk to you about something? I just need you to listen."
         - name: Judged
           slug: judged
           description: others have made up their minds about you
           reviewed: false
+          god_sees_this:
+            - Psalm 35:11
+            - 1 Samuel 1:14-15
+          truth_to_hold:
+            - 1 Corinthians 4:3-4
+            - 1 Samuel 16:7
+            - Romans 8:33-34
+          reflection: >-
+            Whose verdict about you matters most, and what does God say?
+          prayer: >-
+            Father, people have made up their minds about me, and it hurts. You see the heart, and You are my judge, not them. Help me hold their opinions loosely and listen to You.
+          action: >-
+            If there's truth in what they think, own that part. Let the rest go, and read 1 Corinthians 4:3–4 when the judgement comes to mind.
     - name: Disconnected
       slug: disconnected
       description: among people but not really with them
       reviewed: false
+      god_sees_this:
+        - Psalm 55:12-14
+        - Psalm 88:18
+      truth_to_hold:
+        - Romans 12:15
+        - Hebrews 10:24-25
+        - Revelation 3:20
+      reflection: >-
+        What keeps you from really being with the people you're among?
+      prayer: >-
+        Lord, I'm around people, but I don't feel with them. You knock and wait to share a meal with me. Teach me to open up to You and to others, one step at a time.
+      action: >-
+        In your next conversation, share one true thing about how you're doing, beyond "fine."
       children:
         - name: Distant
           slug: distant
           description: close relationships have grown cold
           reviewed: false
+          god_sees_this:
+            - Psalm 55:12-14
+            - Job 19:13-14
+          truth_to_hold:
+            - Ecclesiastes 4:9-10
+            - Galatians 6:2
+          reflection: >-
+            Which relationship has grown cold, and what is one warm step you could take toward it?
+          prayer: >-
+            Father, people I was close to feel far away now. Show me what happened, and whether there's something for me to mend. Warm what has grown cold.
+          action: >-
+            Choose one relationship that has cooled. Send a message today that says, simply, "I've been thinking about you."
         - name: Out of place
           slug: out-of-place
           description: like you don't belong where you are
           reviewed: false
+          god_sees_this:
+            - Psalm 119:19
+            - Ruth 2:10
+          truth_to_hold:
+            - Ephesians 2:19
+            - 1 Peter 2:9-10
+            - Philippians 3:20
+          reflection: >-
+            Ruth was a foreigner who found a home. Where might God be making room for you?
+          prayer: >-
+            Lord, I feel like I don't belong here. Ruth felt like a foreigner too, and You made her part of Your family. Remind me that I belong to Your household, and show me where I fit.
+          action: >-
+            Find one person in this place who seems to welcome you, and spend a little more time with them this week.
 
 - name: Weariness
   slug: weariness
