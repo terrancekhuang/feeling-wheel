@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Warm paper: cream page, deep ink, serif for headings/Scripture, muted earthy families. */
+:root {
+  --paper: #f7f1e6;
+  --paper-2: #efe6d6;
+  --ink: #2b2520;
+  --ink-soft: #6b6058;
+  --line: #ddd0bb;
+  --accent: #8a4b2f;
+  --accent-ink: #fbf6ee;
+
+  /* One colour per core emotion, in content-file order (cycles if more are added). */
+  --family-0: #7d5a7a; /* plum */
+  --family-1: #4f6d91; /* dusk blue */
+  --family-2: #b0583a; /* clay */
+  --family-3: #b8892f; /* ochre */
+  --family-4: #3f7c7a; /* teal */
+  --family-5: #77874f; /* sage */
+  --family-6: #8a7a69; /* stone */
+
+  /* How much family colour each ring keeps (the rest is paper). */
+  --mix-1: 62%;
+  --mix-2: 40%;
+  --mix-3: 24%;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1d1a17;
+    --paper-2: #27231f;
+    --ink: #efe6d8;
+    --ink-soft: #a89c8e;
+    --line: #3a342d;
+    --accent: #e0a47e;
+    --accent-ink: #1d1a17;
+    --mix-1: 66%;
+    --mix-2: 46%;
+    --mix-3: 32%;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "Noto Serif", Georgia, serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.arc { cursor: pointer; outline: none; }
+.arc path { transition: filter 150ms; }
+.arc:hover path { filter: brightness(1.06) saturate(1.1); }
+.arc:focus-visible path { stroke: var(--ink); stroke-width: 3; }
+
+@media (prefers-reduced-motion: reduce) {
+  .arc path { transition: none; }
+}

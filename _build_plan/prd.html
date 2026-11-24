@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feeling Wheel — PRD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    body { font-feature-settings: "cv11", "ss01"; }
+    @media print {
+      html { background: white !important; color: black !important; color-scheme: light; }
+      html.dark { color-scheme: light; }
+      html.dark body, html.dark * { background: white !important; color: black !important; border-color: #d4d4d8 !important; }
+      .no-print { display: none !important; }
+      .print-card { break-inside: avoid; page-break-inside: avoid; }
+      header.sticky { position: static !important; backdrop-filter: none !important; }
+      main { padding-top: 0 !important; }
+      a { color: black !important; text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased">
+  <header class="sticky top-0 z-10 backdrop-blur bg-zinc-50/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <span class="text-sm font-medium text-zinc-500 dark:text-zinc-400">PRD · Feeling Wheel</span>
+      <button id="theme-toggle" class="no-print inline-flex items-center justify-center w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition" aria-label="Toggle theme">
+        <i data-lucide="sun" class="hidden dark:inline-block w-4 h-4"></i>
+        <i data-lucide="moon" class="inline-block dark:hidden w-4 h-4"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-14">
+
+    <!-- DISCLAIMER (keep verbatim) -->
+    <div class="rounded-lg border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/30 p-4 text-sm text-amber-900 dark:text-amber-200">
+      <p><strong class="font-semibold">About this file:</strong> Everything in <code class="font-mono text-xs">_build_plan/</code> (this PRD and the per-milestone folders) is a temporary documentation artifact for the initial build-out of this codebase. These files are not functional — no code, configuration, runtime logic, tests, or deployment process should import, read, reference, or depend on anything in <code class="font-mono text-xs">_build_plan/</code>. Once the initial milestones are built and shipped, the entire <code class="font-mono text-xs">_build_plan/</code> folder is expected to be deleted from the codebase.</p>
+    </div>
+
+    <!-- HERO -->
+    <section>
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Feeling Wheel</h1>
+      <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">Working name. It's a placeholder and easy to change before launch.</p>
+      <p class="mt-5 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">A free, installable web app where Christians name what they're feeling on a 3-ring wheel of negative emotions. Each emotion opens Scripture (BSB) that first sits with the feeling, then offers truth, and ends with a gentle next step (a question, a prayer, an action). It works offline, and every emotion has its own shareable link.</p>
+      <p class="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">This is a free public ministry focused on the individual Christian's daily walk. There's no monetization, no accounts, and no saved user data. Naming a feeling precisely is part of the value, as the Psalms model. The content follows one rule: meet the emotion before correcting it, and never answer pain with a dismissive proof-text. <strong class="font-semibold text-zinc-800 dark:text-zinc-200">Curation quality is the product.</strong> AI drafts the taxonomy and verse sets, and the author reviews every entry before it ships.</p>
+      <p class="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">It's a fully static app: plain files with no server, hosted free on Cloudflare Pages. All content lives in one bundled data file. The build runs in 5 milestones. Milestones 1–3 build the app around one fully curated branch (Fear), milestone 4 curates the remaining branches, and milestone 5 launches it publicly.</p>
+      <div class="mt-6 flex flex-wrap gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300">React</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300">Vite</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300">Tailwind CSS</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300">D3 (zoomable sunburst, SVG)</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300">Installable PWA, offline</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300">Cloudflare Pages</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300">Berean Standard Bible (public domain)</span>
+      </div>
+    </section>
+
+    <!-- WHAT THE APP DOES -->
+    <section>
+      <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>What the app does
+      </h2>
+      <ul class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3 list-none p-0">
+        <li class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4">
+          <div class="flex items-start gap-3">
+            <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><i data-lucide="circle-dot" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i></div>
+            <div>
+              <p class="font-medium text-zinc-900 dark:text-zinc-100">Emotion wheel</p>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">A 3-ring zoomable sunburst with about 6 core, 30 middle and 80–100 specific negative emotions. Tap to go deeper, and tap the centre to go back.</p>
+            </div>
+          </div>
+        </li>
+        <li class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4">
+          <div class="flex items-start gap-3">
+            <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><i data-lucide="file-text" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i></div>
+            <div>
+              <p class="font-medium text-zinc-900 dark:text-zinc-100">Emotion page</p>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Every emotion at every ring has three groups: God sees this, Truth to hold, and A next step (a question, a prayer and an action).</p>
+            </div>
+          </div>
+        </li>
+        <li class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4">
+          <div class="flex items-start gap-3">
+            <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><i data-lucide="share-2" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i></div>
+            <div>
+              <p class="font-medium text-zinc-900 dark:text-zinc-100">Sharing</p>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">A clean link for each emotion (/anxious), a native share button, and one-tap copy of any verse with its reference.</p>
+            </div>
+          </div>
+        </li>
+        <li class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4">
+          <div class="flex items-start gap-3">
+            <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><i data-lucide="phone" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i></div>
+            <div>
+              <p class="font-medium text-zinc-900 dark:text-zinc-100">Crisis banner</p>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Flagged emotions show a gentle banner that can't be dismissed, with a tap-to-call 988 button and a link to a global helpline directory.</p>
+            </div>
+          </div>
+        </li>
+        <li class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4">
+          <div class="flex items-start gap-3">
+            <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><i data-lucide="download" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i></div>
+            <div>
+              <p class="font-medium text-zinc-900 dark:text-zinc-100">Installable and offline</p>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Add to home screen. After the first visit, everything works with no signal.</p>
+            </div>
+          </div>
+        </li>
+        <li class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4">
+          <div class="flex items-start gap-3">
+            <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><i data-lucide="shield" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i></div>
+            <div>
+              <p class="font-medium text-zinc-900 dark:text-zinc-100">Content file with review gate</p>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Only entries the author has marked as reviewed go live. A content check verifies the BSB text and blocks bad publishes.</p>
+            </div>
+          </div>
+        </li>
+        <li class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4">
+          <div class="flex items-start gap-3">
+            <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><i data-lucide="message-square" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i></div>
+            <div>
+              <p class="font-medium text-zinc-900 dark:text-zinc-100">About page</p>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Why it exists, how to use it, a "not a substitute for help" note, BSB attribution and a contact email.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- STARTING POINT -->
+    <section>
+      <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+        <i data-lucide="package-check" class="w-3.5 h-3.5"></i>Starting point
+      </h2>
+      <p class="mt-5 text-zinc-700 dark:text-zinc-300 leading-relaxed">This is an empty project with no starter template. Milestone 1 sets up the app from scratch. A login-based starter would be the wrong fit, because there are no accounts, no database and no server.</p>
+    </section>
+
+    <!-- OUT OF SCOPE -->
+    <section>
+      <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+        <i data-lucide="minus-circle" class="w-3.5 h-3.5"></i>Out of scope (v1)
+      </h2>
+      <ul class="mt-5 space-y-2.5 list-none p-0">
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Positive emotions (joy, gratitude, peace)</span><span class="text-zinc-500 dark:text-zinc-400"> — v1 focuses on meeting people in hard feelings. This is a possible later addition.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Search ("type what you feel")</span><span class="text-zinc-500 dark:text-zinc-400"> — the wheel is the way in. Search is a possible later addition.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Favourites or emotion history</span><span class="text-zinc-500 dark:text-zinc-400"> — v1 saves no user data, either on the device or synced.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Verse memorization</span><span class="text-zinc-500 dark:text-zinc-400"> — a separate product loop, left for later.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Verse-image sharing cards</span><span class="text-zinc-500 dark:text-zinc-400"> — copying the text and sharing the link cover v1.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Native mobile apps / app-store listings</span><span class="text-zinc-500 dark:text-zinc-400"> — the installable web app covers phones.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">CMS or admin screen</span><span class="text-zinc-500 dark:text-zinc-400"> — the author edits the content file directly.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Other Bible translations and other languages</span><span class="text-zinc-500 dark:text-zinc-400"> — BSB only, in English. One translation keeps the curation manageable.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Analytics of any kind</span><span class="text-zinc-500 dark:text-zinc-400"> — private by default, with no tracking or counters.</span></span></li>
+        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 mt-1 shrink-0 text-zinc-400 dark:text-zinc-600"></i><span class="text-zinc-700 dark:text-zinc-300"><span class="font-medium">Accounts, notifications, daily reminders</span><span class="text-zinc-500 dark:text-zinc-400"> — no backend, and v1 doesn't need any of them.</span></span></li>
+      </ul>
+    </section>
+
+    <!-- INTEGRATIONS -->
+    <section>
+      <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+        <i data-lucide="plug" class="w-3.5 h-3.5"></i>External services
+      </h2>
+      <p class="mt-3 text-sm text-zinc-500 dark:text-zinc-400">The app doesn't call any outside service while it runs. No API keys are needed.</p>
+      <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5">
+          <div class="flex items-center gap-2">
+            <i data-lucide="plug" class="w-4 h-4 text-zinc-500 dark:text-zinc-400"></i>
+            <h3 class="font-semibold text-zinc-900 dark:text-zinc-100">Cloudflare Pages</h3>
+            <span class="ml-auto text-xs text-zinc-500 dark:text-zinc-400">Hosting</span>
+          </div>
+          <p class="mt-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">It serves the app's files to the world for free. It's needed from milestone 3.</p>
+          <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="key" class="w-3 h-3"></i>Credentials needed</p>
+          <ul class="mt-2 space-y-1.5 list-none p-0">
+            <li class="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300"><i data-lucide="key-round" class="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500"></i>A free Cloudflare account</li>
+          </ul>
+        </div>
+        <div class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5">
+          <div class="flex items-center gap-2">
+            <i data-lucide="file-text" class="w-4 h-4 text-zinc-500 dark:text-zinc-400"></i>
+            <h3 class="font-semibold text-zinc-900 dark:text-zinc-100">Berean Standard Bible text</h3>
+            <span class="ml-auto text-xs text-zinc-500 dark:text-zinc-400">Content source</span>
+          </div>
+          <p class="mt-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">The full BSB text is a free download from the BSB publisher. It's used to fill in verse text and to check every quoted verse word for word. It's needed from milestone 2.</p>
+          <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="key" class="w-3 h-3"></i>Credentials needed</p>
+          <ul class="mt-2 space-y-1.5 list-none p-0">
+            <li class="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300"><i data-lucide="key-round" class="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500"></i>None (public domain)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA MODEL -->
+    <section>
+      <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+        <i data-lucide="database" class="w-3.5 h-3.5"></i>Data model
+      </h2>
+      <p class="mt-3 text-sm text-zinc-500 dark:text-zinc-400">What the app needs to remember. All of it lives in one content file that ships with the app. Nothing about users is stored.</p>
+      <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5">
+          <div class="flex items-center gap-2">
+            <i data-lucide="box" class="w-4 h-4 text-zinc-500 dark:text-zinc-400"></i>
+            <h3 class="font-semibold text-zinc-900 dark:text-zinc-100">Emotion</h3>
+          </div>
+          <table class="mt-4 w-full text-sm">
+            <tbody class="divide-y divide-zinc-100 dark:divide-zinc-800">
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">name</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">What the user sees, e.g. "Anxious"</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">slug</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">Its link, e.g. /anxious. Unique across the whole app.</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">ring</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">Core, middle or specific</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">parent</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">The broader emotion it sits under (Anxious → Worried → Fear). Core emotions have none.</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">description</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">One line, e.g. "a restless dread about what might happen"</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">crisis</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">Yes/no. Yes shows the crisis banner.</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">reviewed</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">Yes/no. Only reviewed emotions go live.</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">god sees this</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">2–4 verses of lament and company, where someone in Scripture felt this</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">truth to hold</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">2–4 verses of promise or reframe</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">reflection</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">One reflection question</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">prayer</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">A short written prayer, 2–4 sentences</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">action</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">One practical next step</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-4 text-xs text-zinc-500 dark:text-zinc-400"><span class="font-semibold uppercase tracking-[0.14em] text-[11px]">Related to</span> · Emotion (parent and children), Verse (its two verse groups)</p>
+        </div>
+        <div class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 self-start">
+          <div class="flex items-center gap-2">
+            <i data-lucide="box" class="w-4 h-4 text-zinc-500 dark:text-zinc-400"></i>
+            <h3 class="font-semibold text-zinc-900 dark:text-zinc-100">Verse</h3>
+          </div>
+          <table class="mt-4 w-full text-sm">
+            <tbody class="divide-y divide-zinc-100 dark:divide-zinc-800">
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">reference</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">e.g. "Psalm 42:5" (a short range like "1 Kings 19:4–5" is allowed)</td></tr>
+              <tr><td class="py-2 pr-4 font-mono text-xs font-medium text-zinc-700 dark:text-zinc-300 align-top whitespace-nowrap">text</td><td class="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">The exact BSB wording, checked against the official BSB text</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-4 text-xs text-zinc-500 dark:text-zinc-400"><span class="font-semibold uppercase tracking-[0.14em] text-[11px]">Related to</span> · Emotion. The same verse can be reused by several emotions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MILESTONES -->
+    <section>
+      <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+        <i data-lucide="route" class="w-3.5 h-3.5"></i>Milestones
+      </h2>
+      <div class="mt-5 space-y-5">
+
+        <!-- M1 -->
+        <article class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 overflow-hidden">
+          <header class="flex items-center gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 flex items-center justify-center text-sm font-semibold">1</span>
+            <h3 class="font-semibold text-lg text-zinc-900 dark:text-zinc-100">Taxonomy + Wheel</h3>
+          </header>
+          <div class="p-5">
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">Set up the app, draft the full original 3-ring emotion taxonomy, and make the zoomable wheel work with it, so the author can click through every emotion and review the tree.</p>
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>What gets built</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A proposed visual style that the author approves before the rest of the build. It should be calm, warm and readable, with light and dark modes that follow the phone setting.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>The content file with an AI-drafted, original taxonomy: about 6 core, about 30 middle and about 80–100 specific negative emotions. Each has a name, link slug, parent, a one-line description and a suggested crisis flag. All are marked as not reviewed. It's inspired by the feelings-wheel concept but doesn't copy any published graphic.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>The main screen, with the heading "What are you feeling?" and the hint "Not sure? Tap the closest one; you can go deeper."</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A zoomable sunburst wheel that shows the current level plus one ring out. Slices are coloured by core family, with lighter shades further out. Tapping a slice zooms it to the centre and reveals its children.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>The centre circle shows the current emotion's name and a "Read verses" button, and tapping the centre zooms back out. In this milestone, "Read verses" and taps on specific emotions go to a placeholder page.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>The wheel works the same on phone and desktop, with keyboard navigation and labels for screen readers.</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="x-circle" class="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500"></i>Not in this milestone</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-500 dark:text-zinc-400 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Any verses, prayers or real emotion pages</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>The review gate or content check (everything shows for now)</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Sharing, offline/install, the About page, and deploying</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>A list view, search, extra animations, a "feeling of the day", and showing all three rings at once on mobile</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-5 rounded-md border-l-4 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 p-4 text-sm text-emerald-900 dark:text-emerald-200">
+              <p class="flex items-start gap-2"><i data-lucide="flag" class="w-4 h-4 mt-0.5 shrink-0"></i><span><span class="font-semibold">Done when:</span> On both phone and desktop, the author can open the app locally, zoom from any core emotion down to any specific emotion and back, and read the full drafted taxonomy. They can also edit a name in the content file and see the change on the wheel.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- M2 -->
+        <article class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 overflow-hidden">
+          <header class="flex items-center gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 flex items-center justify-center text-sm font-semibold">2</span>
+            <h3 class="font-semibold text-lg text-zinc-900 dark:text-zinc-100">Fear Branch + Emotion Page</h3>
+          </header>
+          <div class="p-5">
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">Fully draft the Fear branch's content, build the emotion page, and add the review gate and content check, so the author can review real pages in context.</p>
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>What gets built</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>AI-drafted content for every emotion in the Fear branch (core, middle and specific): God sees this, Truth to hold, a reflection question, a prayer and an action. Verse text comes from the official BSB. Lament comes before correction, with no dismissive proof-texts.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>The emotion page, top to bottom: a tappable breadcrumb (Fear › Worried › Anxious), the name and description, the crisis banner if flagged, God sees this (2–4 verse cards), Truth to hold (2–4 verse cards), and A next step (the question, prayer and action, each labelled). Core and middle emotions also get "Go deeper" chips linking to their children. There's a back-to-wheel button.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Verse cards show the BSB text and reference only, plus a copy icon that copies "verse text" — Psalm 42:5 (BSB) and briefly shows "Copied".</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>The crisis banner appears on every crisis-flagged emotion, above the verses, and can't be dismissed. It has gentle wording, a tap-to-call 988 button (call or text), an "Outside the US? Find a helpline" link to findahelpline.com, and the line "If you're in immediate danger, call your local emergency number."</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Review gate in the live build: an emotion appears on the wheel only if it, or something beneath it, is reviewed. Its own page shows content only if it's reviewed. Unreviewed links show "This page is still being prepared" with a link back to the wheel.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A draft preview mode on the author's computer shows everything, with a visible DRAFT badge on unreviewed pages.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A content check the author can run. It flags verse text that doesn't exactly match the BSB, missing groups, prayers or actions, verse counts outside 2–4, and duplicate or broken links. It also reports "X of Y emotions reviewed".</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="x-circle" class="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500"></i>Not in this milestone</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-500 dark:text-zinc-400 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Content for any branch other than Fear</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Marking entries as reviewed. Only the author does that, by hand.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>The share button, link previews, offline/install, the About page, and deploying</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>The surrounding passage, external Bible links, audio, notes, favourites, and switching translations</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Crisis detection from user input, automatic contact, chat, and country auto-detection</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>An in-app editing screen, multiple authors, review history, and scheduled publishing</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-5 rounded-md border-l-4 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 p-4 text-sm text-emerald-900 dark:text-emerald-200">
+              <p class="flex items-start gap-2"><i data-lucide="flag" class="w-4 h-4 mt-0.5 shrink-0"></i><span><span class="font-semibold">Done when:</span> In draft preview, the author can open any Fear emotion and read its full page, copy a verse, and see the crisis banner on a flagged emotion. The content check passes on the Fear branch. After the author marks a few emotions as reviewed, the normal build shows only those (and the path to them), and the rest show "still being prepared".</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- M3 -->
+        <article class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 overflow-hidden">
+          <header class="flex items-center gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 flex items-center justify-center text-sm font-semibold">3</span>
+            <h3 class="font-semibold text-lg text-zinc-900 dark:text-zinc-100">Share, Offline &amp; Soft Launch</h3>
+          </header>
+          <div class="p-5">
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">Make the app shareable, installable and fully offline, add the About page, and put it online privately on Cloudflare Pages.</p>
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>What gets built</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Every emotion's clean link (site/anxious) opens straight to its page, including on a first visit or a refresh.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A Share button on emotion pages opens the phone's share sheet, or copies the link on desktop.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Pasting a link into a chat app shows a tidy preview with the emotion's name and description.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Installable on phones (Add to Home Screen) and desktop browsers. It opens full screen with its own icon and splash colour.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>After the first visit, the wheel, every emotion page and every verse work with no internet. New content is picked up quietly on the next open, with an optional small "Updated" note.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>An About page linked from a small footer on every page. It covers why the app exists, how to use it in 3 steps, the "devotional aid, not counselling or medical care" note with 988 and findahelpline.com, the BSB attribution, the fact that every entry is hand-reviewed, and a contact email.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Deployed to Cloudflare Pages at its free default address, showing reviewed content only. Publishing is blocked if the content check fails.</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="x-circle" class="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500"></i>Not in this milestone</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-500 dark:text-zinc-400 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>An "Install this app" prompt. The app relies on the browser's own install option.</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Verse-image cards, custom social images, share counts, short links, and copying the whole page</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Push notifications, background sync, and offline download-progress screens</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>An author bio, donation link, newsletter, statement of faith, and feedback form</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>A custom domain, final name, analytics, and public announcement</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-5 rounded-md border-l-4 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 p-4 text-sm text-emerald-900 dark:text-emerald-200">
+              <p class="flex items-start gap-2"><i data-lucide="flag" class="w-4 h-4 mt-0.5 shrink-0"></i><span><span class="font-semibold">Done when:</span> The author opens the live Cloudflare address on their phone, installs the app, and switches on airplane mode. The wheel and reviewed Fear pages still work. Sending a friend /anxious (once reviewed) opens straight to that page with a tidy preview.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- M4 -->
+        <article class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 overflow-hidden">
+          <header class="flex items-center gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 flex items-center justify-center text-sm font-semibold">4</span>
+            <h3 class="font-semibold text-lg text-zinc-900 dark:text-zinc-100">Curate Remaining Branches</h3>
+          </header>
+          <div class="p-5">
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">A repeatable content milestone. Each session drafts one remaining core branch to the same standard as Fear, and the author then reviews and marks entries as reviewed. Run it once per branch.</p>
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>What gets built</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Full drafted content for every emotion in the chosen branch, in all three groups, with exact BSB text</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Crisis flags rechecked for that branch</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Small taxonomy fixes the author asks for (renames, moves, merges) while reviewing</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A short review list for the author covering each new emotion's link in draft preview, so nothing gets skipped</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="x-circle" class="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500"></i>Not in this milestone</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-500 dark:text-zinc-400 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>New app features or design changes</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>More than one branch per session</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>The agent marking anything as reviewed</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Positive emotions</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-5 rounded-md border-l-4 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 p-4 text-sm text-emerald-900 dark:text-emerald-200">
+              <p class="flex items-start gap-2"><i data-lucide="flag" class="w-4 h-4 mt-0.5 shrink-0"></i><span><span class="font-semibold">Done when:</span> Every branch has full drafted content, the content check passes with no errors, and the author can walk through each branch in draft preview. Repeat until every branch is drafted and reviewed.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- M5 -->
+        <article class="print-card rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 overflow-hidden">
+          <header class="flex items-center gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 flex items-center justify-center text-sm font-semibold">5</span>
+            <h3 class="font-semibold text-lg text-zinc-900 dark:text-zinc-100">Public Launch</h3>
+          </header>
+          <div class="p-5">
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">Final checks and polish, then make the app public.</p>
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>What gets built</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A full content check that passes, with every emotion reviewed</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>A launch checklist pass: every crisis-flagged emotion shows the banner, tap-to-call works on a real phone, offline works, every link opens and previews, and the app is readable in light and dark mode and with the keyboard and screen reader</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Optional (recommended): a pastor or elder reviews the theology, using a printable list of every emotion and its content</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>Optional: the final app name, icon and a custom domain, if chosen by then</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"></i><span>The production publish</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5"><i data-lucide="x-circle" class="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500"></i>Not in this milestone</h4>
+                <ul class="mt-3 space-y-2 text-sm text-zinc-500 dark:text-zinc-400 list-none p-0">
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Any feature from the out-of-scope list</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>Analytics, a marketing site, or app-store submission</span></li>
+                  <li class="flex items-start gap-2"><i data-lucide="minus" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i><span>New content beyond fixes found in review</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-5 rounded-md border-l-4 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 p-4 text-sm text-emerald-900 dark:text-emerald-200">
+              <p class="flex items-start gap-2"><i data-lucide="flag" class="w-4 h-4 mt-0.5 shrink-0"></i><span><span class="font-semibold">Done when:</span> The public address serves the complete, fully reviewed wheel. Every launch-checklist item is ticked, and the author is confident sending the link to anyone.</span></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="pt-8 border-t border-zinc-200 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400">
+      Generated by <span class="font-medium">bm-prd-creator</span>. Open the milestone-1 <code class="font-mono">prompt.md</code> to start building.
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var html = document.documentElement;
+      var stored = localStorage.getItem('prd-theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var initial = stored ? stored : (prefersDark ? 'dark' : 'light');
+      if (initial === 'dark') html.classList.add('dark');
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var isDark = html.classList.toggle('dark');
+          localStorage.setItem('prd-theme', isDark ? 'dark' : 'light');
+        });
+      }
+      if (window.lucide) window.lucide.createIcons();
+    })();
+  </script>
+</body>
+</html>
