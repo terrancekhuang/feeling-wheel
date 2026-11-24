@@ -1129,93 +1129,369 @@
   slug: shame
   description: feeling that something is wrong with who you are
   reviewed: false
+  god_sees_this:
+    - Genesis 3:10
+    - ref: Psalm 44:15
+      excerpt: 'All day long my disgrace is before me, and shame has covered my face'
+    - Psalm 69:19
+  truth_to_hold:
+    - Psalm 34:5
+    - Hebrews 12:2
+    - Romans 8:1
+  reflection: >-
+    What is the voice of shame saying about who you are, and would God say the same thing?
+  prayer: >-
+    Lord, part of me wants to hide from You, the way Adam hid in the garden. But You already see me, and You still call me by name. Lift my face, and let me hear what You say about me instead of what shame says.
+  action: >-
+    Write down the sentence shame keeps saying to you. Next to it, write Romans 8:1. Read them side by side, and decide which one you will believe today.
   children:
     - name: Guilty
       slug: guilty
       description: knowing you have done wrong
       reviewed: false
+      god_sees_this:
+        - Psalm 51:3
+        - Psalm 38:4
+      truth_to_hold:
+        - 1 John 1:9
+        - ref: Psalm 32:5
+          excerpt: 'Then I acknowledged my sin to You and did not hide my iniquity. I said, “I will confess my transgressions to the LORD,” and You forgave the guilt of my sin.'
+        - Psalm 103:12
+      reflection: >-
+        What have you done that you need to bring into the light, before God and, if needed, before the person you wronged?
+      prayer: >-
+        God, I have done wrong, and I know it. I won't hide it or explain it away. I confess it to You now, and I trust You to forgive and cleanse me as You promised.
+      action: >-
+        Name what you did, plainly, in prayer. If someone was hurt, decide today on one step to make it right, like an apology or a repair.
       children:
         - name: Remorseful
           slug: remorseful
           description: sorrow over the harm you have caused
           reviewed: false
+          god_sees_this:
+            - Luke 22:61-62
+            - Psalm 51:3
+          truth_to_hold:
+            - 2 Corinthians 7:10
+            - Psalm 51:17
+          reflection: >-
+            Is your sorrow leading you toward God and toward repair, or only around in circles?
+          prayer: >-
+            Lord, I am sorry for the harm I caused. Peter wept bitterly, and You restored him. Let this sorrow turn me toward You and toward making things right, not into despair.
+          action: >-
+            Write down who was hurt and how. Pick one honest step toward repair, like an apology without excuses, and take it this week.
         - name: Condemned
           slug: condemned
           description: feeling judged and sentenced, with no way back
           reviewed: false
+          god_sees_this:
+            - John 8:10-11
+            - Psalm 130:3-4
+          truth_to_hold:
+            - Romans 8:1
+            - Romans 8:33-34
+            - 1 John 3:19-20
+          reflection: >-
+            Whose voice is passing sentence on you: God's, someone else's, or your own?
+          prayer: >-
+            Jesus, I feel sentenced, with no way back. But You said to the woman, "Neither do I condemn you." Christ is the one who could condemn me, and He is praying for me instead. Help me believe it.
+          action: >-
+            Read Romans 8:33–34 aloud, slowly. Each time the condemning thought comes back today, answer it with "Christ Jesus is interceding for me."
         - name: Regretful
           slug: regretful
           description: wishing you could undo what you did or didn't do
           reviewed: false
+          god_sees_this:
+            - Psalm 25:7
+            - Luke 22:61-62
+          truth_to_hold:
+            - Joel 2:25
+            - Philippians 3:13-14
+            - Lamentations 3:22-23
+          reflection: >-
+            What do you wish you could undo, and what might God still do with it from here?
+          prayer: >-
+            Father, I can't go back and change what happened, and I wish I could. You are able to restore what was lost. Help me leave the past with You and take the next step forward.
+          action: >-
+            Write down the regret. Then write one thing you could do differently from today on, and do it once this week.
     - name: Worthless
       slug: worthless
       description: believing you have no value
       reviewed: false
       crisis: true
+      god_sees_this:
+        - Psalm 22:6
+        - ref: 1 Kings 19:4
+          excerpt: '“I have had enough, LORD,” he said. “Take my life, for I am no better than my fathers.”'
+      truth_to_hold:
+        - Isaiah 43:4
+        - Matthew 10:29-31
+        - Psalm 139:13-14
+      reflection: >-
+        Who taught you that you were worthless, and does God agree with them?
+      prayer: >-
+        God, I feel like I'm worth nothing. Elijah felt it too, and You didn't leave him there. You call me precious and honoured. Hold on to that for me when I can't believe it.
+      action: >-
+        If feeling worthless has you thinking about hurting yourself, tell someone today: a trusted friend, a pastor, a doctor, or call or text 988. You are worth that phone call.
       children:
         - name: Unlovable
           slug: unlovable
           description: sure that no one could truly love you
           reviewed: false
+          god_sees_this:
+            - Psalm 88:18
+            - Luke 15:20-21
+          truth_to_hold:
+            - Jeremiah 31:3
+            - Romans 5:8
+            - Zephaniah 3:17
+          reflection: >-
+            What do you think someone would find in you that would make them stop loving you, and has God already seen it?
+          prayer: >-
+            Father, I feel like no one could really love me. The son in the story felt unworthy, and the father ran to him anyway. You loved me before I was any good. Let me feel that love today.
+          action: >-
+            Read Zephaniah 3:17 and put your own name in it. Then let one person who cares about you close enough to see how you're really doing.
         - name: Like a failure
           slug: like-a-failure
           description: measuring your life and finding it not enough
           reviewed: false
+          god_sees_this:
+            - ref: 1 Kings 19:4
+              excerpt: '“I have had enough, LORD,” he said. “Take my life, for I am no better than my fathers.”'
+            - Psalm 73:26
+          truth_to_hold:
+            - Proverbs 24:16
+            - 2 Corinthians 12:9
+            - Ephesians 2:10
+          reflection: >-
+            Whose measuring stick are you using to call yourself a failure?
+          prayer: >-
+            Lord, I look at my life and it feels like it doesn't add up. Your grace is enough for me, and Your strength shows up in my weakness. Help me get up again, and show me the good work You still have for me.
+          action: >-
+            Write down three things you have got through or done well, however small. Then choose one small, good thing to do today.
         - name: Insignificant
           slug: insignificant
           description: as if your life makes no difference
           reviewed: false
+          god_sees_this:
+            - Judges 6:15
+            - Psalm 31:12
+          truth_to_hold:
+            - Matthew 10:29-31
+            - 1 Corinthians 1:27-28
+            - Psalm 139:13-14
+          reflection: >-
+            What small faithfulness in your life might matter more than you think?
+          prayer: >-
+            God, I feel small and like my life makes no difference. Gideon felt the same, and You still chose him. You count the sparrows and the hairs on my head. Show me that I matter to You.
+          action: >-
+            Do one small kindness for someone today, unseen if you can. Remember that God notices it.
     - name: Inadequate
       slug: inadequate
       description: not measuring up to what is asked of you
       reviewed: false
+      god_sees_this:
+        - Exodus 4:10
+        - Judges 6:15
+      truth_to_hold:
+        - 2 Corinthians 3:5
+        - 2 Corinthians 12:9
+      reflection: >-
+        What is being asked of you right now, and what would it look like to lean on God's strength for it instead of your own?
+      prayer: >-
+        Lord, I don't feel up to this. Moses didn't either, and You went with him. My competence comes from You. Give me what I need for today's part.
+      action: >-
+        Write down the task that feels too big. Break it into the smallest next step, ask God for help with that step, and do it.
       children:
         - name: Not good enough
           slug: not-good-enough
           description: whatever you do, it never seems to be enough
           reviewed: false
+          god_sees_this:
+            - Romans 7:24-25
+            - Luke 15:28-29
+          truth_to_hold:
+            - Ephesians 2:8-9
+            - Luke 15:31
+            - 2 Corinthians 12:9
+          reflection: >-
+            Who are you trying to be good enough for, and what would change if you didn't have to earn it?
+          prayer: >-
+            Father, I keep trying and it never feels like enough. Like the older son, I've been working hard for love that was already mine. Let me rest in grace I don't have to earn.
+          action: >-
+            Pick one thing today that you will do "well enough" instead of perfectly. When it's done, stop, and thank God for grace.
         - name: Inferior
           slug: inferior
           description: lesser than the people around you
           reviewed: false
+          god_sees_this:
+            - Exodus 4:10
+            - Psalm 22:6
+          truth_to_hold:
+            - 1 Samuel 16:7
+            - Ephesians 2:10
+            - 1 Corinthians 1:27-28
+          reflection: >-
+            Who are you comparing yourself to, and what does that comparison leave out?
+          prayer: >-
+            Lord, I keep measuring myself against others and coming up short. You don't look at what they see. You look at the heart. Help me stop comparing and do the work You gave me.
+          action: >-
+            Notice the next time you compare yourself to someone. Stop, thank God for one thing in them, and one thing He has given you.
         - name: Falling short
           slug: falling-short
           description: missing the mark again and again
           reviewed: false
+          god_sees_this:
+            - Romans 7:24-25
+            - Romans 3:23-24
+          truth_to_hold:
+            - Proverbs 24:16
+            - Lamentations 3:22-23
+            - Philippians 1:6
+          reflection: >-
+            Where do you keep missing the mark, and what is one small way God might be growing you there?
+          prayer: >-
+            God, I keep falling short, again and again. Thank You that Your mercies are new every morning and that You finish what You start. Help me get up one more time.
+          action: >-
+            Choose one area where you keep falling short. Ask a trusted friend to pray for you in it, and check in with them next week.
     - name: Embarrassed
       slug: embarrassed
       description: wishing you could hide from others' eyes
       reviewed: false
+      god_sees_this:
+        - Genesis 3:10
+        - ref: Psalm 44:15
+          excerpt: 'All day long my disgrace is before me, and shame has covered my face'
+      truth_to_hold:
+        - Psalm 34:5
+        - Isaiah 54:4
+      reflection: >-
+        How big will this moment look in a month, and how does God see you in it now?
+      prayer: >-
+        Lord, I want to hide. I feel everyone's eyes on me. You see me and You don't turn away. Help me hold my head up and laugh at myself where I can.
+      action: >-
+        Tell one safe person what happened. Shame grows in hiding and shrinks when it's shared.
       children:
         - name: Humiliated
           slug: humiliated
           description: shamed in front of others
           reviewed: false
+          god_sees_this:
+            - Psalm 69:19
+            - Isaiah 53:3
+          truth_to_hold:
+            - Hebrews 12:2
+            - Isaiah 61:7
+            - Isaiah 50:7
+          reflection: >-
+            Jesus was shamed in public too. What does it mean that He knows exactly how this feels?
+          prayer: >-
+            Jesus, I was shamed in front of others, and it burns. You were mocked and despised, and You know this pain. Take my shame, and give me Your dignity back.
+          action: >-
+            Write down what happened and how it made you feel. Then read Isaiah 61:7 and ask God for His "double portion" in place of this shame.
         - name: Exposed
           slug: exposed
           description: something you wanted hidden has come to light
           reviewed: false
+          god_sees_this:
+            - Genesis 3:10
+            - Psalm 69:5
+          truth_to_hold:
+            - Hebrews 4:13
+            - 1 John 1:9
+            - Hebrews 4:15-16
+          reflection: >-
+            Now that it's in the light, what might God want to heal that couldn't be healed in hiding?
+          prayer: >-
+            God, what I wanted hidden is out, and I feel naked. You already saw it, and You still invite me to come close. Meet me here, and heal what hiding couldn't.
+          action: >-
+            If what came out hurt someone, own it honestly with them. If it was something done to you, talk it through with someone you trust.
         - name: Foolish
           slug: foolish
           description: feeling stupid for what you said or did
           reviewed: false
+          god_sees_this:
+            - Psalm 69:5
+            - Matthew 14:31
+          truth_to_hold:
+            - James 1:5
+            - Proverbs 24:16
+          reflection: >-
+            What can you learn from this, and then let go of?
+          prayer: >-
+            Lord, I feel stupid for what I said and did. You know my folly, and You don't throw me away. Give me wisdom for next time, and help me let this go.
+          action: >-
+            Write down one lesson you'll take from this. If you need to apologise, do it simply. Then let it go.
     - name: Unclean
       slug: unclean
       description: feeling stained by sin or by what was done to you
       reviewed: false
+      god_sees_this:
+        - Isaiah 6:5
+        - Mark 1:40-41
+      truth_to_hold:
+        - Psalm 51:7
+        - Ezekiel 36:25-26
+        - Isaiah 1:18
+      reflection: >-
+        Does this stain come from something you did, something done to you, or both, and what would it mean to let Jesus touch it?
+      prayer: >-
+        Jesus, I feel stained and unclean. You reached out and touched the leper when no one else would. Touch me too. Make me clean, and help me believe it.
+      action: >-
+        Read Mark 1:40–41 slowly. If this feeling comes from harm someone did to you, it was not your sin. Tell a trusted person or counsellor, and let them help you carry it.
       children:
         - name: Defiled
           slug: defiled
           description: feeling dirty in a way you can't wash off
           reviewed: false
+          god_sees_this:
+            - ref: 2 Samuel 13:13
+              excerpt: 'Where could I ever take my shame?'
+            - Mark 5:25-26
+          truth_to_hold:
+            - Mark 1:40-41
+            - Ezekiel 36:25-26
+            - Hebrews 10:22
+          reflection: >-
+            What would it be like to believe that Jesus is not afraid to touch what makes you feel dirty?
+          prayer: >-
+            Lord, I feel dirty in a way I can't wash off. Tamar cried out, "Where could I take my shame?" and You heard her. Wash me, make me new, and don't let what was done to me define me.
+          action: >-
+            If someone harmed or abused you, what they did is not your shame. Tell a trusted person, pastor or counsellor this week, and let someone help you carry it.
         - name: Disgusted with myself
           slug: disgusted-with-myself
           description: unable to stand who you have been
           reviewed: false
+          god_sees_this:
+            - Job 42:6
+            - Romans 7:24-25
+          truth_to_hold:
+            - 1 Timothy 1:15-16
+            - Ezekiel 36:25-26
+            - 2 Corinthians 7:10
+          reflection: >-
+            Is your disgust leading you to change, or just to hate yourself?
+          prayer: >-
+            God, I can't stand who I have been. Paul called himself the worst of sinners, and You showed him mercy. Turn this disgust into real change, and teach me to see myself with Your mercy.
+          action: >-
+            Write down one thing about who you've been that you want to change. Then write one thing God has done for you anyway. Keep the second where you'll see it.
         - name: Unforgivable
           slug: unforgivable
           description: sure you have gone too far to be forgiven
           reviewed: false
+          god_sees_this:
+            - Luke 15:20-21
+            - Psalm 130:3-4
+          truth_to_hold:
+            - Isaiah 1:18
+            - Micah 7:18-19
+            - 1 Timothy 1:15-16
+          reflection: >-
+            What makes you think your sin is bigger than Christ's cross?
+          prayer: >-
+            Father, I feel like I've gone too far to be forgiven. But You ran to the son who came home, and You throw our sins into the depths of the sea. I come home to You now. Forgive me.
+          action: >-
+            Read Micah 7:18–19 aloud. Then tell a pastor or mature Christian what you're carrying, and let them remind you of God's forgiveness.
 
 - name: Loneliness
   slug: loneliness
