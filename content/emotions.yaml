@@ -2205,81 +2205,325 @@
   slug: doubt
   description: struggling to trust what you once believed or felt sure of
   reviewed: false
+  god_sees_this:
+    - Mark 9:24
+    - Matthew 11:3
+  truth_to_hold:
+    - Jude 1:22
+    - John 20:27-29
+    - 2 Timothy 2:13
+  reflection: >-
+    What exactly do you doubt right now, and what do you still hold on to, even a little?
+  prayer: >-
+    Lord, I believe, but help my unbelief. Jesus, You didn't push Thomas away. You showed him Your hands. Meet me in my doubt, and stay faithful when I can't.
+  action: >-
+    Write down your doubt as one honest question. Bring it to God in prayer, and talk it through with a mature Christian you trust.
   children:
     - name: Confused
       slug: confused
       description: unable to make sense of what is happening
       reviewed: false
+      god_sees_this:
+        - Psalm 73:16-17
+        - Habakkuk 1:3
+      truth_to_hold:
+        - Proverbs 3:5-6
+        - John 13:7
+      reflection: >-
+        What part of this can you understand, and what might you need to leave with God for now?
+      prayer: >-
+        Lord, I can't make sense of what's happening. The psalmist couldn't either, until he came into Your presence. I don't need every answer, but I need You. Steady me.
+      action: >-
+        Write down what you understand and what you don't. Hand the second list to God in prayer, and act on what you do know.
       children:
         - name: Lost
           slug: lost
           description: not knowing which way to go
           reviewed: false
+          god_sees_this:
+            - Job 23:8-10
+            - Isaiah 53:6
+          truth_to_hold:
+            - Luke 15:4
+            - Psalm 32:8
+            - Psalm 119:105
+          reflection: >-
+            If you can't see the whole path, what is the next step right in front of you?
+          prayer: >-
+            Shepherd, I don't know which way to go. You go after the sheep that's lost. Find me, and light the next step in front of me.
+          action: >-
+            Don't try to map the whole way. Name the next faithful step, take it today, and ask God to light the one after.
         - name: Torn
           slug: torn
           description: pulled between two paths or two loyalties
           reviewed: false
+          god_sees_this:
+            - Genesis 32:24-26
+            - Romans 7:19
+          truth_to_hold:
+            - James 1:5
+            - Proverbs 3:5-6
+            - Isaiah 30:21
+          reflection: >-
+            What does each path ask you to love most?
+          prayer: >-
+            Father, I'm pulled two ways, and I don't know which is right. You give wisdom generously to all who ask. I'm asking. Show me the way, and give me peace to walk in it.
+          action: >-
+            Write down both options. Under each, list what it would cost and what it would honour. Pray over the list, and ask one wise person what they see.
         - name: Unsure of God's will
           slug: unsure-of-gods-will
           description: wanting to obey but not knowing what God wants
           reviewed: false
+          god_sees_this:
+            - Psalm 25:4-5
+            - Job 23:3
+          truth_to_hold:
+            - Micah 6:8
+            - Romans 12:2
+            - Proverbs 16:9
+          reflection: >-
+            What do you already know God wants of you, today, whatever you decide?
+          prayer: >-
+            Lord, I want to obey You, but I don't know what You want. You've shown me what is good: to act justly, love mercy and walk humbly with You. Help me do that today, and guide my steps.
+          action: >-
+            Do the parts of God's will you already know: act justly, love mercy, walk humbly. Then make the best choice you can, and trust Him to steer.
     - name: Far from God
       slug: far-from-god
       description: God feels distant or absent
       reviewed: false
+      god_sees_this:
+        - Psalm 10:1
+        - Job 23:8-10
+      truth_to_hold:
+        - Psalm 139:7-8
+        - James 4:8
+        - Romans 8:38-39
+      reflection: >-
+        When did God last feel near, and what has changed since then?
+      prayer: >-
+        God, You feel far away. Why do You stand far off? I can't feel You, but I'm still here, still calling. Draw near to me as I draw near to You.
+      action: >-
+        Read Psalm 139:7–10 slowly. Then spend five minutes telling God honestly how far away He feels.
       children:
         - name: Forsaken
           slug: forsaken
           description: as if God Himself has turned away from you
           reviewed: false
+          god_sees_this:
+            - Matthew 27:46
+            - Isaiah 49:14
+          truth_to_hold:
+            - Psalm 22:24
+            - Isaiah 49:15-16
+            - Hebrews 13:5
+          reflection: >-
+            Jesus cried, "Why have You forsaken Me?" What does it mean that He has been where you are?
+          prayer: >-
+            My God, why have You forsaken me? Jesus prayed these words on the cross, so I can pray them too. You haven't despised my cry. Don't hide Your face from me.
+          action: >-
+            Pray Psalm 22 aloud. It begins with "My God, my God, why?" and ends with God hearing. Let it carry your words.
         - name: God feels silent
           slug: god-feels-silent
           description: you pray and hear nothing back
           reviewed: false
+          god_sees_this:
+            - Psalm 22:2
+            - Habakkuk 1:2
+          truth_to_hold:
+            - Micah 7:7
+            - Isaiah 59:1
+          reflection: >-
+            What would you say to God if you knew He was listening, even in His silence?
+          prayer: >-
+            Lord, I pray and hear nothing. Habakkuk asked "How long?" and so do I. I'll keep watching and waiting for You. Your ear is not too dull to hear me.
+          action: >-
+            Keep a simple prayer journal this month. Write your prayers and leave space beside each one to note anything God does.
         - name: Cold in faith
           slug: cold-in-faith
           description: your love for God has cooled
           reviewed: false
+          god_sees_this:
+            - Revelation 2:4
+            - Luke 24:32
+          truth_to_hold:
+            - Hosea 14:4
+            - Jeremiah 2:2
+            - Psalm 85:6
+          reflection: >-
+            What first warmed your heart toward God, and could you return there?
+          prayer: >-
+            Lord, my love for You has cooled. I remember when my heart burned. You remember it too. Revive me again, and bring me back to my first love.
+          action: >-
+            Do one thing you did when faith was warm, like reading a favourite passage, singing a song you loved, or meeting with an old friend in faith.
     - name: Questioning
       slug: questioning
       description: wrestling with hard questions about God and faith
       reviewed: false
+      god_sees_this:
+        - Genesis 32:24-26
+        - Habakkuk 1:3
+      truth_to_hold:
+        - James 1:5
+        - Deuteronomy 29:29
+        - 1 Corinthians 13:12
+      reflection: >-
+        Jacob wrestled with God and wouldn't let go. What would it look like to wrestle with your questions while holding on?
+      prayer: >-
+        Lord, I have hard questions about You and about faith. Jacob wrestled with You and wouldn't let go, and You blessed him. I'm holding on. Meet me in my questions.
+      action: >-
+        Write your hardest question down. Look for one trustworthy book or person who has wrestled with it, and take the question to them.
       children:
         - name: Struggling to believe
           slug: struggling-to-believe
           description: wanting to believe but finding it hard
           reviewed: false
+          god_sees_this:
+            - Mark 9:24
+            - John 20:25
+          truth_to_hold:
+            - John 20:27-29
+            - Luke 24:38-39
+            - Jude 1:22
+          reflection: >-
+            What makes it hard to believe, and what do you still want to be true?
+          prayer: >-
+            Lord, I want to believe, but it's hard. Help my unbelief. You met Thomas where he was. Meet me here too.
+          action: >-
+            Read John 20:24–29 slowly. Then pray Mark 9:24, "I do believe; help my unbelief!", as your own prayer each day this week.
         - name: Shaken
           slug: shaken
           description: something has rattled the foundations of your faith
           reviewed: false
+          god_sees_this:
+            - Psalm 11:3
+            - Psalm 73:2-3
+          truth_to_hold:
+            - Hebrews 12:27-28
+            - Isaiah 28:16
+            - Matthew 7:24-25
+          reflection: >-
+            What was shaken, and what is still standing?
+          prayer: >-
+            Lord, something has shaken the ground under my faith. Show me what was built on sand and what is built on You. Hold me fast while things are shaken.
+          action: >-
+            Make two lists: what was shaken, and what you still believe. Share both with someone wise you trust.
         - name: Why, God?
           slug: why-god
           description: unable to understand why God allowed this
           reviewed: false
+          god_sees_this:
+            - Habakkuk 1:3
+            - Jeremiah 15:18
+          truth_to_hold:
+            - Isaiah 55:8-9
+            - Romans 8:28
+            - Habakkuk 3:17-18
+          reflection: >-
+            Can you bring your "why" to God without needing an answer today?
+          prayer: >-
+            God, why did You allow this? I don't understand, and I won't pretend to. Habakkuk asked You why, and You answered him. Help me trust You even without an answer.
+          action: >-
+            Write your "why" to God as a letter, holding nothing back. Then read Habakkuk 3:17–18, and pray it if you can.
     - name: Disillusioned
       slug: disillusioned
       description: let down by the church or by other believers
       reviewed: false
+      god_sees_this:
+        - Psalm 55:12-14
+        - Micah 7:5
+      truth_to_hold:
+        - Ezekiel 34:11
+        - Matthew 12:20
+      reflection: >-
+        Can you separate what people did from who God is?
+      prayer: >-
+        Lord, the people I trusted to show me You have let me down. You see what they did, and You care for Your sheep. Help me not to confuse them with You.
+      action: >-
+        Write down what happened and what it did to your view of God. Talk it through with someone outside the situation whom you trust.
       children:
         - name: Hurt by church
           slug: hurt-by-church
           description: wounded by a church or by Christians you trusted
           reviewed: false
+          god_sees_this:
+            - Psalm 55:20-21
+            - Ezekiel 34:4
+          truth_to_hold:
+            - Ezekiel 34:15-16
+            - Jeremiah 23:1
+            - Matthew 12:20
+          reflection: >-
+            God was angry with shepherds who hurt His sheep. What does that say about how He sees what happened to you?
+          prayer: >-
+            Lord, I was hurt by people who claimed to speak for You. You promised to judge the shepherds who harm Your flock and to care for the wounded Yourself. Bind up what was broken in me.
+          action: >-
+            If what happened was abuse, it is not your fault. Tell someone you trust outside that church. When you're ready, look for a safe, healthy community to heal in, without rushing.
         - name: Cynical
           slug: cynical
           description: expecting the worst from people who claim faith
           reviewed: false
+          god_sees_this:
+            - Psalm 116:11
+            - Matthew 23:27
+          truth_to_hold:
+            - 1 Corinthians 13:7
+            - Philippians 1:6
+          reflection: >-
+            What hurt taught you to expect the worst, and is there any believer who has proved you wrong?
+          prayer: >-
+            Lord, I've come to expect the worst from Christians. Some of that came from real hurt. Heal what made me cynical, and help me see the people who are genuine too.
+          action: >-
+            Think of one believer who has been genuine with you. Thank them this week.
     - name: Spiritually unsure
       slug: spiritually-unsure
       description: uncertain where you stand with God
       reviewed: false
+      god_sees_this:
+        - Psalm 51:11
+        - ref: Psalm 77:9
+          excerpt: 'Has God forgotten to be gracious? Has His anger shut off His compassion?'
+      truth_to_hold:
+        - 1 John 5:13
+        - John 10:28-29
+        - 1 John 3:19-20
+      reflection: >-
+        Are you looking to your feelings to tell you where you stand, or to what God has promised?
+      prayer: >-
+        Lord, I don't know where I stand with You. My heart condemns me, but You are greater than my heart. Help me rest on Your promises, not on how I feel.
+      action: >-
+        Read 1 John 5:11–13. Talk with a pastor or mature Christian about what assurance means.
       children:
         - name: Unsure I'm saved
           slug: unsure-im-saved
           description: afraid you might not truly belong to God
           reviewed: false
+          god_sees_this:
+            - Psalm 51:11
+            - Mark 9:24
+          truth_to_hold:
+            - Romans 10:9
+            - Ephesians 2:8-9
+            - Romans 8:15-16
+          reflection: >-
+            Is your salvation resting on how strong your faith feels, or on how strong Christ is?
+          prayer: >-
+            Jesus, I'm afraid I might not truly belong to You. I trust You, even if my faith feels weak. Let Your Spirit assure me that I'm Your child.
+          action: >-
+            Read Romans 10:9 and Ephesians 2:8–9. Pray them back to God in your own words. Then talk with a pastor about your fears.
         - name: Afraid I've gone too far
           slug: gone-too-far
           description: wondering if you've wandered beyond God's reach
           reviewed: false
+          god_sees_this:
+            - Jonah 2:4
+            - Luke 15:20-21
+          truth_to_hold:
+            - Isaiah 59:1
+            - Hebrews 7:25
+            - Isaiah 44:22
+          reflection: >-
+            Jonah ran as far as he could, and God reached him in the depths. Where do you think you've wandered?
+          prayer: >-
+            Father, I'm afraid I've wandered too far. Jonah thought he was banished, and You heard him from the depths. Your arm is not too short to save. I'm turning back to You now.
+          action: >-
+            Read Luke 15:11–24, the story of the son who came home. Then take one step back toward God today, like a prayer, a church visit or a call to a Christian friend.

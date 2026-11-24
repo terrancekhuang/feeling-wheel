@@ -1,7 +1,7 @@
 # Milestone 4 — Curate Remaining Branches: log
 
-Branches done: **Fear** (milestone 2), **Sadness** (session 1), **Anger** (session 2).
-Still to do: Shame, Loneliness, Weariness, Doubt.
+Branches done: **Fear** (milestone 2), **Sadness** (session 1), **Anger** (session 2), **Shame, Loneliness, Weariness, Doubt** (session 3).
+Still to do: none. Every branch is drafted; review is what remains.
 
 ---
 
@@ -89,6 +89,78 @@ Worth a closer look while reviewing:
 
 - Same recipe as before: print verses from `content/bsb.txt`, write the entries, run `pnpm check`. Watch for "Selah" and psalm titles (Psalm 4:4, 62:8, 13:1 needed excerpts here).
 - Next suggested branch: **Shame** (one crisis flag: Worthless).
+
+### Deviations from the PRD
+
+- None.
+
+---
+
+## Session 3 — Shame, Loneliness, Weariness, Doubt
+
+### What's new in the app
+
+- **Every emotion on the wheel now has a full page in draft preview.** This session adds 81 pages: Shame (21), Loneliness (20), Weariness (21) and Doubt (19).
+- **Every verse is checked word for word against the BSB** (`pnpm check`: no problems, 145 of 145 fully drafted).
+- **The two crisis-flagged pages** (Worthless, Ready to give up) have actions that name 988 or a trusted person, alongside the banner.
+- Nothing is live yet. These pages appear on the public site only after you mark them `reviewed: true`.
+
+### Review list (run `pnpm dev`, open each link, then set `reviewed: true`)
+
+Shame
+- [ ] /shame
+- [ ] /guilty · [ ] /remorseful · [ ] /condemned · [ ] /regretful
+- [ ] /worthless ⚠ · [ ] /unlovable · [ ] /like-a-failure · [ ] /insignificant
+- [ ] /inadequate · [ ] /not-good-enough · [ ] /inferior · [ ] /falling-short
+- [ ] /embarrassed · [ ] /humiliated · [ ] /exposed · [ ] /foolish
+- [ ] /unclean · [ ] /defiled · [ ] /disgusted-with-myself · [ ] /unforgivable
+
+Loneliness
+- [ ] /loneliness
+- [ ] /isolated · [ ] /alone · [ ] /cut-off · [ ] /homesick
+- [ ] /rejected · [ ] /excluded · [ ] /unwanted · [ ] /ignored
+- [ ] /abandoned · [ ] /deserted · [ ] /forgotten · [ ] /left-behind
+- [ ] /misunderstood · [ ] /unseen · [ ] /unheard · [ ] /judged
+- [ ] /disconnected · [ ] /distant · [ ] /out-of-place
+
+Weariness
+- [ ] /weariness
+- [ ] /exhausted · [ ] /drained · [ ] /burned-out · [ ] /sleepless
+- [ ] /burdened · [ ] /weighed-down · [ ] /stretched-thin · [ ] /carrying-others-pain
+- [ ] /worn-down · [ ] /tired-of-waiting · [ ] /worn-out-by-pain · [ ] /ready-to-give-up ⚠
+- [ ] /numb · [ ] /detached · [ ] /apathetic · [ ] /flat
+- [ ] /spiritually-dry · [ ] /going-through-the-motions · [ ] /struggling-to-pray · [ ] /thirsty-for-god
+
+Doubt
+- [ ] /doubt
+- [ ] /confused · [ ] /lost · [ ] /torn · [ ] /unsure-of-gods-will
+- [ ] /far-from-god · [ ] /forsaken · [ ] /god-feels-silent · [ ] /cold-in-faith
+- [ ] /questioning · [ ] /struggling-to-believe · [ ] /shaken · [ ] /why-god
+- [ ] /disillusioned · [ ] /hurt-by-church · [ ] /cynical
+- [ ] /spiritually-unsure · [ ] /unsure-im-saved · [ ] /gone-too-far
+
+⚠ = crisis-flagged. Read these with the most care.
+
+Worth a closer look while reviewing:
+- **/defiled** quotes Tamar ("Where could I ever take my shame?", 2 Samuel 13:13), spoken as she pleads against being raped. It fits readers who feel stained by abuse, but it is heavy. The action says plainly that harm done to you is not your shame.
+- **/unclean**, **/defiled** and **/hurt-by-church** separate sin you did from harm done to you, and point to a trusted person or counsellor.
+- **/worthless** and **/like-a-failure** both use Elijah's "I am no better than my fathers" (1 Kings 19:4, excerpt). **/ready-to-give-up** uses "I have had enough, LORD" from the same verse, then God's answer of sleep and food (19:5–7).
+- **/numb**, **/detached**, **/apathetic**, **/sleepless**, **/burned-out** and **/worn-out-by-pain** suggest a doctor or counsellor if the feeling persists, since these overlap with depression and burnout.
+- **/forsaken** uses Jesus' cry from the cross (Matthew 27:46) as the lament.
+- **/unsure-im-saved** leans on Romans 10:9 and Ephesians 2:8–9. Check that it fits your church's teaching on assurance.
+
+### What was built
+
+- `content/emotions.yaml`: full content for 81 entries across Shame, Loneliness, Weariness and Doubt. No names, slugs, descriptions, flags or `reviewed` values changed (diffed against the previous commit). No app code changed.
+
+### Decisions not pre-specified in the PRD
+
+- **Crisis flags kept as they were:** only Worthless and Ready to give up. Unlovable, Unforgivable, Forsaken and Numb are not flagged. Their content points toward people and, where relevant, a doctor. Flag any of them if you want the banner.
+- All four branches were done in one session at your request, rather than one per session.
+
+### For the next session
+
+- Milestone 4's content is complete. What remains is your review: work through the lists above and in sessions 1–2, then set `reviewed: true`.
 
 ### Deviations from the PRD
 
