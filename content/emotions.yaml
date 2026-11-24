@@ -752,7 +752,7 @@
 - name: Anger
   slug: anger
   description: heat rising against something that feels wrong
-  reviewed: false
+  reviewed: true
   god_sees_this:
     - Mark 3:5
     - Psalm 39:3
@@ -771,7 +771,7 @@
     - name: Frustrated
       slug: frustrated
       description: blocked again and again from what you want or need
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Exodus 5:22-23
         - Numbers 11:14
@@ -788,7 +788,7 @@
         - name: Irritated
           slug: irritated
           description: small things keep rubbing you the wrong way
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Luke 10:40
             - Numbers 20:10
@@ -804,7 +804,7 @@
         - name: Impatient
           slug: impatient
           description: tired of waiting and wanting it done now
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: Psalm 13:1
               excerpt: 'How long, O LORD? Will You forget me forever?'
@@ -822,7 +822,7 @@
         - name: Stuck
           slug: stuck
           description: pushing hard and going nowhere
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Job 19:8
             - Romans 7:19
@@ -839,7 +839,7 @@
     - name: Bitter
       slug: bitter
       description: an old hurt that has hardened inside
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Ruth 1:20
         - Job 7:11
@@ -856,7 +856,7 @@
         - name: Resentful
           slug: resentful
           description: replaying a wrong and holding it against someone
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 55:12-13
             - Luke 15:29
@@ -872,7 +872,7 @@
         - name: Unforgiving
           slug: unforgiving
           description: unable or unwilling to let a debt go
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Matthew 18:21
             - Psalm 109:4-5
@@ -889,7 +889,7 @@
         - name: Hardened
           slug: hardened
           description: closing your heart so it can't be hurt again
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 77:2
             - Jeremiah 31:15
@@ -906,7 +906,7 @@
     - name: Enraged
       slug: enraged
       description: anger that feels too big to contain
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Jonah 4:9
         - Genesis 4:6
@@ -923,7 +923,7 @@
         - name: Furious
           slug: furious
           description: burning, explosive anger
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 39:3
             - Jonah 4:4
@@ -940,7 +940,7 @@
         - name: Vengeful
           slug: vengeful
           description: wanting the one who hurt you to pay
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 58:6
             - Psalm 7:6
@@ -957,7 +957,7 @@
     - name: Wronged
       slug: wronged
       description: treated unfairly, and it isn't being made right
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 35:11-12
         - Job 19:7
@@ -974,7 +974,7 @@
         - name: Cheated
           slug: cheated
           description: robbed of what was rightfully yours
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Genesis 27:36
             - Genesis 31:41
@@ -992,7 +992,7 @@
         - name: Disrespected
           slug: disrespected
           description: treated as if you don't matter
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 123:3-4
             - Psalm 69:20
@@ -1009,7 +1009,7 @@
         - name: Indignant
           slug: indignant
           description: angry at injustice done to you or to others
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Habakkuk 1:2-3
             - Psalm 94:3
@@ -1026,7 +1026,7 @@
     - name: Envious
       slug: envious
       description: pained by what others have that you don't
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 73:2-3
         - Psalm 73:21-22
@@ -1043,7 +1043,7 @@
         - name: Jealous
           slug: jealous
           description: afraid of losing what or who you love to someone else
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Genesis 30:1
             - ref: Song of Solomon 8:6
@@ -1060,7 +1060,7 @@
         - name: Discontent
           slug: discontent
           description: unable to be at peace with what you have
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Numbers 11:4-5
             - Ecclesiastes 4:4
@@ -1077,7 +1077,7 @@
     - name: Angry with God
       slug: angry-with-god
       description: hurt and angry at God for what He has allowed
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Job 30:20-21
         - Psalm 88:14
@@ -1095,7 +1095,7 @@
         - name: Disappointed in God
           slug: disappointed-in-god
           description: God did not do what you hoped He would
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - John 11:21
             - Psalm 22:2
@@ -1111,7 +1111,7 @@
         - name: Feeling God is unfair
           slug: god-is-unfair
           description: it seems God blesses others and passes you by
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Jeremiah 12:1
             - Psalm 73:13
