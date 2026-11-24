@@ -28,9 +28,11 @@ function App() {
       <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 pb-10">
         {!slug ? <Home key={n} /> : about ? <About /> : node ? <EmotionPage key={slug} slug={slug} /> : <NotFound />}
       </main>
-      <footer className="px-4 pb-6 text-center text-sm text-ink-soft">
-        <a href="/about" onClick={linkTo("/about")} className="hover:text-ink underline-offset-2 hover:underline">About</a>
-      </footer>
+      {!about && (
+        <footer className="px-4 pb-6 text-center text-sm text-ink-soft">
+          <a href="/about" onClick={linkTo("/about")} className="hover:text-ink underline-offset-2 hover:underline">About</a>
+        </footer>
+      )}
     </div>
   );
 }

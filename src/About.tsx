@@ -1,5 +1,4 @@
 import { APP } from "./content";
-import { linkTo } from "./router";
 
 const CONTACT = "terrancehuang@proton.me";
 
@@ -57,9 +56,6 @@ export default function About() {
         </p>
       </Section>
 
-      <a href="/" onClick={linkTo("/")} className="inline-block mt-10 rounded-full bg-accent text-accent-ink text-sm font-medium px-4 py-2 hover:opacity-90">
-        ‹ Back to the wheel
-      </a>
     </article>
   );
 }

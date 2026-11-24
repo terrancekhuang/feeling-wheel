@@ -11,10 +11,16 @@ export default function EmotionPage({ slug }: { slug: string }) {
   const back: Page = deeper.length ? node : node.parent!;
   const backState = { focus: back.depth ? back.data.slug : null };
   const ready = drafts || e.reviewed;
+  const backLink = (
+    <a href="/" onClick={linkTo("/", backState)} className="inline-block rounded-full bg-accent text-accent-ink text-sm font-medium px-4 py-2 hover:opacity-90">
+      ‹ Back to the wheel
+    </a>
+  );
 
   return (
     <article className="mt-6 max-w-prose mx-auto">
-      <nav aria-label="Breadcrumb" className="text-sm text-ink-soft" hidden={trail.length < 2}>
+      {backLink}
+      <nav aria-label="Breadcrumb" className="mt-4 text-sm text-ink-soft" hidden={trail.length < 2}>
         {trail.map((n, i) => (
           <span key={n.data.slug}>
             {i > 0 && <span aria-hidden> › </span>}
@@ -81,9 +87,7 @@ export default function EmotionPage({ slug }: { slug: string }) {
         </section>
       )}
 
-      <a href="/" onClick={linkTo("/", backState)} className="inline-block mt-10 rounded-full bg-accent text-accent-ink text-sm font-medium px-4 py-2 hover:opacity-90">
-        ‹ Back to the wheel
-      </a>
+      <div className="mt-10">{backLink}</div>
     </article>
   );
 }
