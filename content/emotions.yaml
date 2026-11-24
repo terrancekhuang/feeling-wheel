@@ -388,7 +388,7 @@
 - name: Sadness
   slug: sadness
   description: a heaviness of heart over what is lost, broken or not as it should be
-  reviewed: false
+  reviewed: true
   god_sees_this:
     - Psalm 6:6
     - John 11:35
@@ -405,7 +405,7 @@
     - name: Grieving
       slug: grieving
       description: mourning someone or something you have lost
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 42:3
         - ref: Isaiah 53:3
@@ -423,7 +423,7 @@
         - name: Heartbroken
           slug: heartbroken
           description: a deep ache where love or hope used to be
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 31:9
             - ref: Psalm 22:14
@@ -441,7 +441,7 @@
         - name: Bereaved
           slug: bereaved
           description: grieving the death of someone you love
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - 2 Samuel 18:33
             - John 11:33-35
@@ -457,7 +457,7 @@
         - name: Missing someone
           slug: missing-someone
           description: longing for a person who is far away or gone
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - 2 Timothy 1:4
             - Philippians 1:8
@@ -474,7 +474,7 @@
     - name: Disappointed
       slug: disappointed
       description: what you hoped for did not happen
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - ref: Luke 24:21
           excerpt: 'But we were hoping He was the One who would redeem Israel.'
@@ -492,7 +492,7 @@
         - name: Let down
           slug: let-down
           description: someone you counted on did not come through
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - 2 Timothy 4:16
             - Psalm 142:4
@@ -509,7 +509,7 @@
         - name: Discouraged
           slug: discouraged
           description: losing the heart to keep trying
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Nehemiah 4:10
             - Psalm 69:3
@@ -525,7 +525,7 @@
         - name: Unfulfilled
           slug: unfulfilled
           description: life feels smaller than you thought it would be
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Ecclesiastes 2:11
             - ref: Psalm 63:1
@@ -542,7 +542,7 @@
     - name: Hurt
       slug: hurt
       description: wounded by what someone said or did
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 69:20
         - Psalm 109:22
@@ -559,7 +559,7 @@
         - name: Wounded
           slug: wounded
           description: carrying an injury that hasn't healed
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: Jeremiah 15:18
               excerpt: 'Why is my pain unending, and my wound incurable, refusing to be healed?'
@@ -577,7 +577,7 @@
         - name: Betrayed
           slug: betrayed
           description: hurt by someone you trusted
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 55:12-14
             - Luke 22:48
@@ -594,7 +594,7 @@
         - name: Crushed
           slug: crushed
           description: pressed down so hard you can barely stand
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 38:8
             - ref: Psalm 143:3
@@ -611,7 +611,7 @@
     - name: Downcast
       slug: downcast
       description: a low, heavy spirit that won't lift
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 38:6
         - Psalm 143:4
@@ -628,7 +628,7 @@
         - name: Heavy-hearted
           slug: heavy-hearted
           description: a weight on your chest you can't put down
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Matthew 26:38
             - ref: Psalm 31:10
@@ -645,7 +645,7 @@
         - name: Gloomy
           slug: gloomy
           description: everything seems grey and dim
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Job 30:26
             - Psalm 88:18
@@ -662,7 +662,7 @@
         - name: Empty
           slug: empty
           description: hollow inside, as if nothing is left
-          reviewed: false
+          reviewed: true
           crisis: true
           god_sees_this:
             - Job 30:16
@@ -679,7 +679,7 @@
     - name: Hopeless
       slug: hopeless
       description: unable to see how things could ever get better
-      reviewed: false
+      reviewed: true
       crisis: true
       god_sees_this:
         - Job 17:15
@@ -697,7 +697,7 @@
         - name: Despairing
           slug: despairing
           description: hope feels completely gone
-          reviewed: false
+          reviewed: true
           crisis: true
           god_sees_this:
             - 2 Corinthians 1:8
@@ -716,7 +716,7 @@
         - name: Defeated
           slug: defeated
           description: you've fought and feel you have lost
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Joshua 7:7
             - Psalm 44:9
@@ -733,7 +733,7 @@
         - name: Not wanting to live
           slug: not-wanting-to-live
           description: thoughts of not wanting to be here anymore
-          reviewed: false
+          reviewed: true
           crisis: true
           god_sees_this:
             - ref: 1 Kings 19:4
