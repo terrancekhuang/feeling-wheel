@@ -389,96 +389,365 @@
   slug: sadness
   description: a heaviness of heart over what is lost, broken or not as it should be
   reviewed: false
+  god_sees_this:
+    - Psalm 6:6
+    - John 11:35
+  truth_to_hold:
+    - Psalm 56:8
+    - Psalm 30:5
+  reflection: >-
+    What exactly are you sad about, and have you said it to God plainly?
+  prayer: >-
+    Lord, my heart is heavy. You wept at Lazarus' tomb, so You are not ashamed of my tears. Come near to me in this sadness and comfort me in the way only You can.
+  action: >-
+    Find a quiet place and tell God what you are sad about, out loud or on paper, without tidying it up. Then read Psalm 56:8 slowly.
   children:
     - name: Grieving
       slug: grieving
       description: mourning someone or something you have lost
       reviewed: false
+      god_sees_this:
+        - Psalm 42:3
+        - ref: Isaiah 53:3
+          excerpt: 'He was despised and rejected by men, a man of sorrows, acquainted with grief.'
+      truth_to_hold:
+        - Matthew 5:4
+        - Revelation 21:4
+      reflection: >-
+        What or who are you grieving, and what do you miss most?
+      prayer: >-
+        Lord, I am grieving, and this loss feels too big to hold. Jesus, You were a man of sorrows, acquainted with grief, so You understand. Comfort me while I mourn, and one day wipe away every tear.
+      action: >-
+        Set aside ten minutes to remember what you lost. Say it, or their name, to God, and give thanks for one specific memory.
       children:
         - name: Heartbroken
           slug: heartbroken
           description: a deep ache where love or hope used to be
           reviewed: false
+          god_sees_this:
+            - Psalm 31:9
+            - ref: Psalm 22:14
+              excerpt: 'My heart is like wax; it melts away within me.'
+          truth_to_hold:
+            - Psalm 34:18
+            - ref: Isaiah 61:1
+              excerpt: 'He has sent Me to bind up the brokenhearted'
+          reflection: >-
+            What did you love or hope for that now aches, and can you tell God about it in your own words?
+          prayer: >-
+            Lord, my heart is broken. You say You are near to the brokenhearted, so please be near to me now. Bind up this wound, gently and in Your time.
+          action: >-
+            Write God a short, honest letter about what broke your heart. Then read Psalm 34:18 over it.
         - name: Bereaved
           slug: bereaved
           description: grieving the death of someone you love
           reviewed: false
+          god_sees_this:
+            - 2 Samuel 18:33
+            - John 11:33-35
+          truth_to_hold:
+            - 1 Thessalonians 4:13-14
+            - John 11:25
+          reflection: >-
+            What do you most want to say to God about the person you have lost?
+          prayer: >-
+            Lord, someone I love has died, and the world feels wrong without them. Jesus, You wept at Your friend's grave, so You know this pain. You are the resurrection and the life; let me grieve with hope, and carry me through the hardest days.
+          action: >-
+            Share a memory of them with someone who knew them, or ask that person for one of theirs. If grief still floods every day months from now, look for a grief group or counsellor.
         - name: Missing someone
           slug: missing-someone
           description: longing for a person who is far away or gone
           reviewed: false
+          god_sees_this:
+            - 2 Timothy 1:4
+            - Philippians 1:8
+          truth_to_hold:
+            - Romans 8:38-39
+            - ref: Hebrews 13:5
+              excerpt: 'Never will I leave you, never will I forsake you.'
+          reflection: >-
+            Who are you missing, and what about them do you miss most?
+          prayer: >-
+            Father, I miss them, and the space they left feels empty. Thank You for every good thing they brought into my life. Nothing can separate me from Your love, so stay close to me in the missing.
+          action: >-
+            If you can, send them a message today, even a short one. If you can't, write down what you would say and thank God for them.
     - name: Disappointed
       slug: disappointed
       description: what you hoped for did not happen
       reviewed: false
+      god_sees_this:
+        - ref: Luke 24:21
+          excerpt: 'But we were hoping He was the One who would redeem Israel.'
+        - Proverbs 13:12
+      truth_to_hold:
+        - Romans 5:5
+        - Psalm 27:13-14
+      reflection: >-
+        What were you hoping for, and what does its not happening seem to say to you?
+      prayer: >-
+        Lord, I hoped for this and it didn't happen. Like the disciples on the road to Emmaus, I'm confused and let down. Walk with me in it, and show me what You are doing that I can't yet see.
+      action: >-
+        Tell God plainly what you hoped for. Then name one good thing He has given you that you didn't expect.
       children:
         - name: Let down
           slug: let-down
           description: someone you counted on did not come through
           reviewed: false
+          god_sees_this:
+            - 2 Timothy 4:16
+            - Psalm 142:4
+          truth_to_hold:
+            - ref: 2 Timothy 4:17
+              excerpt: 'But the Lord stood by me and strengthened me'
+            - Isaiah 49:15
+          reflection: >-
+            Who let you down, and what did you need from them that you didn't get?
+          prayer: >-
+            Lord, I counted on them and they didn't come through. Paul knew this too, and You stood by him. Stand by me now, and help me be honest about the hurt without letting it harden my heart.
+          action: >-
+            Decide whether to talk to them about it or let it go. If you talk, start with what you needed, not with what they did wrong.
         - name: Discouraged
           slug: discouraged
           description: losing the heart to keep trying
           reviewed: false
+          god_sees_this:
+            - Nehemiah 4:10
+            - Psalm 69:3
+          truth_to_hold:
+            - Galatians 6:9
+            - 2 Corinthians 4:16
+          reflection: >-
+            What made you want to stop trying, and what part of it is still worth one more try?
+          prayer: >-
+            Lord, I'm losing heart. I've tried, and I'm tired of trying. Renew me inwardly day by day, and give me enough courage for the next small step.
+          action: >-
+            Pick the smallest next step, something you could do in ten minutes, and do it today. Then rest without guilt.
         - name: Unfulfilled
           slug: unfulfilled
           description: life feels smaller than you thought it would be
           reviewed: false
+          god_sees_this:
+            - Ecclesiastes 2:11
+            - ref: Psalm 63:1
+              excerpt: 'my soul thirsts for You. My body yearns for You in a dry and weary land without water.'
+          truth_to_hold:
+            - Ephesians 2:10
+            - Psalm 16:11
+          reflection: >-
+            Where does life feel smaller than you hoped, and what do you think would make it feel full?
+          prayer: >-
+            Father, my life feels smaller than I imagined, and some of what I chased hasn't satisfied. Show me the path of life, and the good works You prepared for me, even the quiet ones.
+          action: >-
+            Think of one small way to serve someone this week, and do it. Afterwards, notice how it felt.
     - name: Hurt
       slug: hurt
       description: wounded by what someone said or did
       reviewed: false
+      god_sees_this:
+        - Psalm 69:20
+        - Psalm 109:22
+      truth_to_hold:
+        - Psalm 147:3
+        - 1 Peter 2:23
+      reflection: >-
+        What was said or done, and what did it make you believe about yourself?
+      prayer: >-
+        Lord, what they said and did hurt me. You were abused too, and You entrusted Yourself to the One who judges justly. Heal this wound, and help me leave the judging to You.
+      action: >-
+        Write down what happened and the lie it left you with. Next to it, write what God says is true about you.
       children:
         - name: Wounded
           slug: wounded
           description: carrying an injury that hasn't healed
           reviewed: false
+          god_sees_this:
+            - ref: Jeremiah 15:18
+              excerpt: 'Why is my pain unending, and my wound incurable, refusing to be healed?'
+            - Psalm 6:2
+          truth_to_hold:
+            - ref: Jeremiah 30:17
+              excerpt: 'But I will restore your health and heal your wounds, declares the LORD'
+            - Isaiah 42:3
+          reflection: >-
+            What old hurt still aches when it's touched, and what might help it heal?
+          prayer: >-
+            Lord, this wound hasn't healed, and sometimes it feels like it never will. You don't break a bruised reed. Be gentle with me, and heal what I can't heal myself.
+          action: >-
+            Name the wound to one trusted person, a friend, pastor or counsellor, and ask them to help you carry it.
         - name: Betrayed
           slug: betrayed
           description: hurt by someone you trusted
           reviewed: false
+          god_sees_this:
+            - Psalm 55:12-14
+            - Luke 22:48
+          truth_to_hold:
+            - ref: Genesis 50:20
+              excerpt: 'what you intended against me for evil, God intended for good'
+            - Psalm 27:10
+          reflection: >-
+            What did you trust them with, and what do you need now to feel safe?
+          prayer: >-
+            Jesus, You were betrayed with a kiss by someone who shared Your table. You know this pain. Protect my heart, show me what is wise, and in Your time bring good even out of this.
+          action: >-
+            Put some healthy distance in place if you need it. Then tell God exactly what they did, and leave the outcome with Him for today.
         - name: Crushed
           slug: crushed
           description: pressed down so hard you can barely stand
           reviewed: false
+          god_sees_this:
+            - Psalm 38:8
+            - ref: Psalm 143:3
+              excerpt: 'For the enemy has pursued my soul, crushing my life to the ground'
+          truth_to_hold:
+            - 2 Corinthians 4:8-9
+            - Psalm 34:19
+          reflection: >-
+            What is pressing down on you, and what is one thing you could set down today?
+          prayer: >-
+            Lord, I am pressed so hard I can barely stand. Hold me so that I'm hard pressed but not crushed. Deliver me, and give me strength for just this day.
+          action: >-
+            Cancel or postpone one non-essential thing today, and use the time to rest or ask someone for help.
     - name: Downcast
       slug: downcast
       description: a low, heavy spirit that won't lift
       reviewed: false
+      god_sees_this:
+        - Psalm 38:6
+        - Psalm 143:4
+      truth_to_hold:
+        - Psalm 42:11
+        - Psalm 3:3
+      reflection: >-
+        When did this heaviness start, and is there something underneath it you haven't named yet?
+      prayer: >-
+        Lord, my spirit is low and won't lift. Like the psalmist, I ask my soul why it is downcast, and I choose to hope in You. Lift my head when I can't lift it myself.
+      action: >-
+        Get outside for fifteen minutes today, in daylight if you can. If this low mood has lasted more than two weeks, tell a doctor or counsellor.
       children:
         - name: Heavy-hearted
           slug: heavy-hearted
           description: a weight on your chest you can't put down
           reviewed: false
+          god_sees_this:
+            - Matthew 26:38
+            - ref: Psalm 31:10
+              excerpt: 'For my life is consumed with grief and my years with groaning'
+          truth_to_hold:
+            - Matthew 11:28
+            - Psalm 55:22
+          reflection: >-
+            What weight are you carrying, and does anyone else know about it?
+          prayer: >-
+            Jesus, Your soul was so heavy that You asked Your friends to stay with You. My heart is heavy too. I come to You weary and burdened; give me rest, and carry what I can't.
+          action: >-
+            Tell one person today, "I'm carrying something heavy," and let them pray with you or simply sit with you.
         - name: Gloomy
           slug: gloomy
           description: everything seems grey and dim
           reviewed: false
+          god_sees_this:
+            - Job 30:26
+            - Psalm 88:18
+          truth_to_hold:
+            - John 1:5
+            - ref: Micah 7:8
+              excerpt: 'though I sit in darkness, the LORD will be my light.'
+          reflection: >-
+            Is there one small place today, however dim, where you can still see some light?
+          prayer: >-
+            Lord, everything looks grey right now. Darkness is not dark to You. Shine into this dimness, and help me notice even small glimpses of Your goodness.
+          action: >-
+            Open a curtain or step outside, and spend five minutes noticing one good thing: light, a sound, a taste. Thank God for it by name.
         - name: Empty
           slug: empty
           description: hollow inside, as if nothing is left
           reviewed: false
           crisis: true
+          god_sees_this:
+            - Job 30:16
+            - Psalm 88:3
+          truth_to_hold:
+            - Psalm 73:26
+            - Psalm 107:9
+          reflection: >-
+            When you feel empty, what do you usually reach for, and does it fill you?
+          prayer: >-
+            Lord, I feel hollow, as if nothing is left. I don't have much to bring You, so I bring You this emptiness. Be the strength of my heart, and slowly fill me again.
+          action: >-
+            Do one small life-giving thing today: eat a real meal, step outside, or message a friend. If the emptiness won't lift, talk to a doctor or counsellor.
     - name: Hopeless
       slug: hopeless
       description: unable to see how things could ever get better
       reviewed: false
       crisis: true
+      god_sees_this:
+        - Job 17:15
+        - Lamentations 3:17-18
+      truth_to_hold:
+        - Lamentations 3:21-23
+        - Romans 15:13
+      reflection: >-
+        What has made things feel like they can't get better, and who could help you carry it today?
+      prayer: >-
+        God, I can't see how this gets better, and my hope feels gone. But Your mercies are new every morning, so I'm asking for today's. Hold on to me when I can't hold on to You.
+      action: >-
+        Tell someone today how hopeless you feel: a friend, a pastor, a doctor or a crisis line. You don't have to feel hopeful to ask for help.
       children:
         - name: Despairing
           slug: despairing
           description: hope feels completely gone
           reviewed: false
           crisis: true
+          god_sees_this:
+            - 2 Corinthians 1:8
+            - ref: Psalm 22:1
+              excerpt: 'My God, my God, why have You forsaken me? Why are You so far from saving me, so far from my words of groaning?'
+          truth_to_hold:
+            - Psalm 40:2
+            - ref: 2 Corinthians 1:10
+              excerpt: 'He has delivered us from such a deadly peril, and He will deliver us.'
+          reflection: >-
+            Despair says nothing will ever change. Who could you let into this with you today?
+          prayer: >-
+            Lord, I'm in the pit and I can't see a way out. Paul despaired even of life, and You delivered him. Hear my cry, lift me out, and set my feet on a rock.
+          action: >-
+            Please don't carry this alone. Today, reach out to one person, a friend, a pastor or a doctor, or call or text 988, and say plainly, "I'm in despair."
         - name: Defeated
           slug: defeated
           description: you've fought and feel you have lost
           reviewed: false
+          god_sees_this:
+            - Joshua 7:7
+            - Psalm 44:9
+          truth_to_hold:
+            - Psalm 37:24
+            - ref: 2 Corinthians 12:9
+              excerpt: 'My grace is sufficient for you, for My power is perfected in weakness.'
+          reflection: >-
+            What did you fight for and lose, and is God asking you to rise, to rest, or to let it go?
+          prayer: >-
+            Lord, I fought and I lost, and I feel beaten. Remind me that falling isn't the end, because You are holding my hand. Let Your power show up in my weakness.
+          action: >-
+            Write down what you lost and one thing you learned in the fight. Rest today; getting back up can start tomorrow.
         - name: Not wanting to live
           slug: not-wanting-to-live
           description: thoughts of not wanting to be here anymore
           reviewed: false
           crisis: true
+          god_sees_this:
+            - ref: 1 Kings 19:4
+              excerpt: 'He sat down under a broom tree and prayed that he might die. “I have had enough, LORD,” he said. “Take my life, for I am no better than my fathers.”'
+            - Job 3:11
+          truth_to_hold:
+            - 1 Kings 19:5-7
+            - Psalm 139:16
+          reflection: >-
+            Who is one safe person you could tell today that you've been having these thoughts?
+          prayer: >-
+            God, I don't want to be here anymore, and I'm telling You honestly. You didn't turn away from Elijah when he asked to die; You gave him sleep, food and a way forward. Meet me like that, and help me reach out for help today.
+          action: >-
+            Please tell someone now. Call or text 988, use the helpline link above, or ask a trusted person to stay with you. If you might act on these thoughts, call your local emergency number.
 
 - name: Anger
   slug: anger
