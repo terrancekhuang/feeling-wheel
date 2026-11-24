@@ -14,3 +14,17 @@ export function publish(tree, bible, drafts) {
   };
   return tree.map(one);
 }
+
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+
+/** A description as a preview sentence: "a restless dread" → "A restless dread." @param {string} s */
+export const sentence = (s) => s[0].toUpperCase() + s.slice(1) + (/[.!?]$/.test(s) ? "" : ".");
+
+/** index.html with its <title>, description and Open Graph tags swapped for one page's (link previews).
+ * @param {string} html @param {string} title @param {string} desc */
+export function withMeta(html, title, desc) {
+  return html
+    .replace(/<title>.*?<\/title>/, `<title>${esc(title)}</title>`)
+    .replace(/(property="og:title" content=)"[^"]*"/, `$1"${esc(title)}"`)
+    .replace(/((?:name="description"|property="og:description") content=)"[^"]*"/g, `$1"${esc(desc)}"`);
+}

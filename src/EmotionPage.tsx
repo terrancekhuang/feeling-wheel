@@ -35,6 +35,7 @@ export default function EmotionPage({ slug }: { slug: string }) {
         )}
         <h1 className="font-serif text-4xl sm:text-5xl leading-tight">{e.name}</h1>
         <p className="mt-2 text-lg text-ink-soft">{e.description}</p>
+        <ShareButton name={e.name} />
       </header>
 
       {e.crisis && <CrisisBanner />}
@@ -142,6 +143,30 @@ function VerseCard({ verse }: { verse: Verse }) {
   );
 }
 
+/** Phones get the share sheet; desktops copy the link. */
+function ShareButton({ name }: { name: string }) {
+  const [copied, setCopied] = useState<boolean | null>(null);
+  async function share() {
+    const url = location.href;
+    if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+      await navigator.share({ title: name, url }).catch(() => {}); // cancelled: nothing to do
+      return;
+    }
+    setCopied(await navigator.clipboard.writeText(url).then(() => true, () => false));
+    setTimeout(() => setCopied(null), 2000);
+  }
+  return (
+    <button
+      type="button"
+      onClick={share}
+      className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-line px-3.5 py-1.5 text-sm text-ink-soft hover:border-ink-soft hover:text-ink focus-visible:outline-2 focus-visible:outline-ink"
+    >
+      <Icon d={copied ? CHECK : SHARE} />
+      <span aria-live="polite">{copied ? "Link copied" : copied === false ? "Couldn't copy" : "Share"}</span>
+    </button>
+  );
+}
+
 function Step({ label, text, serif }: { label: string; text?: string; serif?: boolean }) {
   return (
     <div>
@@ -180,6 +205,7 @@ function CrisisBanner() {
 }
 
 const COPY = "M8 8h11v11H8zM5 15H4V4h11v1";
+const SHARE = "M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7M16 6l-4-4-4 4M12 2v13";
 const CHECK = "M5 12l5 5L20 7";
 const PHONE = "M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z";
 const TEXT = "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z";

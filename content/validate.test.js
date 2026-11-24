@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { parse } from "yaml";
 import { loadBible, resolveVerse, verseNotes } from "./bible.js";
 import { validate } from "./validate.js";
-import { publish } from "./publish.js";
+import { publish, sentence, withMeta } from "./publish.js";
 
 const bible = loadBible();
 const e = (slug, extra = {}) => ({ name: slug, slug, description: "d", reviewed: false, ...extra });
@@ -64,4 +64,13 @@ test("publish fills verse text and strips unreviewed content from live builds", 
   assert.equal(live[0].truth_to_hold[1].text, "Immediately Jesus reached out His hand and took hold of Peter.");
   assert.equal(live[0].children[0].prayer, undefined);
   assert.equal(publish(tree, bible, true)[0].children[0].prayer, "p");
+});
+
+test("link previews: each page's HTML carries its own escaped title and description", () => {
+  const html = readFileSync("index.html", "utf8");
+  const out = withMeta(html, `"Lost" & alone · App`, sentence("a feeling of <nowhere>"));
+  assert.match(out, /<title>&quot;Lost&quot; &amp; alone · App<\/title>/);
+  assert.match(out, /property="og:title" content="&quot;Lost&quot; &amp; alone · App"/);
+  assert.equal(out.match(/content="A feeling of &lt;nowhere>\."/g)?.length, 2); // description + og:description
+  assert.equal(sentence("done."), "Done.");
 });

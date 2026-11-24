@@ -7,5 +7,6 @@ Do not treat `_build_plan/` as long-living documentation for the codebase. The c
 ## Project
 
 Static React + Vite + Tailwind v4 PWA. All content lives in `content/emotions.yaml` (validated at build by `content/validate.js`).
-Commands: `pnpm dev` (shows drafts), `pnpm build` (reviewed only), `pnpm check` (content report), `pnpm test`.
+Commands: `pnpm dev` (shows drafts), `pnpm build` (reviewed only), `pnpm check` (content report), `pnpm test`, `pnpm release` (build + deploy to Cloudflare Pages via wrangler).
+Offline: root `sw.js` is a template; the build fills in its file list and writes `dist/sw.js` plus one `<slug>.html` per page (link previews).
 Verse text comes from `content/bsb.txt` (public-domain BSB); the content file holds references only.

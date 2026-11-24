@@ -3,6 +3,8 @@ import tree, { drafts } from "../content/emotions.yaml";
 
 export { drafts };
 
+export const APP = "Feeling Wheel"; // working name; also in index.html and public/manifest.webmanifest
+
 export type Verse = { ref: string; text: string };
 
 export type Emotion = {

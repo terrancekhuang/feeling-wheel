@@ -7,7 +7,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "node --test content/*.test.js",
-    "check": "node content/check.js"
+    "check": "node content/check.js",
+    "release": "pnpm build && pnpm dlx wrangler@4 pages deploy dist --project-name feeling-wheel --branch main"
   },
   "dependencies": {
     "d3-hierarchy": "^3.1.3",

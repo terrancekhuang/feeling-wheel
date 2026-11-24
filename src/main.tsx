@@ -3,19 +3,20 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import Wheel from "./Wheel";
 import EmotionPage from "./EmotionPage";
-import { pages, root } from "./content";
+import About from "./About";
+import { APP, pages, root } from "./content";
 import { usePath, linkTo } from "./router";
 
-const APP = "Feeling Wheel"; // working name
 
 function App() {
   const { path, n } = usePath();
   const slug = decodeURIComponent(path.slice(1).replace(/\/$/, ""));
+  const about = slug === "about";
   const node = slug ? pages.get(slug) : undefined;
 
   useEffect(() => {
-    document.title = node ? `${node.data.name} · ${APP}` : slug ? `Not found · ${APP}` : APP;
-  }, [node, slug]);
+    document.title = about ? `About · ${APP}` : node ? `${node.data.name} · ${APP}` : slug ? `Not found · ${APP}` : APP;
+  }, [about, node, slug]);
 
   return (
     <div className="min-h-dvh flex flex-col">
@@ -25,8 +26,11 @@ function App() {
         </a>
       </header>
       <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 pb-10">
-        {!slug ? <Home key={n} /> : node ? <EmotionPage key={slug} slug={slug} /> : <NotFound />}
+        {!slug ? <Home key={n} /> : about ? <About /> : node ? <EmotionPage key={slug} slug={slug} /> : <NotFound />}
       </main>
+      <footer className="px-4 pb-6 text-center text-sm text-ink-soft">
+        <a href="/about" onClick={linkTo("/about")} className="hover:text-ink underline-offset-2 hover:underline">About</a>
+      </footer>
     </div>
   );
 }
@@ -55,6 +59,9 @@ function NotFound() {
     </div>
   );
 }
+
+// Offline support (live builds only; `pnpm build` writes sw.js).
+if (import.meta.env.PROD && "serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
