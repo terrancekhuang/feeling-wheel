@@ -9,7 +9,7 @@ export default function About() {
 
       <Section title="Why this exists">
         <p>
-          The Psalms are full of people naming exactly what they feel: afraid, forgotten, worn out, angry. {APP} helps you do
+          Throughout the Bible, God's people name exactly what they feel: afraid, forgotten, worn out, angry. {APP} helps you do
           the same, then opens Scripture that sits with you in that feeling first, offers truth to hold, and ends with a gentle
           next step. It's free, it works offline, and it saves nothing about you.
         </p>
