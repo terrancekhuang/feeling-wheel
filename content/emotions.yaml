@@ -7,98 +7,383 @@
 #   - crisis   = true shows the crisis banner (988 + helplines) on that emotion's page.
 #                Crisis flags below are suggestions — please check each one.
 #
+# Each emotion's page content (all optional while drafting; all required once reviewed: true):
+#   god_sees_this: 2–4 verses of lament and company — someone in Scripture who felt this.
+#   truth_to_hold: 2–4 verses of promise or reframe.
+#   reflection / prayer / action: one question, a 2–4 sentence prayer, one practical step.
+#
+# Verses: write just the reference — the exact BSB text is filled in for you.
+#     - Psalm 42:5
+#     - Mark 14:33-34          (ranges up to 4 verses, same chapter)
+#     - ref: Psalm 62:1        (quote only part of a verse; must be word-for-word BSB)
+#       excerpt: 'In God alone my soul finds rest; my salvation comes from Him.'
+#
+# Run `pnpm check` for a report. `pnpm dev` shows drafts; `pnpm build` ships reviewed entries only.
+#
 # Order matters: emotions appear around the wheel in the order written here.
 
 - name: Fear
   slug: fear
   description: a sense that something bad is coming and you can't stop it
   reviewed: false
+  god_sees_this:
+    - Psalm 55:4
+    - Psalm 102:2
+  truth_to_hold:
+    - Isaiah 41:10
+    - Psalm 23:4
+  reflection: >-
+    What, specifically, are you afraid might happen, and what would it mean to bring that exact fear to God?
+  prayer: >-
+    Lord, I'm afraid, and I don't want to pretend otherwise. You see what I'm facing more clearly than I do. Stay near me and steady my heart, one step at a time.
+  action: >-
+    Write your fear down in one honest sentence. Then read Isaiah 41:10 aloud, slowly, over it.
   children:
     - name: Worried
       slug: worried
       description: a mind that keeps circling what might go wrong
       reviewed: false
+      god_sees_this:
+        - Psalm 13:2
+        - Luke 10:41
+      truth_to_hold:
+        - Matthew 6:34
+        - Psalm 94:19
+      reflection: >-
+        Which of your worries are about today, and which are about a tomorrow that hasn't arrived?
+      prayer: >-
+        Father, my mind keeps circling the same worries. I hand You the ones I cannot solve today. Give me what I need for this day, and help me leave tomorrow with You.
+      action: >-
+        List what you're worried about. Circle the one thing you can act on today, do it, and pray over the rest.
       children:
         - name: Anxious
           slug: anxious
           description: a restless dread about what might happen
           reviewed: false
+          god_sees_this:
+            - Mark 14:33-34
+            - ref: Psalm 42:5
+              excerpt: 'Why are you downcast, O my soul? Why the unease within me?'
+          truth_to_hold:
+            - Philippians 4:6-7
+            - 1 Peter 5:7
+          reflection: >-
+            Where do you feel the anxiety in your body right now, and what might it be trying to tell you?
+          prayer: >-
+            Jesus, You know what it is to be deeply troubled. I bring You this restless dread just as it is. Guard my heart and mind with Your peace, even before anything changes.
+          action: >-
+            Take five slow breaths. With each one, name one specific request to God. Finish with one thing you're thankful for.
         - name: Restless
           slug: restless
           description: unable to settle, as if something is always unfinished
           reviewed: false
+          god_sees_this:
+            - Psalm 77:4
+            - Job 7:4
+          truth_to_hold:
+            - Matthew 11:28
+            - ref: Psalm 62:1
+              excerpt: 'In God alone my soul finds rest; my salvation comes from Him.'
+          reflection: >-
+            What is keeping you from settling: something unfinished, unsaid or unknown?
+          prayer: >-
+            Lord, I can't seem to settle. You invited the weary to come to You, so I'm coming. Quiet my mind and teach my soul to rest in You.
+          action: >-
+            Put your phone in another room for ten minutes. Sit still, and each time your mind wanders, gently pray, "In God alone my soul finds rest."
         - name: Dreading
           slug: dreading
           description: bracing for something you know is coming
           reviewed: false
+          god_sees_this:
+            - Mark 14:35-36
+            - Job 3:25-26
+          truth_to_hold:
+            - Deuteronomy 31:8
+            - Psalm 112:7
+          reflection: >-
+            What are you bracing for, and what would it look like for God to be with you in that moment?
+          prayer: >-
+            Father, I'm dreading what's ahead. Like Jesus in the garden, I ask You to take this cup if You can. And if not, go before me and stay with me through it.
+          action: >-
+            Tell one trusted person what's coming and ask them to pray for you on that day.
     - name: Afraid
       slug: afraid
       description: feeling in danger, whether the threat is near or imagined
       reviewed: false
+      god_sees_this:
+        - Psalm 31:22
+        - Matthew 14:30
+      truth_to_hold:
+        - Psalm 56:3-4
+        - ref: Isaiah 43:1
+          excerpt: 'Do not fear, for I have redeemed you; I have called you by your name; you are Mine!'
+      reflection: >-
+        What is the danger you sense, and is it here now or still ahead?
+      prayer: >-
+        God, I'm afraid. You call me by name and say I'm Yours. When fear rises, help me put my trust in You again, as many times as it takes.
+      action: >-
+        Each time the fear rises today, say Psalm 56:3 under your breath: "When I am afraid, I put my trust in You."
       children:
         - name: Terrified
           slug: terrified
           description: fear so strong it is hard to think or move
           reviewed: false
+          god_sees_this:
+            - Psalm 55:5
+            - Psalm 18:4-6
+          truth_to_hold:
+            - ref: Mark 6:50
+              excerpt: 'Take courage! It is I. Do not be afraid.'
+            - ref: Psalm 46:1
+              excerpt: 'God is our refuge and strength, an ever-present help in times of trouble.'
+          reflection: >-
+            When fear this strong takes hold, what is the smallest step toward safety or help you could take?
+          prayer: >-
+            Lord, I'm terrified and I can barely think. Hear my cry and be my refuge. Speak "Take courage, it is I" into this moment.
+          action: >-
+            If you are in danger, get to safety and call for help now. Otherwise, sit down, plant your feet, and slowly name five things you can see as you breathe.
         - name: Panicked
           slug: panicked
           description: a sudden rush of fear that floods body and mind
           reviewed: false
+          god_sees_this:
+            - Psalm 38:10
+            - Matthew 14:30
+          truth_to_hold:
+            - ref: Matthew 14:31
+              excerpt: 'Immediately Jesus reached out His hand and took hold of Peter.'
+            - Isaiah 26:3
+          reflection: >-
+            When the panic passes, what did you most need to hear in the middle of it?
+          prayer: >-
+            Lord, save me, I'm sinking. Reach out Your hand and take hold of me as You did for Peter. Keep my mind steady on You until this wave passes.
+          action: >-
+            Breathe in for four counts, praying "Lord, hold me," and out for six counts, praying "I am Yours." Repeat until your breathing slows.
         - name: Threatened
           slug: threatened
           description: sensing that someone or something is against you
           reviewed: false
+          god_sees_this:
+            - ref: Psalm 3:1
+              excerpt: 'O LORD, how my foes have increased! How many rise up against me!'
+            - Psalm 31:13
+          truth_to_hold:
+            - Psalm 3:3
+            - ref: Psalm 27:1
+              excerpt: 'The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—whom shall I dread?'
+          reflection: >-
+            Who or what feels like it is against you, and what kind of protection do you most need?
+          prayer: >-
+            Lord, it feels like so much is against me. Be the shield around me and the One who lifts my head. Show me wise steps to take, and guard me from harm.
+          action: >-
+            If someone is threatening you, tell a person you trust today, and contact the authorities if you are in danger. Then read Psalm 3 aloud.
     - name: Insecure
       slug: insecure
       description: lacking solid ground under your feet
       reviewed: false
+      god_sees_this:
+        - Psalm 73:2
+        - ref: Psalm 61:2
+          excerpt: 'From the ends of the earth I call out to You whenever my heart is faint.'
+      truth_to_hold:
+        - Psalm 18:2
+        - Psalm 62:6
+      reflection: >-
+        What do you usually lean on to feel steady, and is it holding?
+      prayer: >-
+        Father, I feel like the ground is shifting under me. You are my rock and my fortress. Set my feet on You, so I will not be shaken.
+      action: >-
+        Write down three things that are true about God and don't change when your circumstances do. Keep the note where you'll see it.
       children:
         - name: Unsafe
           slug: unsafe
           description: not able to relax because you don't feel protected
           reviewed: false
+          god_sees_this:
+            - Psalm 142:4
+            - ref: Psalm 55:6
+              excerpt: 'Oh, that I had wings like a dove! I would fly away and find rest.'
+          truth_to_hold:
+            - Psalm 91:1-2
+            - Psalm 4:8
+          reflection: >-
+            Where, and with whom, do you feel safest, and how could you get there?
+          prayer: >-
+            Lord, I don't feel safe. Be my refuge and my fortress. Protect me, lead me to people who will help, and let me lie down in peace tonight.
+          action: >-
+            If you are in physical danger, contact someone you trust or emergency services now. Otherwise, name one safe person and one safe place, and reach out today.
         - name: Unsure of myself
           slug: unsure-of-myself
           description: doubting your own judgment and ability
           reviewed: false
+          god_sees_this:
+            - Exodus 4:10
+            - Jeremiah 1:6
+          truth_to_hold:
+            - Exodus 4:11-12
+            - 2 Corinthians 12:9
+          reflection: >-
+            What is God asking of you that feels bigger than you are?
+          prayer: >-
+            Lord, like Moses I feel I'm not enough for this. You made me, and You know my weakness. Help me as I go, and let Your strength show where mine runs out.
+          action: >-
+            Write down the one task you doubt you can do. Next to it write "I will help you" (Exodus 4:12), then take the first small step.
         - name: Fragile
           slug: fragile
           description: feeling one more blow could break you
           reviewed: false
+          god_sees_this:
+            - Psalm 6:2
+            - Psalm 31:9
+          truth_to_hold:
+            - Isaiah 42:3
+            - Psalm 34:18
+          reflection: >-
+            What would it look like to treat yourself as gently as God treats a bruised reed?
+          prayer: >-
+            Lord, I feel like one more blow could break me. You don't crush bruised reeds. Be near me, heal what hurts, and handle me gently.
+          action: >-
+            Postpone one non-essential thing today, and use that time to rest or to be with someone safe.
     - name: Overwhelmed
       slug: overwhelmed
       description: more coming at you than you can hold
       reviewed: false
+      god_sees_this:
+        - 2 Corinthians 1:8
+        - Psalm 142:3
+      truth_to_hold:
+        - ref: Psalm 61:2
+          excerpt: 'Lead me to the rock that is higher than I.'
+        - Psalm 55:22
+        - Isaiah 40:31
+      reflection: >-
+        If you could set down just one thing you're carrying, which would it be?
+      prayer: >-
+        Father, it is all too much, and I'm running out of strength. I cast this burden on You. Sustain me, and lead me to the rock that is higher than I.
+      action: >-
+        Write everything on your mind onto one page. Choose the single next step, and give the rest to God in a one-line prayer.
       children:
         - name: Pressured
           slug: pressured
           description: pushed by demands and expectations from every side
           reviewed: false
+          god_sees_this:
+            - Exodus 18:18
+            - Psalm 25:17
+          truth_to_hold:
+            - 2 Corinthians 4:8-9
+            - Matthew 11:29-30
+          reflection: >-
+            Whose expectations are you trying to meet, and are they God's?
+          prayer: >-
+            Jesus, I'm pressed on every side. Teach me to take Your easy yoke instead of the heavy ones I've picked up. Show me what I can lay down.
+          action: >-
+            Like Moses, you can't carry it alone. Ask one person today to share part of the load.
         - name: Out of control
           slug: out-of-control
           description: life is moving faster than you can steer it
           reviewed: false
+          god_sees_this:
+            - Mark 4:37-38
+            - Psalm 107:27
+          truth_to_hold:
+            - Mark 4:39
+            - Psalm 31:14-15
+          reflection: >-
+            What part of this is actually in your hands, and what part belongs only to God?
+          prayer: >-
+            Lord, it feels like the storm is swamping my boat. You have not forgotten me. Speak peace over this storm, and help me trust that my times are in Your hands.
+          action: >-
+            Divide a page into two columns, "Mine to do" and "God's to hold." Do one thing from the first column today.
         - name: Drowning
           slug: drowning
           description: going under, with no strength left to keep your head up
           reviewed: false
+          god_sees_this:
+            - ref: Psalm 69:1
+              excerpt: 'Save me, O God, for the waters are up to my neck.'
+            - Psalm 69:2
+            - Jonah 2:5
+          truth_to_hold:
+            - Psalm 18:16
+            - Isaiah 43:2
+          reflection: >-
+            Who could you let know that you're going under?
+          prayer: >-
+            Save me, O God. The waters are up to my neck. Reach down and take hold of me, and draw me out of these deep waters.
+          action: >-
+            Send a short message to someone you trust today: "I'm struggling and could use help." You don't have to explain everything.
     - name: Helpless
       slug: helpless
       description: unable to change what is happening
       reviewed: false
+      god_sees_this:
+        - 2 Chronicles 20:12
+        - ref: Psalm 121:1
+          excerpt: 'I lift up my eyes to the hills. From where does my help come?'
+      truth_to_hold:
+        - Psalm 121:2
+        - ref: 2 Chronicles 20:15
+          excerpt: 'Do not be afraid or discouraged because of this vast army, for the battle does not belong to you, but to God.'
+      reflection: >-
+        What would it look like to pray, "We do not know what to do, but our eyes are upon You"?
+      prayer: >-
+        God, I am powerless before this, and I don't know what to do. My eyes are on You. Fight this battle for me, and show me any part that is mine.
+      action: >-
+        Pray 2 Chronicles 20:12 out loud, then do one small thing that is within your reach today.
       children:
         - name: Powerless
           slug: powerless
           description: watching something unfold that you cannot stop
           reviewed: false
+          god_sees_this:
+            - Psalm 88:4
+            - ref: Psalm 22:15
+              excerpt: 'My strength is dried up like a potsherd, and my tongue sticks to the roof of my mouth.'
+          truth_to_hold:
+            - Isaiah 40:29
+            - ref: Zechariah 4:6
+              excerpt: 'Not by might nor by power, but by My Spirit, says the LORD of Hosts.'
+            - 2 Corinthians 12:9
+          reflection: >-
+            Where have you seen God's power work through weakness before, in Scripture or in your own life?
+          prayer: >-
+            Lord, my strength is dried up and I can't change this. You give power to the faint. Do by Your Spirit what I cannot do by my might.
+          action: >-
+            Write down one time God came through when you were powerless. Read it again whenever the helplessness rises.
         - name: Trapped
           slug: trapped
           description: seeing no way out of where you are
           reviewed: false
+          god_sees_this:
+            - Lamentations 3:7
+            - ref: Psalm 142:7
+              excerpt: 'Free my soul from prison, that I may praise Your name.'
+          truth_to_hold:
+            - Psalm 18:19
+            - Psalm 31:8
+          reflection: >-
+            What makes you feel there is no way out, and is that feeling the whole truth?
+          prayer: >-
+            Lord, I feel walled in, and I can't see a way out. Free my soul from this prison. Bring me out into the open place You have for me.
+          action: >-
+            Ask someone you trust to help you list possible ways forward, even small or imperfect ones. Seeing them written down can loosen the walls.
         - name: Vulnerable
           slug: vulnerable
           description: exposed and open to harm
           reviewed: false
+          god_sees_this:
+            - Psalm 40:17
+            - Psalm 22:11
+          truth_to_hold:
+            - Psalm 91:4
+            - Psalm 121:7-8
+          reflection: >-
+            Where do you feel exposed, and what kind of covering do you need?
+          prayer: >-
+            Lord, I am poor and needy and open to harm. Cover me with Your feathers and hide me under Your wings. Guard my coming and going.
+          action: >-
+            Choose one boundary that would protect you this week, and tell someone you trust about it.
 
 - name: Sadness
   slug: sadness

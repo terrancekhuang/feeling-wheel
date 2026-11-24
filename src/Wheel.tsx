@@ -1,15 +1,17 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { arc } from "d3-shape";
 import { interpolate } from "d3-interpolate";
-import { root, fill, bySlug, type Node } from "./content";
+import { root, fill, type Node } from "./content";
 import { navigate, linkTo } from "./router";
 
 type Rect = { x0: number; x1: number; y0: number; y1: number; o: number }; // o = opacity
 
 const DURATION = 650;
+const feelings = (n: number) => `${n} feeling${n === 1 ? "" : "s"}`;
 const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
 const nodes = root.descendants().slice(1);
+const bySlug = new Map(nodes.map((n) => [n.data.slug, n]));
 
 /** Where every slice sits when `p` is in the centre. Rings 1–2 (y units) are the visible ones. */
 function layout(p: Node) {
@@ -121,7 +123,7 @@ export default function Wheel({ initial }: { initial?: string }) {
                   className="arc"
                   tabIndex={0}
                   role={more ? "button" : "link"}
-                  aria-label={more ? `${d.data.name}: ${d.data.description}. ${more} feelings inside.` : `${d.data.name}: ${d.data.description}`}
+                  aria-label={more ? `${d.data.name}: ${d.data.description}. ${feelings(more)} inside.` : `${d.data.name}: ${d.data.description}`}
                   onClick={() => activate(d)}
                   onMouseDown={(e) => e.preventDefault() /* no focus ring on tap */}
                   onKeyDown={(e) => {
@@ -170,7 +172,7 @@ export default function Wheel({ initial }: { initial?: string }) {
         </div>
       )}
       <p className="sr-only" aria-live="polite">
-        {focus === root ? "Showing all feelings." : `Showing ${focus.data.name}: ${kids} feelings inside.`}
+        {focus === root ? "Showing all feelings." : `Showing ${focus.data.name}: ${feelings(kids)} inside.`}
       </p>
     </div>
   );
