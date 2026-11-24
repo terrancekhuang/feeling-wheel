@@ -13,7 +13,7 @@ const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2
 const nodes = root.descendants().slice(1);
 const bySlug = new Map(nodes.map((n) => [n.data.slug, n]));
 
-/** Where every slice sits when `p` is in the centre. Rings 1–2 (y units) are the visible ones. */
+/** Where every slice sits when `p` is in the centre. Rings 1–2 (y units) are the tappable ones; ring 3 is a thin unlabelled rim. */
 function layout(p: Node) {
   const m = new Map<Node, Rect>();
   const span = p.x1 - p.x0;
@@ -25,7 +25,7 @@ function layout(p: Node) {
       y1: Math.max(0, d.y1 - p.depth),
       o: 0,
     };
-    r.o = r.y1 <= 3 && r.y0 >= 1 && r.x1 - r.x0 > 1e-6 ? 1 : 0;
+    r.o = r.y1 <= 4 && r.y0 >= 1 && r.x1 - r.x0 > 1e-6 ? 1 : 0;
     m.set(d, r);
   }
   return m;
@@ -79,10 +79,14 @@ export default function Wheel({ initial }: { initial?: string }) {
     frame.current = requestAnimationFrame(tick);
   }
 
-  // Ring radii: small centre, then two rings (outer one wider, it holds longer names).
+  // Ring radii: small centre, two rings (outer one wider, it holds longer names), then a thin rim hinting at the next level.
   const R = size / 2 - 2;
-  const stops = [0, R * 0.34, R * 0.64, R];
-  const radius = (y: number) => (y <= 3 ? stops[Math.floor(y)] + (y % 1) * (stops[Math.min(3, Math.floor(y) + 1)] - stops[Math.floor(y)]) : R + (y - 3) * R * 0.36);
+  const RIM = Math.max(10, R * 0.06);
+  const stops = [0, R * 0.34, R * 0.58, R - RIM, R];
+  const radius = (y: number) => {
+    const i = Math.min(Math.floor(y), stops.length - 2);
+    return stops[i] + (y - i) * (stops[i + 1] - stops[i]);
+  };
   const path = useMemo(
     () =>
       arc<Rect>()
@@ -92,7 +96,7 @@ export default function Wheel({ initial }: { initial?: string }) {
         .padRadius(R * 0.5)
         .innerRadius((d) => radius(d.y0))
         .outerRadius((d) => Math.max(radius(d.y0), radius(d.y1) - 2))
-        .cornerRadius(4),
+        .cornerRadius((d) => (d.y0 > 2.99 ? 1 : 4)),
     [size],
   );
 
@@ -115,6 +119,7 @@ export default function Wheel({ initial }: { initial?: string }) {
             )}
             {shown.map((d) => {
               const r = rects.get(d)!;
+              if (r.y0 > 2.99) return <path key={d.data.slug} d={path(r)!} style={{ fill: fill(d), opacity: r.o }} pointerEvents="none" aria-hidden />;
               const label = animating ? null : fitLabel(d.data.name, radius(r.y0), radius(r.y1), r.x0, r.x1);
               const more = d.children?.length;
               return (
