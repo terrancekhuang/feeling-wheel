@@ -1496,7 +1496,7 @@
 - name: Loneliness
   slug: loneliness
   description: an ache to be known, wanted and close to someone
-  reviewed: false
+  reviewed: true
   god_sees_this:
     - Psalm 25:16
     - Psalm 102:7
@@ -1514,7 +1514,7 @@
     - name: Isolated
       slug: isolated
       description: cut off from the people around you
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 142:4
         - Psalm 102:7
@@ -1531,7 +1531,7 @@
         - name: Alone
           slug: alone
           description: no one is with you in this
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - John 16:32
             - 2 Timothy 4:16-17
@@ -1548,7 +1548,7 @@
         - name: Cut off
           slug: cut-off
           description: separated from community by distance, illness or circumstance
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 38:11
             - Psalm 88:8
@@ -1564,7 +1564,7 @@
         - name: Homesick
           slug: homesick
           description: longing for a place and people you have left
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 137:1
             - Psalm 137:4
@@ -1581,7 +1581,7 @@
     - name: Rejected
       slug: rejected
       description: pushed away by people you wanted to be close to
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Isaiah 53:3
         - John 1:11-12
@@ -1599,7 +1599,7 @@
         - name: Excluded
           slug: excluded
           description: left out while others are welcomed in
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: Luke 15:28-29
               excerpt: 'Yet you never gave me even a young goat so I could celebrate with my friends.'
@@ -1617,7 +1617,7 @@
         - name: Unwanted
           slug: unwanted
           description: as if no one wants you around
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Job 19:19
             - Psalm 31:12
@@ -1634,7 +1634,7 @@
         - name: Ignored
           slug: ignored
           description: treated as if you aren't there
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 142:4
             - Psalm 38:11
@@ -1651,7 +1651,7 @@
     - name: Abandoned
       slug: abandoned
       description: left by someone who should have stayed
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 27:10
         - Mark 14:50
@@ -1669,7 +1669,7 @@
         - name: Deserted
           slug: deserted
           description: left to face hard things on your own
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: 2 Timothy 4:16
               excerpt: 'At my first defense, no one stood with me, but everyone deserted me.'
@@ -1687,7 +1687,7 @@
         - name: Forgotten
           slug: forgotten
           description: as if no one remembers you exist
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Isaiah 49:14
             - Psalm 31:12
@@ -1704,7 +1704,7 @@
         - name: Left behind
           slug: left-behind
           description: everyone else has moved on without you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Job 19:13-14
             - Psalm 88:18
@@ -1721,7 +1721,7 @@
     - name: Misunderstood
       slug: misunderstood
       description: no one seems to see what's really going on inside you
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - 1 Samuel 1:13
         - ref: Psalm 42:3
@@ -1741,7 +1741,7 @@
         - name: Unseen
           slug: unseen
           description: your pain or effort goes unnoticed
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 142:4
             - Psalm 69:19
@@ -1758,7 +1758,7 @@
         - name: Unheard
           slug: unheard
           description: you speak, but no one really listens
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - 1 Samuel 1:14-15
             - Psalm 142:4
@@ -1775,7 +1775,7 @@
         - name: Judged
           slug: judged
           description: others have made up their minds about you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 35:11
             - 1 Samuel 1:14-15
@@ -1792,7 +1792,7 @@
     - name: Disconnected
       slug: disconnected
       description: among people but not really with them
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 55:12-14
         - Psalm 88:18
@@ -1810,7 +1810,7 @@
         - name: Distant
           slug: distant
           description: close relationships have grown cold
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 55:12-14
             - Job 19:13-14
@@ -1826,7 +1826,7 @@
         - name: Out of place
           slug: out-of-place
           description: like you don't belong where you are
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 119:19
             - Ruth 2:10
@@ -1844,7 +1844,7 @@
 - name: Weariness
   slug: weariness
   description: worn down in body, mind or soul
-  reviewed: false
+  reviewed: true
   god_sees_this:
     - Psalm 6:6
     - Psalm 143:4
@@ -1861,7 +1861,7 @@
     - name: Exhausted
       slug: exhausted
       description: completely out of strength
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - 1 Kings 19:5-7
         - Psalm 69:3
@@ -1878,7 +1878,7 @@
         - name: Drained
           slug: drained
           description: everything has been poured out and nothing refilled
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: Psalm 22:14
               excerpt: 'I am poured out like water'
@@ -1895,7 +1895,7 @@
         - name: Burned out
           slug: burned-out
           description: worn out by work or service that once gave you life
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Exodus 18:17-18
             - Numbers 11:14
@@ -1912,7 +1912,7 @@
         - name: Sleepless
           slug: sleepless
           description: unable to rest even when you lie down
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 77:4
             - Job 7:3-4
@@ -1929,7 +1929,7 @@
     - name: Burdened
       slug: burdened
       description: carrying more weight than you were made to carry
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Numbers 11:14
         - Psalm 38:4
@@ -1947,7 +1947,7 @@
         - name: Weighed down
           slug: weighed-down
           description: responsibilities pressing on you all day
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - 2 Corinthians 11:28
             - Exodus 18:17-18
@@ -1963,7 +1963,7 @@
         - name: Stretched thin
           slug: stretched-thin
           description: too many people need too much from you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Mark 6:31
             - Numbers 11:14
@@ -1979,7 +1979,7 @@
         - name: Carrying others' pain
           slug: carrying-others-pain
           description: worn by caring for someone who is suffering
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - 2 Corinthians 11:28
             - Psalm 6:6
@@ -1996,7 +1996,7 @@
     - name: Worn down
       slug: worn-down
       description: tired from a struggle that has lasted too long
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 6:3
         - Psalm 69:3
@@ -2014,7 +2014,7 @@
         - name: Tired of waiting
           slug: tired-of-waiting
           description: you have waited and prayed, and still nothing
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 6:3
             - Psalm 69:3
@@ -2032,7 +2032,7 @@
         - name: Worn out by pain
           slug: worn-out-by-pain
           description: long illness or ongoing pain has taken its toll
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Mark 5:25-26
             - Psalm 38:8
@@ -2049,7 +2049,7 @@
         - name: Ready to give up
           slug: ready-to-give-up
           description: you don't know how much longer you can keep going
-          reviewed: false
+          reviewed: true
           crisis: true
           god_sees_this:
             - Job 6:11
@@ -2068,7 +2068,7 @@
     - name: Numb
       slug: numb
       description: feeling very little at all
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 38:8
         - Psalm 143:4
@@ -2085,7 +2085,7 @@
         - name: Detached
           slug: detached
           description: watching your own life from a distance
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 143:4
             - Psalm 77:4
@@ -2101,7 +2101,7 @@
         - name: Apathetic
           slug: apathetic
           description: finding it hard to care about anything
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Ecclesiastes 2:17
             - Ecclesiastes 1:14
@@ -2117,7 +2117,7 @@
         - name: Flat
           slug: flat
           description: no highs or lows, just grey
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Lamentations 3:17-18
             - Psalm 143:4
@@ -2133,7 +2133,7 @@
     - name: Spiritually dry
       slug: spiritually-dry
       description: your soul feels parched and far from refreshment
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - ref: Psalm 63:1
           excerpt: 'O God, You are my God. Earnestly I seek You; my soul thirsts for You. My body yearns for You in a dry and weary land without water.'
@@ -2153,7 +2153,7 @@
         - name: Going through the motions
           slug: going-through-the-motions
           description: doing the right things with no life in them
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Isaiah 29:13
             - Revelation 2:4
@@ -2169,7 +2169,7 @@
         - name: Struggling to pray
           slug: struggling-to-pray
           description: prayer feels hard, empty or impossible
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 77:4
             - Luke 11:1
@@ -2185,7 +2185,7 @@
         - name: Thirsty for God
           slug: thirsty-for-god
           description: longing for God's presence you can't seem to feel
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: Psalm 42:2
               excerpt: 'My soul thirsts for God, the living God. When shall I come and appear in God’s presence?'
@@ -2204,7 +2204,7 @@
 - name: Doubt
   slug: doubt
   description: struggling to trust what you once believed or felt sure of
-  reviewed: false
+  reviewed: true
   god_sees_this:
     - Mark 9:24
     - Matthew 11:3
@@ -2222,7 +2222,7 @@
     - name: Confused
       slug: confused
       description: unable to make sense of what is happening
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 73:16-17
         - Habakkuk 1:3
@@ -2239,7 +2239,7 @@
         - name: Lost
           slug: lost
           description: not knowing which way to go
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Job 23:8-10
             - Isaiah 53:6
@@ -2256,7 +2256,7 @@
         - name: Torn
           slug: torn
           description: pulled between two paths or two loyalties
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Genesis 32:24-26
             - Romans 7:19
@@ -2273,7 +2273,7 @@
         - name: Unsure of God's will
           slug: unsure-of-gods-will
           description: wanting to obey but not knowing what God wants
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 25:4-5
             - Job 23:3
@@ -2290,7 +2290,7 @@
     - name: Far from God
       slug: far-from-god
       description: God feels distant or absent
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 10:1
         - Job 23:8-10
@@ -2308,7 +2308,7 @@
         - name: Forsaken
           slug: forsaken
           description: as if God Himself has turned away from you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Matthew 27:46
             - Isaiah 49:14
@@ -2325,7 +2325,7 @@
         - name: God feels silent
           slug: god-feels-silent
           description: you pray and hear nothing back
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 22:2
             - Habakkuk 1:2
@@ -2341,7 +2341,7 @@
         - name: Cold in faith
           slug: cold-in-faith
           description: your love for God has cooled
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Revelation 2:4
             - Luke 24:32
@@ -2358,7 +2358,7 @@
     - name: Questioning
       slug: questioning
       description: wrestling with hard questions about God and faith
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Genesis 32:24-26
         - Habakkuk 1:3
@@ -2376,7 +2376,7 @@
         - name: Struggling to believe
           slug: struggling-to-believe
           description: wanting to believe but finding it hard
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Mark 9:24
             - John 20:25
@@ -2393,7 +2393,7 @@
         - name: Shaken
           slug: shaken
           description: something has rattled the foundations of your faith
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 11:3
             - Psalm 73:2-3
@@ -2410,7 +2410,7 @@
         - name: Why, God?
           slug: why-god
           description: unable to understand why God allowed this
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Habakkuk 1:3
             - Jeremiah 15:18
@@ -2427,7 +2427,7 @@
     - name: Disillusioned
       slug: disillusioned
       description: let down by the church or by other believers
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 55:12-14
         - Micah 7:5
@@ -2444,7 +2444,7 @@
         - name: Hurt by church
           slug: hurt-by-church
           description: wounded by a church or by Christians you trusted
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 55:20-21
             - Ezekiel 34:4
@@ -2461,7 +2461,7 @@
         - name: Cynical
           slug: cynical
           description: expecting the worst from people who claim faith
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 116:11
             - Matthew 23:27
@@ -2477,7 +2477,7 @@
     - name: Spiritually unsure
       slug: spiritually-unsure
       description: uncertain where you stand with God
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 51:11
         - ref: Psalm 77:9
@@ -2496,7 +2496,7 @@
         - name: Unsure I'm saved
           slug: unsure-im-saved
           description: afraid you might not truly belong to God
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 51:11
             - Mark 9:24
@@ -2513,7 +2513,7 @@
         - name: Afraid I've gone too far
           slug: gone-too-far
           description: wondering if you've wandered beyond God's reach
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Jonah 2:4
             - Luke 15:20-21
