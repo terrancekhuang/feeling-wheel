@@ -1128,7 +1128,7 @@
 - name: Shame
   slug: shame
   description: feeling that something is wrong with who you are
-  reviewed: false
+  reviewed: true
   god_sees_this:
     - Genesis 3:10
     - ref: Psalm 44:15
@@ -1148,7 +1148,7 @@
     - name: Guilty
       slug: guilty
       description: knowing you have done wrong
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Psalm 51:3
         - Psalm 38:4
@@ -1167,7 +1167,7 @@
         - name: Remorseful
           slug: remorseful
           description: sorrow over the harm you have caused
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Luke 22:61-62
             - Psalm 51:3
@@ -1183,7 +1183,7 @@
         - name: Condemned
           slug: condemned
           description: feeling judged and sentenced, with no way back
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - John 8:10-11
             - Psalm 130:3-4
@@ -1200,7 +1200,7 @@
         - name: Regretful
           slug: regretful
           description: wishing you could undo what you did or didn't do
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 25:7
             - Luke 22:61-62
@@ -1217,7 +1217,7 @@
     - name: Worthless
       slug: worthless
       description: believing you have no value
-      reviewed: false
+      reviewed: true
       crisis: true
       god_sees_this:
         - Psalm 22:6
@@ -1237,7 +1237,7 @@
         - name: Unlovable
           slug: unlovable
           description: sure that no one could truly love you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 88:18
             - Luke 15:20-21
@@ -1254,7 +1254,7 @@
         - name: Like a failure
           slug: like-a-failure
           description: measuring your life and finding it not enough
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: 1 Kings 19:4
               excerpt: '“I have had enough, LORD,” he said. “Take my life, for I am no better than my fathers.”'
@@ -1272,7 +1272,7 @@
         - name: Insignificant
           slug: insignificant
           description: as if your life makes no difference
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Judges 6:15
             - Psalm 31:12
@@ -1289,7 +1289,7 @@
     - name: Inadequate
       slug: inadequate
       description: not measuring up to what is asked of you
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Exodus 4:10
         - Judges 6:15
@@ -1306,7 +1306,7 @@
         - name: Not good enough
           slug: not-good-enough
           description: whatever you do, it never seems to be enough
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Romans 7:24-25
             - Luke 15:28-29
@@ -1323,7 +1323,7 @@
         - name: Inferior
           slug: inferior
           description: lesser than the people around you
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Exodus 4:10
             - Psalm 22:6
@@ -1340,7 +1340,7 @@
         - name: Falling short
           slug: falling-short
           description: missing the mark again and again
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Romans 7:24-25
             - Romans 3:23-24
@@ -1357,7 +1357,7 @@
     - name: Embarrassed
       slug: embarrassed
       description: wishing you could hide from others' eyes
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Genesis 3:10
         - ref: Psalm 44:15
@@ -1375,7 +1375,7 @@
         - name: Humiliated
           slug: humiliated
           description: shamed in front of others
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 69:19
             - Isaiah 53:3
@@ -1392,7 +1392,7 @@
         - name: Exposed
           slug: exposed
           description: something you wanted hidden has come to light
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Genesis 3:10
             - Psalm 69:5
@@ -1409,7 +1409,7 @@
         - name: Foolish
           slug: foolish
           description: feeling stupid for what you said or did
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Psalm 69:5
             - Matthew 14:31
@@ -1425,7 +1425,7 @@
     - name: Unclean
       slug: unclean
       description: feeling stained by sin or by what was done to you
-      reviewed: false
+      reviewed: true
       god_sees_this:
         - Isaiah 6:5
         - Mark 1:40-41
@@ -1443,7 +1443,7 @@
         - name: Defiled
           slug: defiled
           description: feeling dirty in a way you can't wash off
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - ref: 2 Samuel 13:13
               excerpt: 'Where could I ever take my shame?'
@@ -1461,7 +1461,7 @@
         - name: Disgusted with myself
           slug: disgusted-with-myself
           description: unable to stand who you have been
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Job 42:6
             - Romans 7:24-25
@@ -1478,7 +1478,7 @@
         - name: Unforgivable
           slug: unforgivable
           description: sure you have gone too far to be forgiven
-          reviewed: false
+          reviewed: true
           god_sees_this:
             - Luke 15:20-21
             - Psalm 130:3-4
