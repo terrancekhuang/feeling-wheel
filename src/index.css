@@ -72,8 +72,9 @@
 @font-face {
   font-family: "Noto Sans";
   font-weight: 100 900;
+  font-stretch: 62.5% 100%; /* width axis: the wheel uses a condensed cut so labels fit */
   font-display: swap;
-  src: url("@fontsource-variable/noto-sans/files/noto-sans-latin-wght-normal.woff2") format("woff2");
+  src: url("@fontsource-variable/noto-sans/files/noto-sans-latin-wdth-normal.woff2") format("woff2");
 }
 
 body {

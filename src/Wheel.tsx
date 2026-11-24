@@ -38,6 +38,9 @@ export default function Wheel({ initial }: { initial?: string }) {
   const [focus, setFocus] = useState<Node>(() => bySlug.get(initial ?? "") ?? root);
   const [rects, setRects] = useState(() => layout(focus));
   const [animating, setAnimating] = useState(false);
+  // Labels are measured with the bundled font; re-measure once it has loaded.
+  const [, fontsLoaded] = useState(false);
+  useEffect(() => void document.fonts.ready.then(() => fontsLoaded(true)), []);
   const frame = useRef(0);
   const viaKeyboard = useRef(false);
 
@@ -183,16 +186,29 @@ export default function Wheel({ initial }: { initial?: string }) {
   );
 }
 
-// ---- Labels: pick the biggest size/orientation that fits the slice, or hide (zoom in to read it). ----
+// ---- Labels: pick the biggest size/orientation that fits the slice, else trim with "…" (zoom in to read it all). ----
 
 type Fit = { lines: string[]; size: number; radial: boolean; r: number; a: number };
 const SIZES = [13, 11.5, 10];
-let ctx: CanvasRenderingContext2D | null = null;
+const PAD = 6; // px of slice left around a label
+const STRETCH = "75%"; // condensed Noto Sans: same face as the rest of the app, narrower
+let probe: SVGTextElement | null = null;
 
+/** Measured with a hidden SVG <text> styled like the labels, so it matches what renders. */
 function textWidth(s: string, size: number) {
-  ctx ??= document.createElement("canvas").getContext("2d")!;
-  ctx.font = `500 ${size}px ${getComputedStyle(document.body).fontFamily}`;
-  return ctx.measureText(s).width;
+  if (!probe) {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("aria-hidden", "true");
+    svg.style.cssText = "position:absolute;width:0;height:0;visibility:hidden";
+    probe = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    probe.setAttribute("font-weight", "500");
+    probe.style.fontStretch = STRETCH;
+    svg.append(probe);
+    document.body.append(svg);
+  }
+  probe.setAttribute("font-size", String(size));
+  probe.textContent = s;
+  return probe.getComputedTextLength();
 }
 
 function twoLines(s: string) {
@@ -216,11 +232,19 @@ function fitLabel(name: string, r0: number, r1: number, a0: number, a1: number):
     for (const lines of options) {
       const w = Math.max(...lines.map((l) => textWidth(l, size)));
       const h = lines.length * size * 1.15;
-      if (w + 10 <= arcLen && h + 6 <= ringW) return { lines, size, radial: false, r, a };
-      if (w + 10 <= ringW && h + 4 <= arcLen) return { lines, size, radial: true, r, a };
+      if (w + PAD <= arcLen && h + 6 <= ringW) return { lines, size, radial: false, r, a };
+      if (w + PAD <= ringW && h + 2 <= arcLen) return { lines, size, radial: true, r, a };
     }
   }
-  return null;
+  // Nothing fits: one line at the smallest size, trimmed, in whichever direction has more room.
+  const size = SIZES.at(-1)!;
+  const along = size * 1.15 + 6 <= ringW ? arcLen : 0;
+  const across = size * 1.15 + 2 <= arcLen ? ringW : 0;
+  const room = Math.max(along, across) - PAD;
+  let cut = name.length - 1;
+  while (cut >= 3 && textWidth(name.slice(0, cut).trimEnd() + "…", size) > room) cut--;
+  if (cut < 3) return null;
+  return { lines: [name.slice(0, cut).trimEnd() + "…"], size, radial: across > along, r, a };
 }
 
 function Label({ lines, size, radial, r, a }: Fit) {
@@ -230,7 +254,7 @@ function Label({ lines, size, radial, r, a }: Fit) {
     : `translate(${r * Math.sin(a)},${-r * Math.cos(a)}) rotate(${deg > 90 && deg < 270 ? deg + 180 : deg})`;
   const lh = size * 1.15;
   return (
-    <text transform={transform} textAnchor="middle" dominantBaseline="central" fontSize={size} fontWeight={500} fill="var(--ink)" pointerEvents="none">
+    <text transform={transform} textAnchor="middle" dominantBaseline="central" fontSize={size} fontWeight={500} fill="var(--ink)" pointerEvents="none" style={{ fontStretch: STRETCH }}>
       {lines.map((l, i) => (
         <tspan key={i} x={0} dy={i === 0 ? (-(lines.length - 1) * lh) / 2 : lh}>
           {l}
