@@ -61,7 +61,7 @@ export default function EmotionPage({ slug }: { slug: string }) {
           <Section title="A next step">
             <div className="space-y-6">
               <Step label="Reflect" text={e.reflection} />
-              <Step label="Pray" text={e.prayer} serif />
+              <Step label="Pray" text={e.prayer} />
               <Step label="Do" text={e.action} />
             </div>
           </Section>
@@ -171,11 +171,11 @@ function ShareButton({ name }: { name: string }) {
   );
 }
 
-function Step({ label, text, serif }: { label: string; text?: string; serif?: boolean }) {
+function Step({ label, text }: { label: string; text?: string }) {
   return (
     <div>
       <h3 className="text-xs font-semibold uppercase tracking-widest text-ink-soft">{label}</h3>
-      {text ? <p className={`mt-1.5 leading-relaxed ${serif ? "font-serif text-lg" : "text-base"}`}>{text}</p> : <NotYet />}
+      {text ? <p className="mt-1.5 font-serif text-lg leading-relaxed">{text}</p> : <NotYet />}
     </div>
   );
 }
